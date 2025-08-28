@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tycoonlib:remove_build_air",
+    "tycoonlib:build_room_air",
+    "tycoonlib:room_air"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tycoonlib:block/room_air"
+    }
+  }
+}

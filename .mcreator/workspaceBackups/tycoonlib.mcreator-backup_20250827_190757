@@ -1,0 +1,276 @@
+{
+  "mod_elements": [
+    {
+      "name": "RoomAirOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "room_air_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RoomAirOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoomAir",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "room_air",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/room_air.json",
+          "src/main/resources/assets/tycoonlib/models/block/room_air.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/RoomAirBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/room_air.json",
+          "src/main/resources/assets/tycoonlib/blockstates/room_air.json"
+        ]
+      }
+    },
+    {
+      "name": "CheckFillRoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_fill_room",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/CheckFillRoomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoomBuilderRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "room_builder_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RoomBuilderRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoomBuilder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "room_builder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/room_builder.json",
+          "src/main/java/net/devmultiverse/tycoonlib/item/RoomBuilderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BuildRoomAir",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "build_room_air",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/build_room_air.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/BuildRoomAirBlock.java",
+          "src/main/resources/assets/tycoonlib/models/block/build_room_air.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/build_room_air.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/BuildRoomAirBlockEntity.java",
+          "src/main/resources/assets/tycoonlib/blockstates/build_room_air.json"
+        ]
+      }
+    },
+    {
+      "name": "RemoveBuildAir",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_build_air",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/blockstates/remove_build_air.json",
+          "src/main/resources/assets/tycoonlib/models/block/remove_build_air.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/RemoveBuildAirBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/remove_build_air.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/RemoveBuildAirBlockEntity.java",
+          "src/main/resources/assets/tycoonlib/models/item/remove_build_air.json"
+        ]
+      }
+    },
+    {
+      "name": "CheckRemoveRoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_remove_room",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/CheckRemoveRoomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveAirOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_air_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RemoveAirOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:RemoveBuildAir",
+      "~CUSTOM:BuildRoomAir",
+      "~CUSTOM:RoomAir"
+    ],
+    "BLOCKS:mod:oven": [
+      "Blocks.FURNACE",
+      "Blocks.SMOKER"
+    ],
+    "BLOCKS:mod:sink": [],
+    "BLOCKS:mod:fridge": [],
+    "BLOCKS:mod:air_blocks": [
+      "Blocks.AIR",
+      "Blocks.CAVE_AIR"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.tycoonlib.build_room_air": "Room Air",
+      "block.tycoonlib.remove_build_air": "Room Air",
+      "item.tycoonlib.room_builder": "Room Builder",
+      "block.tycoonlib.room_air": "Room Air"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tycoonlib",
+    "modName": "Tycoon-Lib",
+    "version": "1.0.0",
+    "author": "chill, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.devmultiverse.tycoonlib"
+  },
+  "mcreatorVersion": 202400452410
+}

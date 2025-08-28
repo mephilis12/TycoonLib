@@ -1,0 +1,4 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "tycoonlib:blocks/build_room_air"
+}

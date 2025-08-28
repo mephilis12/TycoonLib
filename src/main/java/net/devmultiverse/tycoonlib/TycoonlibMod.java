@@ -17,6 +17,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.devmultiverse.tycoonlib.init.TycoonlibModItems;
+import net.devmultiverse.tycoonlib.init.TycoonlibModBlocks;
+import net.devmultiverse.tycoonlib.init.TycoonlibModBlockEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +40,10 @@ public class TycoonlibMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		TycoonlibModBlocks.REGISTRY.register(bus);
+		TycoonlibModBlockEntities.REGISTRY.register(bus);
+		TycoonlibModItems.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

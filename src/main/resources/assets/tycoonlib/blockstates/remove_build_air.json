@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tycoonlib:block/remove_build_air"
+    }
+  }
+}

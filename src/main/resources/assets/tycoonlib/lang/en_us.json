@@ -1,1 +1,6 @@
-{}
+{
+  "block.tycoonlib.build_room_air": "Room Air",
+  "block.tycoonlib.remove_build_air": "Room Air",
+  "item.tycoonlib.room_builder": "Room Builder",
+  "block.tycoonlib.room_air": "Room Air"
+}
