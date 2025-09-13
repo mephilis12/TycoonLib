@@ -230,6 +230,23 @@
         ]
       },
       "path": "~/Room"
+    },
+    {
+      "name": "Counter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "counter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/blockstates/counter.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CounterBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/counter.json",
+          "src/main/resources/assets/tycoonlib/models/item/counter.json",
+          "src/main/resources/assets/tycoonlib/models/block/counter.json"
+        ]
+      },
+      "path": "~/Block"
     }
   ],
   "variable_elements": [],
@@ -240,16 +257,29 @@
       "~CUSTOM:BuildRoomAir",
       "~CUSTOM:RoomAir"
     ],
+    "BLOCKS:mod:billboard": [],
+    "BLOCKS:mod:table": [],
+    "BLOCKS:mod:ballpit": [],
     "BLOCKS:mod:oven": [
       "Blocks.FURNACE",
       "Blocks.SMOKER"
     ],
-    "BLOCKS:mod:sink": [],
     "BLOCKS:mod:fridge": [],
+    "BLOCKS:mod:sink": [
+      "Blocks.WATER_CAULDRON",
+      "Blocks.CAULDRON"
+    ],
+    "BLOCKS:mod:door": [],
     "BLOCKS:mod:air_blocks": [
       "Blocks.AIR",
       "Blocks.CAVE_AIR"
-    ]
+    ],
+    "BLOCKS:mod:chair": [],
+    "BLOCKS:mod:cash_register": [],
+    "BLOCKS:mod:counter": [
+      "CUSTOM:Counter"
+    ],
+    "BLOCKS:mod:arcade": []
   },
   "tab_element_order": {},
   "language_map": {
@@ -257,6 +287,7 @@
       "block.tycoonlib.build_room_air": "Room Air",
       "block.tycoonlib.remove_build_air": "Room Air",
       "item.tycoonlib.room_builder": "Room Builder",
+      "block.tycoonlib.counter": "Counter",
       "block.tycoonlib.room_air": "Room Air"
     }
   },
@@ -265,6 +296,10 @@
     "children": [
       {
         "name": "Room",
+        "children": []
+      },
+      {
+        "name": "Block",
         "children": []
       }
     ]

@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.devmultiverse.tycoonlib.block.RoomAirBlock;
 import net.devmultiverse.tycoonlib.block.RemoveBuildAirBlock;
+import net.devmultiverse.tycoonlib.block.CounterBlock;
 import net.devmultiverse.tycoonlib.block.BuildRoomAirBlock;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
@@ -20,6 +21,7 @@ public class TycoonlibModBlocks {
 	public static final RegistryObject<Block> ROOM_AIR = REGISTRY.register("room_air", () -> new RoomAirBlock());
 	public static final RegistryObject<Block> BUILD_ROOM_AIR = REGISTRY.register("build_room_air", () -> new BuildRoomAirBlock());
 	public static final RegistryObject<Block> REMOVE_BUILD_AIR = REGISTRY.register("remove_build_air", () -> new RemoveBuildAirBlock());
+	public static final RegistryObject<Block> COUNTER = REGISTRY.register("counter", () -> new CounterBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

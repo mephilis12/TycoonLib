@@ -1,20 +1,4 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "tycoonlib:blocks/remove_build_air",
-  "pools": [
-    {
-      "rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "tycoonlib:remove_build_air"
-        }
-      ]
-    }
-  ]
+  "random_sequence": "tycoonlib:blocks/remove_build_air"
 }

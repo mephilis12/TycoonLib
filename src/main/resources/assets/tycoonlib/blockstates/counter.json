@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tycoonlib:block/counter"
+    }
+  }
+}

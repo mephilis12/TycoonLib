@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.devmultiverse.tycoonlib.block.entity.RoomAirBlockEntity;
 import net.devmultiverse.tycoonlib.block.entity.RemoveBuildAirBlockEntity;
 import net.devmultiverse.tycoonlib.block.entity.BuildRoomAirBlockEntity;
 import net.devmultiverse.tycoonlib.TycoonlibMod;

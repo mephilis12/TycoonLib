@@ -21,6 +21,7 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> ROOM_BUILDER = REGISTRY.register("room_builder", () -> new RoomBuilderItem());
 	public static final RegistryObject<Item> BUILD_ROOM_AIR = block(TycoonlibModBlocks.BUILD_ROOM_AIR);
 	public static final RegistryObject<Item> REMOVE_BUILD_AIR = block(TycoonlibModBlocks.REMOVE_BUILD_AIR);
+	public static final RegistryObject<Item> COUNTER = block(TycoonlibModBlocks.COUNTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

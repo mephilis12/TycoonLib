@@ -28,7 +28,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "RoomAir",
@@ -41,10 +42,12 @@
           "src/main/resources/assets/tycoonlib/models/item/room_air.json",
           "src/main/resources/assets/tycoonlib/models/block/room_air.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/RoomAirBlock.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/RoomAirBlockEntity.java",
           "src/main/resources/data/tycoonlib/loot_tables/blocks/room_air.json",
           "src/main/resources/assets/tycoonlib/blockstates/room_air.json"
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "CheckFillRoom",
@@ -74,23 +77,8 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "RoomBorder",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "room_border",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/tycoonlib/models/item/room_border.json",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/room_border.json",
-          "src/main/resources/assets/tycoonlib/models/block/room_border.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/RoomBorderBlock.java",
-          "src/main/resources/assets/tycoonlib/blockstates/room_border.json"
-        ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "RoomBuilderRightclickedOnBlock",
@@ -128,7 +116,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "RoomBuilder",
@@ -141,7 +130,8 @@
           "src/main/resources/assets/tycoonlib/models/item/room_builder.json",
           "src/main/java/net/devmultiverse/tycoonlib/item/RoomBuilderItem.java"
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "BuildRoomAir",
@@ -158,7 +148,8 @@
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/BuildRoomAirBlockEntity.java",
           "src/main/resources/assets/tycoonlib/blockstates/build_room_air.json"
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "RemoveBuildAir",
@@ -175,7 +166,8 @@
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/RemoveBuildAirBlockEntity.java",
           "src/main/resources/assets/tycoonlib/models/item/remove_build_air.json"
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "CheckRemoveRoom",
@@ -205,7 +197,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Room"
     },
     {
       "name": "RemoveAirOnTickUpdate",
@@ -235,7 +228,25 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Room"
+    },
+    {
+      "name": "Counter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "counter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/blockstates/counter.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CounterBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/counter.json",
+          "src/main/resources/assets/tycoonlib/models/item/counter.json",
+          "src/main/resources/assets/tycoonlib/models/block/counter.json"
+        ]
+      },
+      "path": "~/Block"
     }
   ],
   "variable_elements": [],
@@ -244,7 +255,6 @@
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:RemoveBuildAir",
       "~CUSTOM:BuildRoomAir",
-      "~CUSTOM:RoomBorder",
       "~CUSTOM:RoomAir"
     ],
     "BLOCKS:mod:oven": [
@@ -263,14 +273,23 @@
     "en_us": {
       "block.tycoonlib.build_room_air": "Room Air",
       "block.tycoonlib.remove_build_air": "Room Air",
-      "block.tycoonlib.room_border": "Room Air",
       "item.tycoonlib.room_builder": "Room Builder",
+      "block.tycoonlib.counter": "Counter",
       "block.tycoonlib.room_air": "Room Air"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Room",
+        "children": []
+      },
+      {
+        "name": "Block",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "tycoonlib",

@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.devmultiverse.tycoonlib.init.TycoonlibModTabs;
 import net.devmultiverse.tycoonlib.init.TycoonlibModItems;
 import net.devmultiverse.tycoonlib.init.TycoonlibModBlocks;
 import net.devmultiverse.tycoonlib.init.TycoonlibModBlockEntities;
@@ -44,6 +45,8 @@ public class TycoonlibMod {
 		TycoonlibModBlocks.REGISTRY.register(bus);
 		TycoonlibModBlockEntities.REGISTRY.register(bus);
 		TycoonlibModItems.REGISTRY.register(bus);
+
+		TycoonlibModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

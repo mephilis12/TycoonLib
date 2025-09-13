@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tycoonlib:block/counter",
+    "up": "minecraft:block/beehive_end",
+    "north": "tycoonlib:block/counter",
+    "east": "tycoonlib:block/counter",
+    "south": "tycoonlib:block/counter",
+    "west": "tycoonlib:block/counter",
+    "particle": "tycoonlib:block/counter"
+  },
+  "render_type": "solid"
+}
