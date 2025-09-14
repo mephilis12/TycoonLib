@@ -383,6 +383,104 @@
         ]
       },
       "path": "~/Block"
+    },
+    {
+      "name": "CrappyArcade",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_arcade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_arcade.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyArcadeBlock.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_arcade.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_table.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyTableBlock.java",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_table.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyBallpit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_ballpit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/crappy_ballpit.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_ballpit.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyBallpitBlock.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_ballpit.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_ballpit.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyOpenSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_open_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_open_sign.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyOpenSignBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyOpenSignBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_open_sign_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/crappy_open_sign_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "WoodenStool",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_stool",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/wooden_stool.json",
+          "src/main/resources/assets/tycoonlib/blockstates/wooden_stool.json",
+          "src/main/resources/assets/tycoonlib/models/block/wooden_stool.json",
+          "src/main/resources/assets/tycoonlib/models/item/wooden_stool.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/WoodenStoolBlock.java"
+        ]
+      },
+      "path": "~/Block"
     }
   ],
   "variable_elements": [],
@@ -394,41 +492,70 @@
       "~CUSTOM:RoomAir"
     ],
     "BLOCKS:mod:billboard": [],
-    "BLOCKS:mod:table": [],
-    "BLOCKS:mod:ballpit": [],
+    "BLOCKS:mod:table": [
+      "CUSTOM:CrappyTable"
+    ],
+    "BLOCKS:mod:ballpit": [
+      "CUSTOM:CrappyBallpit"
+    ],
     "BLOCKS:mod:oven": [
       "Blocks.FURNACE",
       "Blocks.SMOKER"
     ],
-    "BLOCKS:mod:fridge": [],
+    "BLOCKS:mod:fridge": [
+      "CUSTOM:CrappyFridge"
+    ],
     "BLOCKS:mod:sink": [
       "Blocks.WATER_CAULDRON",
       "Blocks.CAULDRON"
     ],
-    "BLOCKS:mod:door": [],
+    "BLOCKS:mod:door": [
+      "Blocks.OAK_DOOR",
+      "Blocks.SPRUCE_DOOR",
+      "Blocks.BIRCH_DOOR",
+      "Blocks.JUNGLE_DOOR",
+      "Blocks.ACACIA_DOOR",
+      "Blocks.DARK_OAK_DOOR",
+      "Blocks.CRIMSON_DOOR",
+      "Blocks.WARPED_DOOR",
+      "Blocks.MANGROVE_DOOR",
+      "Blocks.CHERRY_DOOR",
+      "Blocks.BAMBOO_DOOR"
+    ],
     "BLOCKS:mod:air_blocks": [
       "Blocks.AIR",
       "Blocks.CAVE_AIR"
     ],
-    "BLOCKS:mod:chair": [],
-    "BLOCKS:mod:cash_register": [],
+    "BLOCKS:mod:chair": [
+      "CUSTOM:CrappyChair"
+    ],
+    "BLOCKS:mod:cash_register": [
+      "CUSTOM:CrappyCashRegister"
+    ],
     "BLOCKS:mod:counter": [
       "CUSTOM:Counter"
     ],
-    "BLOCKS:mod:arcade": []
+    "BLOCKS:mod:arcade": [
+      "CUSTOM:CrappyArcade"
+    ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "block.tycoonlib.crappy_arcade": "Arcade",
+      "block.tycoonlib.crappy_table": "Table",
+      "item.tycoonlib.room_builder": "Room Builder",
+      "block.tycoonlib.crappy_open_sign": "Open Sign",
+      "block.tycoonlib.counter": "Counter",
+      "block.tycoonlib.room_air": "Room Air",
+      "block.tycoonlib.crappy_chair": "Chair",
       "block.tycoonlib.build_room_air": "Room Air",
       "block.tycoonlib.remove_build_air": "Room Air",
+      "block.tycoonlib.crappy_ballpit": "Ballpit",
       "block.tycoonlib.crappy_carousel": "Carousel",
-      "item.tycoonlib.room_builder": "Room Builder",
-      "block.tycoonlib.counter": "Counter",
       "block.tycoonlib.crappy_fridge": "Cooler",
-      "block.tycoonlib.room_air": "Room Air",
       "block.tycoonlib.crappy_cash_register": "Cash Register",
-      "block.tycoonlib.crappy_chair": "Chair"
+      "block.tycoonlib.wooden_stool": "Wooden Stool"
     }
   },
   "foldersRoot": {
