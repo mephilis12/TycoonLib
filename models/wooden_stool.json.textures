@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "wooden_stool_side",
+        "top": "wooden_stool_top"
+      },
+      "name": "default"
+    }
+  }
+}

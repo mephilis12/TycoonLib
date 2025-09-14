@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.devmultiverse.tycoonlib.block.WoodenStoolBlock;
 import net.devmultiverse.tycoonlib.block.RoomAirBlock;
 import net.devmultiverse.tycoonlib.block.RemoveBuildAirBlock;
 import net.devmultiverse.tycoonlib.block.CrappyTableBlock;
@@ -38,6 +39,7 @@ public class TycoonlibModBlocks {
 	public static final RegistryObject<Block> CRAPPY_TABLE = REGISTRY.register("crappy_table", () -> new CrappyTableBlock());
 	public static final RegistryObject<Block> CRAPPY_BALLPIT = REGISTRY.register("crappy_ballpit", () -> new CrappyBallpitBlock());
 	public static final RegistryObject<Block> CRAPPY_OPEN_SIGN = REGISTRY.register("crappy_open_sign", () -> new CrappyOpenSignBlock());
+	public static final RegistryObject<Block> WOODEN_STOOL = REGISTRY.register("wooden_stool", () -> new WoodenStoolBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
