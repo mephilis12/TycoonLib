@@ -1,0 +1,7 @@
+
+{
+  "parent": "tycoonlib:displaysettings/carousel",
+  "textures": {
+    "particle": "tycoonlib:block/crappy-carousel"
+  }
+}

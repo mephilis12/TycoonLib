@@ -1,7 +1,15 @@
 {
+  "block.tycoonlib.crappy_arcade": "Arcade",
+  "block.tycoonlib.crappy_table": "Table",
+  "item.tycoonlib.room_builder": "Room Builder",
+  "block.tycoonlib.crappy_open_sign": "Open Sign",
+  "block.tycoonlib.counter": "Counter",
+  "block.tycoonlib.room_air": "Room Air",
+  "block.tycoonlib.crappy_chair": "Chair",
   "block.tycoonlib.build_room_air": "Room Air",
   "block.tycoonlib.remove_build_air": "Room Air",
-  "item.tycoonlib.room_builder": "Room Builder",
-  "block.tycoonlib.counter": "Counter",
-  "block.tycoonlib.room_air": "Room Air"
+  "block.tycoonlib.crappy_ballpit": "Ballpit",
+  "block.tycoonlib.crappy_carousel": "Carousel",
+  "block.tycoonlib.crappy_fridge": "Cooler",
+  "block.tycoonlib.crappy_cash_register": "Cash Register"
 }

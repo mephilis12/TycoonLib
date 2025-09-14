@@ -247,6 +247,223 @@
         ]
       },
       "path": "~/Block"
+    },
+    {
+      "name": "CrappyCarousel",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_carousel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/custom/crappy_carousel_particle.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCarouselBlock.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselTileRenderer.java",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_carousel.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselBlockModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselDisplayItemRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/display/CrappyCarouselDisplayItem.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_carousel.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselDisplayModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/CrappyCarouselTileEntity.java",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_carousel_blockstate_0.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyCarouselRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_carousel_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/CrappyCarouselRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Block/Procedures"
+    },
+    {
+      "name": "CrappyCarouselRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_carousel_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/CrappyCarouselRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Block/Procedures"
+    },
+    {
+      "name": "CrappyCashRegister",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_cash_register",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCashRegisterBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_cash_register.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_cash_register.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_cash_register.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_cash_register.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyFridge",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_fridge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/crappy_fridge.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyFridgeBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_fridge.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_fridge.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_fridge.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyChair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_chair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyChairBlock.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_chair.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_chair.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_chair.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_chair.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyArcade",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_arcade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_arcade.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyArcadeBlock.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_arcade.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_table.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyTableBlock.java",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_table.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyBallpit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_ballpit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/crappy_ballpit.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_ballpit.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyBallpitBlock.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_ballpit.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_ballpit.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyOpenSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_open_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_open_sign.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyOpenSignBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyOpenSignBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_open_sign_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/crappy_open_sign_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/Block"
     }
   ],
   "variable_elements": [],
@@ -258,37 +475,69 @@
       "~CUSTOM:RoomAir"
     ],
     "BLOCKS:mod:billboard": [],
-    "BLOCKS:mod:table": [],
-    "BLOCKS:mod:ballpit": [],
+    "BLOCKS:mod:table": [
+      "CUSTOM:CrappyTable"
+    ],
+    "BLOCKS:mod:ballpit": [
+      "CUSTOM:CrappyBallpit"
+    ],
     "BLOCKS:mod:oven": [
       "Blocks.FURNACE",
       "Blocks.SMOKER"
     ],
-    "BLOCKS:mod:fridge": [],
+    "BLOCKS:mod:fridge": [
+      "CUSTOM:CrappyFridge"
+    ],
     "BLOCKS:mod:sink": [
       "Blocks.WATER_CAULDRON",
       "Blocks.CAULDRON"
     ],
-    "BLOCKS:mod:door": [],
+    "BLOCKS:mod:door": [
+      "Blocks.OAK_DOOR",
+      "Blocks.SPRUCE_DOOR",
+      "Blocks.BIRCH_DOOR",
+      "Blocks.JUNGLE_DOOR",
+      "Blocks.ACACIA_DOOR",
+      "Blocks.DARK_OAK_DOOR",
+      "Blocks.CRIMSON_DOOR",
+      "Blocks.WARPED_DOOR",
+      "Blocks.MANGROVE_DOOR",
+      "Blocks.CHERRY_DOOR",
+      "Blocks.BAMBOO_DOOR"
+    ],
     "BLOCKS:mod:air_blocks": [
       "Blocks.AIR",
       "Blocks.CAVE_AIR"
     ],
-    "BLOCKS:mod:chair": [],
-    "BLOCKS:mod:cash_register": [],
+    "BLOCKS:mod:chair": [
+      "CUSTOM:CrappyChair"
+    ],
+    "BLOCKS:mod:cash_register": [
+      "CUSTOM:CrappyCashRegister"
+    ],
     "BLOCKS:mod:counter": [
       "CUSTOM:Counter"
     ],
-    "BLOCKS:mod:arcade": []
+    "BLOCKS:mod:arcade": [
+      "CUSTOM:CrappyArcade"
+    ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "block.tycoonlib.crappy_arcade": "Arcade",
+      "block.tycoonlib.crappy_table": "Table",
+      "item.tycoonlib.room_builder": "Room Builder",
+      "block.tycoonlib.crappy_open_sign": "Open Sign",
+      "block.tycoonlib.counter": "Counter",
+      "block.tycoonlib.room_air": "Room Air",
+      "block.tycoonlib.crappy_chair": "Chair",
       "block.tycoonlib.build_room_air": "Room Air",
       "block.tycoonlib.remove_build_air": "Room Air",
-      "item.tycoonlib.room_builder": "Room Builder",
-      "block.tycoonlib.counter": "Counter",
-      "block.tycoonlib.room_air": "Room Air"
+      "block.tycoonlib.crappy_ballpit": "Ballpit",
+      "block.tycoonlib.crappy_carousel": "Carousel",
+      "block.tycoonlib.crappy_fridge": "Cooler",
+      "block.tycoonlib.crappy_cash_register": "Cash Register"
     }
   },
   "foldersRoot": {
@@ -300,7 +549,12 @@
       },
       {
         "name": "Block",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       }
     ]
   },

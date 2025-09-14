@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tycoonlib:block/crappy_arcade"
+    },
+    "facing=east": {
+      "model": "tycoonlib:block/crappy_arcade",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tycoonlib:block/crappy_arcade",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tycoonlib:block/crappy_arcade",
+      "y": 270
+    }
+  }
+}

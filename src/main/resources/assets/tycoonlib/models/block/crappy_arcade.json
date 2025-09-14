@@ -1,0 +1,9 @@
+{
+  "parent": "tycoonlib:custom/crappyarcade",
+  "textures": {
+    "all": "tycoonlib:block/crappy_arcade",
+    "particle": "tycoonlib:block/crappy_arcade",
+    "1": "tycoonlib:block/crappy_arcade"
+  },
+  "render_type": "cutout_mipped"
+}

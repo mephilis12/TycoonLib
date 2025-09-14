@@ -23,6 +23,14 @@ public class TycoonlibModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_CAROUSEL.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_CASH_REGISTER.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_FRIDGE.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_CHAIR.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_ARCADE.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_TABLE.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_BALLPIT.get().asItem());
+			tabData.accept(TycoonlibModBlocks.CRAPPY_OPEN_SIGN.get().asItem());
 		}
 	}
 }

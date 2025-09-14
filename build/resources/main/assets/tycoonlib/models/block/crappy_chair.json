@@ -1,0 +1,9 @@
+{
+  "parent": "tycoonlib:custom/crappy_chair",
+  "textures": {
+    "all": "tycoonlib:block/crappy_chair",
+    "particle": "tycoonlib:block/crappy_chair",
+    "1": "tycoonlib:block/crappy_chair"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CrappyOpenSign",
+    "blockstateList": [
+      {
+        "texture": "closed",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "crappy_open_sign:closed",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

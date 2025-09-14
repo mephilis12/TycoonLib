@@ -1,0 +1,9 @@
+{
+  "parent": "tycoonlib:custom/crappy_fridge",
+  "textures": {
+    "all": "tycoonlib:block/crappy_fridge",
+    "particle": "tycoonlib:block/crappy_fridge",
+    "0": "tycoonlib:block/crappy_fridge"
+  },
+  "render_type": "solid"
+}

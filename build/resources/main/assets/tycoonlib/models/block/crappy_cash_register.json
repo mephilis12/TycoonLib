@@ -1,0 +1,9 @@
+{
+  "parent": "tycoonlib:custom/crappy_cash_register",
+  "textures": {
+    "all": "tycoonlib:block/crappy_cash_register",
+    "particle": "tycoonlib:block/crappy_cash_register",
+    "0": "tycoonlib:block/crappy_cash_register"
+  },
+  "render_type": "solid"
+}

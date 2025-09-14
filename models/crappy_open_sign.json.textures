@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "open"
+      },
+      "name": "default"
+    },
+    "closed": {
+      "map": {
+        "0": "closed"
+      },
+      "name": "closed"
+    }
+  }
+}

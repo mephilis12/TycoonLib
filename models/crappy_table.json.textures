@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "crappy_table"
+      },
+      "name": "default"
+    }
+  }
+}

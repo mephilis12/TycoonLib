@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.devmultiverse.tycoonlib.item.RoomBuilderItem;
+import net.devmultiverse.tycoonlib.block.display.CrappyCarouselDisplayItem;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 public class TycoonlibModItems {
@@ -22,6 +23,14 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> BUILD_ROOM_AIR = block(TycoonlibModBlocks.BUILD_ROOM_AIR);
 	public static final RegistryObject<Item> REMOVE_BUILD_AIR = block(TycoonlibModBlocks.REMOVE_BUILD_AIR);
 	public static final RegistryObject<Item> COUNTER = block(TycoonlibModBlocks.COUNTER);
+	public static final RegistryObject<Item> CRAPPY_CAROUSEL = REGISTRY.register(TycoonlibModBlocks.CRAPPY_CAROUSEL.getId().getPath(), () -> new CrappyCarouselDisplayItem(TycoonlibModBlocks.CRAPPY_CAROUSEL.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CRAPPY_CASH_REGISTER = block(TycoonlibModBlocks.CRAPPY_CASH_REGISTER);
+	public static final RegistryObject<Item> CRAPPY_FRIDGE = block(TycoonlibModBlocks.CRAPPY_FRIDGE);
+	public static final RegistryObject<Item> CRAPPY_CHAIR = block(TycoonlibModBlocks.CRAPPY_CHAIR);
+	public static final RegistryObject<Item> CRAPPY_ARCADE = block(TycoonlibModBlocks.CRAPPY_ARCADE);
+	public static final RegistryObject<Item> CRAPPY_TABLE = block(TycoonlibModBlocks.CRAPPY_TABLE);
+	public static final RegistryObject<Item> CRAPPY_BALLPIT = block(TycoonlibModBlocks.CRAPPY_BALLPIT);
+	public static final RegistryObject<Item> CRAPPY_OPEN_SIGN = block(TycoonlibModBlocks.CRAPPY_OPEN_SIGN);
 
 	// Start of user code block custom items
 	// End of user code block custom items

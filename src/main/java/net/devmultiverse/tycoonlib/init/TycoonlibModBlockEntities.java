@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.devmultiverse.tycoonlib.block.entity.RoomAirBlockEntity;
 import net.devmultiverse.tycoonlib.block.entity.RemoveBuildAirBlockEntity;
+import net.devmultiverse.tycoonlib.block.entity.CrappyCarouselTileEntity;
 import net.devmultiverse.tycoonlib.block.entity.BuildRoomAirBlockEntity;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
@@ -21,6 +22,8 @@ public class TycoonlibModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> ROOM_AIR = register("room_air", TycoonlibModBlocks.ROOM_AIR, RoomAirBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILD_ROOM_AIR = register("build_room_air", TycoonlibModBlocks.BUILD_ROOM_AIR, BuildRoomAirBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> REMOVE_BUILD_AIR = register("remove_build_air", TycoonlibModBlocks.REMOVE_BUILD_AIR, RemoveBuildAirBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<CrappyCarouselTileEntity>> CRAPPY_CAROUSEL = REGISTRY.register("crappy_carousel",
+			() -> BlockEntityType.Builder.of(CrappyCarouselTileEntity::new, TycoonlibModBlocks.CRAPPY_CAROUSEL.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

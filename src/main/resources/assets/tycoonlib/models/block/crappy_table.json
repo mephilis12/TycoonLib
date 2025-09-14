@@ -1,0 +1,9 @@
+{
+  "parent": "tycoonlib:custom/crappy_table",
+  "textures": {
+    "all": "tycoonlib:block/crappy_table",
+    "particle": "tycoonlib:block/crappy_table",
+    "0": "tycoonlib:block/crappy_table"
+  },
+  "render_type": "solid"
+}
