@@ -12,16 +12,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.devmultiverse.tycoonlib.item.RoomBuilderItem;
+import net.devmultiverse.tycoonlib.item.RoomBlueprintItem;
+import net.devmultiverse.tycoonlib.item.RestaurantBlueprintItem;
 import net.devmultiverse.tycoonlib.block.display.CrappyCarouselDisplayItem;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 public class TycoonlibModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, TycoonlibMod.MODID);
-	public static final RegistryObject<Item> ROOM_AIR = block(TycoonlibModBlocks.ROOM_AIR);
-	public static final RegistryObject<Item> ROOM_BUILDER = REGISTRY.register("room_builder", () -> new RoomBuilderItem());
-	public static final RegistryObject<Item> BUILD_ROOM_AIR = block(TycoonlibModBlocks.BUILD_ROOM_AIR);
-	public static final RegistryObject<Item> REMOVE_BUILD_AIR = block(TycoonlibModBlocks.REMOVE_BUILD_AIR);
 	public static final RegistryObject<Item> COUNTER = block(TycoonlibModBlocks.COUNTER);
 	public static final RegistryObject<Item> CRAPPY_CAROUSEL = REGISTRY.register(TycoonlibModBlocks.CRAPPY_CAROUSEL.getId().getPath(), () -> new CrappyCarouselDisplayItem(TycoonlibModBlocks.CRAPPY_CAROUSEL.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CRAPPY_CASH_REGISTER = block(TycoonlibModBlocks.CRAPPY_CASH_REGISTER);
@@ -32,6 +29,9 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> CRAPPY_BALLPIT = block(TycoonlibModBlocks.CRAPPY_BALLPIT);
 	public static final RegistryObject<Item> CRAPPY_OPEN_SIGN = block(TycoonlibModBlocks.CRAPPY_OPEN_SIGN);
 	public static final RegistryObject<Item> WOODEN_STOOL = block(TycoonlibModBlocks.WOODEN_STOOL);
+	public static final RegistryObject<Item> RESTAURANT_BOARD = block(TycoonlibModBlocks.RESTAURANT_BOARD);
+	public static final RegistryObject<Item> RESTAURANT_BLUEPRINT = REGISTRY.register("restaurant_blueprint", () -> new RestaurantBlueprintItem());
+	public static final RegistryObject<Item> ROOM_BLUEPRINT = REGISTRY.register("room_blueprint", () -> new RoomBlueprintItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

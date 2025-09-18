@@ -43,7 +43,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "BUILDING_BLOCKS"
+        "value": "CUSTOM:TycoonLibTab"
       }
     ],
     "destroyTool": "Not specified",
@@ -122,12 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRedstoneOn": {
-      "name": "CrappyCarouselRedstoneOn"
-    },
-    "onRedstoneOff": {
-      "name": "CrappyCarouselRedstoneOff"
-    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

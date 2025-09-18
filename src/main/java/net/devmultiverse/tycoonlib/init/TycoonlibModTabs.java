@@ -4,33 +4,32 @@
  */
 package net.devmultiverse.tycoonlib.init;
 
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TycoonlibModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TycoonlibMod.MODID);
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_CAROUSEL.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_CASH_REGISTER.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_FRIDGE.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_CHAIR.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_ARCADE.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_TABLE.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_BALLPIT.get().asItem());
-			tabData.accept(TycoonlibModBlocks.CRAPPY_OPEN_SIGN.get().asItem());
-		}
-	}
+	public static final RegistryObject<CreativeModeTab> TYCOON_LIB_TAB = REGISTRY.register("tycoon_lib_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tycoonlib.tycoon_lib_tab")).icon(() -> new ItemStack(TycoonlibModBlocks.WOODEN_STOOL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TycoonlibModBlocks.RESTAURANT_BOARD.get().asItem());
+				tabData.accept(TycoonlibModBlocks.WOODEN_STOOL.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_OPEN_SIGN.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_CASH_REGISTER.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_CAROUSEL.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_FRIDGE.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_CHAIR.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_ARCADE.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_TABLE.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_BALLPIT.get().asItem());
+				tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
+				tabData.accept(TycoonlibModItems.RESTAURANT_BLUEPRINT.get());
+				tabData.accept(TycoonlibModItems.ROOM_BLUEPRINT.get());
+			}).build());
 }

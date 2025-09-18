@@ -1,9 +1,13 @@
 {
-  "parent": "tycoonlib:custom/crappy_open_sign",
+  "parent": "block/cube",
   "textures": {
-    "all": "tycoonlib:block/open",
-    "particle": "tycoonlib:block/open",
-    "0": "tycoonlib:block/open"
+    "down": "tycoonlib:block/open",
+    "up": "tycoonlib:block/open",
+    "north": "tycoonlib:block/open",
+    "east": "tycoonlib:block/open",
+    "south": "tycoonlib:block/open",
+    "west": "tycoonlib:block/open",
+    "particle": "tycoonlib:block/open"
   },
   "render_type": "cutout_mipped"
 }

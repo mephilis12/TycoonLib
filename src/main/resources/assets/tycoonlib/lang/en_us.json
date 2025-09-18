@@ -1,16 +1,21 @@
 {
   "block.tycoonlib.crappy_arcade": "Arcade",
+  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "block.tycoonlib.crappy_table": "Table",
-  "item.tycoonlib.room_builder": "Room Builder",
   "block.tycoonlib.crappy_open_sign": "Open Sign",
   "block.tycoonlib.counter": "Counter",
-  "block.tycoonlib.room_air": "Room Air",
+  "gui.tycoonlib.restaurant_board_gui.FloorLevel": "0",
   "block.tycoonlib.crappy_chair": "Chair",
-  "block.tycoonlib.build_room_air": "Room Air",
-  "block.tycoonlib.remove_build_air": "Room Air",
+  "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
   "block.tycoonlib.crappy_ballpit": "Ballpit",
+  "block.tycoonlib.restaurant_board": "Restaurant Board",
+  "gui.tycoonlib.set_floor_level.button_save": "Save",
+  "gui.tycoonlib.set_floor_level.floor_level": "0",
   "block.tycoonlib.crappy_carousel": "Carousel",
   "block.tycoonlib.crappy_fridge": "Cooler",
+  "item.tycoonlib.room_blueprint": "Room Blueprint",
+  "item_group.tycoonlib.tycoon_lib_tab": "Tycoon Lib",
   "block.tycoonlib.crappy_cash_register": "Cash Register",
-  "block.tycoonlib.wooden_stool": "Wooden Stool"
+  "block.tycoonlib.wooden_stool": "Wooden Stool",
+  "gui.tycoonlib.set_floor_level.label_floor_level": "Floor Level"
 }

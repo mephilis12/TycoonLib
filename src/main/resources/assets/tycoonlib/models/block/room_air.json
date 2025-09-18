@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tycoonlib:block/air",
-    "particle": "tycoonlib:block/air"
-  },
-  "render_type": "cutout"
-}

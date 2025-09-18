@@ -42,7 +42,11 @@
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TycoonLibTab"
+      }
+    ],
     "destroyTool": "axe",
     "customDrop": {
       "value": ""

@@ -11,8 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.devmultiverse.tycoonlib.block.WoodenStoolBlock;
-import net.devmultiverse.tycoonlib.block.RoomAirBlock;
-import net.devmultiverse.tycoonlib.block.RemoveBuildAirBlock;
+import net.devmultiverse.tycoonlib.block.RestaurantBoardBlock;
 import net.devmultiverse.tycoonlib.block.CrappyTableBlock;
 import net.devmultiverse.tycoonlib.block.CrappyOpenSignBlock;
 import net.devmultiverse.tycoonlib.block.CrappyFridgeBlock;
@@ -22,14 +21,10 @@ import net.devmultiverse.tycoonlib.block.CrappyCarouselBlock;
 import net.devmultiverse.tycoonlib.block.CrappyBallpitBlock;
 import net.devmultiverse.tycoonlib.block.CrappyArcadeBlock;
 import net.devmultiverse.tycoonlib.block.CounterBlock;
-import net.devmultiverse.tycoonlib.block.BuildRoomAirBlock;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 public class TycoonlibModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, TycoonlibMod.MODID);
-	public static final RegistryObject<Block> ROOM_AIR = REGISTRY.register("room_air", () -> new RoomAirBlock());
-	public static final RegistryObject<Block> BUILD_ROOM_AIR = REGISTRY.register("build_room_air", () -> new BuildRoomAirBlock());
-	public static final RegistryObject<Block> REMOVE_BUILD_AIR = REGISTRY.register("remove_build_air", () -> new RemoveBuildAirBlock());
 	public static final RegistryObject<Block> COUNTER = REGISTRY.register("counter", () -> new CounterBlock());
 	public static final RegistryObject<Block> CRAPPY_CAROUSEL = REGISTRY.register("crappy_carousel", () -> new CrappyCarouselBlock());
 	public static final RegistryObject<Block> CRAPPY_CASH_REGISTER = REGISTRY.register("crappy_cash_register", () -> new CrappyCashRegisterBlock());
@@ -40,6 +35,7 @@ public class TycoonlibModBlocks {
 	public static final RegistryObject<Block> CRAPPY_BALLPIT = REGISTRY.register("crappy_ballpit", () -> new CrappyBallpitBlock());
 	public static final RegistryObject<Block> CRAPPY_OPEN_SIGN = REGISTRY.register("crappy_open_sign", () -> new CrappyOpenSignBlock());
 	public static final RegistryObject<Block> WOODEN_STOOL = REGISTRY.register("wooden_stool", () -> new WoodenStoolBlock());
+	public static final RegistryObject<Block> RESTAURANT_BOARD = REGISTRY.register("restaurant_board", () -> new RestaurantBoardBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

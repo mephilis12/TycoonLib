@@ -20,15 +20,12 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.devmultiverse.tycoonlib.procedures.CrappyCarouselRedstoneOnProcedure;
-import net.devmultiverse.tycoonlib.procedures.CrappyCarouselRedstoneOffProcedure;
 import net.devmultiverse.tycoonlib.init.TycoonlibModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -110,15 +107,5 @@ public class CrappyCarouselBlock extends BaseEntityBlock implements EntityBlock 
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
-	}
-
-	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		if (world.getBestNeighborSignal(pos) > 0) {
-			CrappyCarouselRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		} else {
-			CrappyCarouselRedstoneOffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		}
 	}
 }
