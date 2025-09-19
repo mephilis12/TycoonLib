@@ -1,0 +1,137 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "RestaurantBoard",
+    "blockstateList": [
+      {
+        "texture": "minecraft:barrel_bottom",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "restaurant_board:level2",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 30.0,
+            "My": 23.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": -16.0,
+            "my": 0.0,
+            "mz": 16.0,
+            "Mx": 32.0,
+            "My": 26.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "minecraft:barrel_bottom",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "restaurant_board:level3",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 30.0,
+            "My": 23.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": -16.0,
+            "my": 0.0,
+            "mz": 16.0,
+            "Mx": 32.0,
+            "My": 26.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "minecraft:barrel_bottom",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "restaurant_board:level4",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 30.0,
+            "My": 23.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": -16.0,
+            "my": 0.0,
+            "mz": 16.0,
+            "Mx": 32.0,
+            "My": 26.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "minecraft:barrel_bottom",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "restaurant_board:level5",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 30.0,
+            "My": 23.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": -16.0,
+            "my": 0.0,
+            "mz": 16.0,
+            "Mx": 32.0,
+            "My": 26.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

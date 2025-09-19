@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [],
-      "name": "RestaurantBlueprintTooltip"
+      "name": "BlueprintTooltip"
     },
     "glowCondition": {
       "fixedValue": false

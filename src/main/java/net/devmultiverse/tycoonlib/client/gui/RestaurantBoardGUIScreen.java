@@ -6,12 +6,9 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.devmultiverse.tycoonlib.world.inventory.RestaurantBoardGUIMenu;
-import net.devmultiverse.tycoonlib.network.RestaurantBoardGUIButtonMessage;
-import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 import java.util.HashMap;
 
@@ -22,7 +19,6 @@ public class RestaurantBoardGUIScreen extends AbstractContainerScreen<Restaurant
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_setfloorlevel;
 
 	public RestaurantBoardGUIScreen(RestaurantBoardGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -31,8 +27,8 @@ public class RestaurantBoardGUIScreen extends AbstractContainerScreen<Restaurant
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 230;
+		this.imageHeight = 219;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("tycoonlib:textures/screens/restaurant_board_gui.png");
@@ -50,6 +46,9 @@ public class RestaurantBoardGUIScreen extends AbstractContainerScreen<Restaurant
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("tycoonlib:textures/screens/restaurant_board.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 230, 219, 230, 219);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -69,13 +68,5 @@ public class RestaurantBoardGUIScreen extends AbstractContainerScreen<Restaurant
 	@Override
 	public void init() {
 		super.init();
-		button_setfloorlevel = Button.builder(Component.translatable("gui.tycoonlib.restaurant_board_gui.button_setfloorlevel"), e -> {
-			if (true) {
-				TycoonlibMod.PACKET_HANDLER.sendToServer(new RestaurantBoardGUIButtonMessage(0, x, y, z));
-				RestaurantBoardGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 61, 93, 20).build();
-		guistate.put("button:button_setfloorlevel", button_setfloorlevel);
-		this.addRenderableWidget(button_setfloorlevel);
 	}
 }

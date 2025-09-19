@@ -1,0 +1,9 @@
+{
+  "parent": "tycoonlib:custom/restaurant_board",
+  "textures": {
+    "all": "minecraft:block/barrel_bottom",
+    "particle": "minecraft:block/barrel_bottom",
+    "restaurant_board": "tycoonlib:block/restaurant_board_level_2"
+  },
+  "render_type": "cutout"
+}

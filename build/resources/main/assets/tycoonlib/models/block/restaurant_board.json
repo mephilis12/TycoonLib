@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "tycoonlib:custom/restaurant_board",
   "textures": {
-    "down": "minecraft:block/barrel_bottom",
-    "up": "minecraft:block/barrel_bottom",
-    "north": "minecraft:block/barrel_bottom",
-    "east": "minecraft:block/barrel_bottom",
-    "south": "minecraft:block/barrel_bottom",
-    "west": "minecraft:block/barrel_bottom",
-    "particle": "minecraft:block/barrel_bottom"
+    "all": "minecraft:block/barrel_bottom",
+    "particle": "minecraft:block/barrel_bottom",
+    "restaurant_board": "tycoonlib:block/restaurant_board_level_1"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

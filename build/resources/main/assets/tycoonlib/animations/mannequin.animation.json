@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mannequin.idle": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"vector": [10, -12.5, 0]
+					}
+				},
+				"Right Arm": {
+					"rotation": {
+						"vector": [15.8049, -17.5481, 7.25799]
+					}
+				},
+				"Left Arm": {
+					"rotation": {
+						"vector": [-7.5, 7.5, -10]
+					}
+				}
+			}
+		}
+	}
+}

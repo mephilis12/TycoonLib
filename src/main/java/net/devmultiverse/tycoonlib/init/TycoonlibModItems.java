@@ -7,6 +7,7 @@ package net.devmultiverse.tycoonlib.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -32,6 +33,7 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> RESTAURANT_BOARD = block(TycoonlibModBlocks.RESTAURANT_BOARD);
 	public static final RegistryObject<Item> RESTAURANT_BLUEPRINT = REGISTRY.register("restaurant_blueprint", () -> new RestaurantBlueprintItem());
 	public static final RegistryObject<Item> ROOM_BLUEPRINT = REGISTRY.register("room_blueprint", () -> new RoomBlueprintItem());
+	public static final RegistryObject<Item> MANNEQUIN_SPAWN_EGG = REGISTRY.register("mannequin_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.MANNEQUIN, -6057888, -15572359, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

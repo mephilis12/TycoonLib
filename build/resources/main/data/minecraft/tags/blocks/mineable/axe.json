@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "tycoonlib:restaurant_board",
     "tycoonlib:wooden_stool"
   ]
 }

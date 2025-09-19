@@ -19,6 +19,8 @@ public class TycoonlibModTabs {
 	public static final RegistryObject<CreativeModeTab> TYCOON_LIB_TAB = REGISTRY.register("tycoon_lib_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tycoonlib.tycoon_lib_tab")).icon(() -> new ItemStack(TycoonlibModBlocks.WOODEN_STOOL.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TycoonlibModBlocks.RESTAURANT_BOARD.get().asItem());
+				tabData.accept(TycoonlibModItems.RESTAURANT_BLUEPRINT.get());
+				tabData.accept(TycoonlibModItems.ROOM_BLUEPRINT.get());
 				tabData.accept(TycoonlibModBlocks.WOODEN_STOOL.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_OPEN_SIGN.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_CASH_REGISTER.get().asItem());
@@ -29,7 +31,6 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.CRAPPY_TABLE.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_BALLPIT.get().asItem());
 				tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
-				tabData.accept(TycoonlibModItems.RESTAURANT_BLUEPRINT.get());
-				tabData.accept(TycoonlibModItems.ROOM_BLUEPRINT.get());
+				tabData.accept(TycoonlibModItems.MANNEQUIN_SPAWN_EGG.get());
 			}).build());
 }

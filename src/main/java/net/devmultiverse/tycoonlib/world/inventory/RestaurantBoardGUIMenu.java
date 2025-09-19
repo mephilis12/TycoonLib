@@ -20,7 +20,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.devmultiverse.tycoonlib.init.TycoonlibModMenus;
-import net.devmultiverse.tycoonlib.init.TycoonlibModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -43,7 +42,7 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 		super(TycoonlibModMenus.RESTAURANT_BOARD_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(5);
+		this.internal = new ItemStackHandler(8);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,61 +77,51 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 8) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 110) {
 			private final int slot = 0;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return TycoonlibModItems.RESTAURANT_BLUEPRINT.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 8) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 110) {
 			private final int slot = 1;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return TycoonlibModItems.ROOM_BLUEPRINT.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 8) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 110) {
 			private final int slot = 2;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return TycoonlibModItems.ROOM_BLUEPRINT.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 43, 26) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 110) {
 			private final int slot = 3;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return TycoonlibModItems.ROOM_BLUEPRINT.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 61, 26) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 98, 110) {
 			private final int slot = 4;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return TycoonlibModItems.ROOM_BLUEPRINT.get() == stack.getItem();
-			}
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 116, 110) {
+			private final int slot = 5;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 134, 110) {
+			private final int slot = 6;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 152, 110) {
+			private final int slot = 7;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 53 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 53 + 142));
 	}
 
 	@Override
@@ -155,16 +144,16 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 5) {
-				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
+			if (index < 8) {
+				if (!this.moveItemStackTo(itemstack1, 8, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
-				if (index < 5 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 8, false)) {
+				if (index < 8 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 8 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 8, 8 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -272,6 +261,12 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 						continue;
 					if (j == 4)
 						continue;
+					if (j == 5)
+						continue;
+					if (j == 6)
+						continue;
+					if (j == 7)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
@@ -285,6 +280,12 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 					if (i == 3)
 						continue;
 					if (i == 4)
+						continue;
+					if (i == 5)
+						continue;
+					if (i == 6)
+						continue;
+					if (i == 7)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}

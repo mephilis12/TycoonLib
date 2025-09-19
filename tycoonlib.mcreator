@@ -325,26 +325,6 @@
       "path": "~/Restaurant"
     },
     {
-      "name": "RestaurantBlueprintTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "restaurant_blueprint_tooltip",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantBlueprintTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Restaurant"
-    },
-    {
       "name": "RestaurantBoardGUI",
       "type": "gui",
       "compiles": true,
@@ -353,8 +333,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/client/gui/RestaurantBoardGUIScreen.java",
-          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/RestaurantBoardGUIMenu.java",
-          "src/main/java/net/devmultiverse/tycoonlib/network/RestaurantBoardGUIButtonMessage.java"
+          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/RestaurantBoardGUIMenu.java"
         ]
       },
       "path": "~/Restaurant"
@@ -430,26 +409,6 @@
           {
             "name": "z",
             "type": "number"
-          }
-        ]
-      },
-      "path": "~/Restaurant"
-    },
-    {
-      "name": "RoomBlueprintTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "room_blueprint_tooltip",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/RoomBlueprintTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -543,6 +502,127 @@
         ]
       },
       "path": "~/Restaurant"
+    },
+    {
+      "name": "SetDefaultDataForRestaurantBoard",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_default_data_for_restaurant_board",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetDefaultDataForRestaurantBoardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "BlueprintTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/BlueprintTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantBoardStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_board_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_0.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_3.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_2.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_1.json"
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "MannequinOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mannequin_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MannequinOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mannequin"
+    },
+    {
+      "name": "Mannequin",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mannequin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/MannequinRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/MannequinModel.java",
+          "src/main/resources/assets/tycoonlib/models/item/mannequin_spawn_egg.json",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/MannequinEntity.java"
+        ]
+      },
+      "path": "~/Mannequin"
+    },
+    {
+      "name": "MannequinRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mannequin_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MannequinRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mannequin"
     }
   ],
   "variable_elements": [],
@@ -593,6 +673,7 @@
       "CUSTOM:Counter"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:RestaurantBoard",
       "~CUSTOM:WoodenStool"
     ],
     "BLOCKS:mod:arcade": [
@@ -602,6 +683,8 @@
   "tab_element_order": {
     "CUSTOM:TycoonLibTab": [
       "RestaurantBoard",
+      "RestaurantBlueprint",
+      "RoomBlueprint",
       "WoodenStool",
       "CrappyOpenSign",
       "CrappyCashRegister",
@@ -612,29 +695,37 @@
       "CrappyTable",
       "CrappyBallpit",
       "Counter",
-      "RestaurantBlueprint",
-      "RoomBlueprint"
+      "Mannequin"
     ]
   },
   "language_map": {
     "en_us": {
-      "block.tycoonlib.crappy_arcade": "Arcade",
       "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "block.tycoonlib.crappy_table": "Table",
-      "block.tycoonlib.crappy_open_sign": "Open Sign",
       "block.tycoonlib.counter": "Counter",
       "gui.tycoonlib.restaurant_board_gui.FloorLevel": "0",
-      "block.tycoonlib.crappy_chair": "Chair",
-      "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_31": "Unlock at level 3",
       "block.tycoonlib.crappy_ballpit": "Ballpit",
-      "block.tycoonlib.restaurant_board": "Restaurant Board",
       "gui.tycoonlib.set_floor_level.button_save": "Save",
-      "gui.tycoonlib.set_floor_level.floor_level": "0",
       "block.tycoonlib.crappy_carousel": "Carousel",
-      "block.tycoonlib.crappy_fridge": "Cooler",
       "item.tycoonlib.room_blueprint": "Room Blueprint",
+      "item.tycoonlib.mannequin_spawn_egg": "Mannequin Spawn Egg",
       "item_group.tycoonlib.tycoon_lib_tab": "Tycoon Lib",
       "block.tycoonlib.crappy_cash_register": "Cash Register",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_2": "Unlock at level 2",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_3": "Unlock at level 3",
+      "entity.tycoonlib.mannequin": "Mannequin",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_5": "Unlock at level 5",
+      "block.tycoonlib.crappy_arcade": "Arcade",
+      "block.tycoonlib.crappy_open_sign": "Open Sign",
+      "gui.tycoonlib.restaurant_board_gui.label_level_1": "Level: 1",
+      "block.tycoonlib.crappy_chair": "Chair",
+      "gui.tycoonlib.restaurant_board_gui.label_no_rooms": "No Rooms",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_21": "Unlock at level 2",
+      "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
+      "block.tycoonlib.restaurant_board": "Restaurant Board",
+      "gui.tycoonlib.set_floor_level.floor_level": "0",
+      "block.tycoonlib.crappy_fridge": "Cooler",
       "block.tycoonlib.wooden_stool": "Wooden Stool",
       "gui.tycoonlib.set_floor_level.label_floor_level": "Floor Level"
     }
@@ -653,6 +744,10 @@
       },
       {
         "name": "Restaurant",
+        "children": []
+      },
+      {
+        "name": "Mannequin",
         "children": []
       }
     ]

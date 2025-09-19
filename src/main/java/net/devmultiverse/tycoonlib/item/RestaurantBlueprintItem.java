@@ -11,8 +11,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
-import net.devmultiverse.tycoonlib.procedures.RestaurantBlueprintTooltipProcedure;
 import net.devmultiverse.tycoonlib.procedures.RestaurantBlueprintFindDataProcedure;
+import net.devmultiverse.tycoonlib.procedures.BlueprintTooltipProcedure;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class RestaurantBlueprintItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		Entity entity = itemstack.getEntityRepresentation();
-		String hoverText = RestaurantBlueprintTooltipProcedure.execute(itemstack);
+		String hoverText = BlueprintTooltipProcedure.execute(itemstack);
 		if (hoverText != null) {
 			for (String line : hoverText.split("\n")) {
 				list.add(Component.literal(line));

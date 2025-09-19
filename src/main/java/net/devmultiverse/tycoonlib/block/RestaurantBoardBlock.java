@@ -1,17 +1,30 @@
 
 package net.devmultiverse.tycoonlib.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -24,6 +37,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.devmultiverse.tycoonlib.world.inventory.RestaurantBoardGUIMenu;
@@ -33,13 +47,101 @@ import net.devmultiverse.tycoonlib.block.entity.RestaurantBoardBlockEntity;
 import io.netty.buffer.Unpooled;
 
 public class RestaurantBoardBlock extends Block implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 4);
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final IntegerProperty LEVEL = BlockStateProperties.LEVEL;
+
 	public RestaurantBoardBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(2.5f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(2.5f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 2)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 3)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 4)
+					return 0;
+				return 0;
+			}
+		}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LEVEL, 1));
+	}
+
+	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
 	}
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return switch (state.getValue(FACING)) {
+				default -> box(-14, 1, 0, 16, 23, 1);
+				case NORTH -> box(0, 1, 15, 30, 23, 16);
+				case EAST -> box(0, 1, 0, 1, 23, 30);
+				case WEST -> box(15, 1, -14, 16, 23, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 2) {
+			return switch (state.getValue(FACING)) {
+				default -> box(-14, 1, 0, 16, 23, 1);
+				case NORTH -> box(0, 1, 15, 30, 23, 16);
+				case EAST -> box(0, 1, 0, 1, 23, 30);
+				case WEST -> box(15, 1, -14, 16, 23, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 3) {
+			return switch (state.getValue(FACING)) {
+				default -> box(-14, 1, 0, 16, 23, 1);
+				case NORTH -> box(0, 1, 15, 30, 23, 16);
+				case EAST -> box(0, 1, 0, 1, 23, 30);
+				case WEST -> box(15, 1, -14, 16, 23, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 4) {
+			return switch (state.getValue(FACING)) {
+				default -> box(-14, 1, 0, 16, 23, 1);
+				case NORTH -> box(0, 1, 15, 30, 23, 16);
+				case EAST -> box(0, 1, 0, 1, 23, 30);
+				case WEST -> box(15, 1, -14, 16, 23, 16);
+			};
+		}
+		return switch (state.getValue(FACING)) {
+			default -> box(-14, 1, 0, 16, 23, 1);
+			case NORTH -> box(0, 1, 15, 30, 23, 16);
+			case EAST -> box(0, 1, 0, 1, 23, 30);
+			case WEST -> box(15, 1, -14, 16, 23, 16);
+		};
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
+		builder.add(FACING, LEVEL, BLOCKSTATE);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(LEVEL, 1);
+	}
+
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
 	@Override
