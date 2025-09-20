@@ -4,7 +4,7 @@
   "definition": {
     "name": "Tycoon Lib",
     "icon": {
-      "value": "CUSTOM:WoodenStool"
+      "value": "CUSTOM:RestaurantBoard"
     },
     "showSearch": false
   }

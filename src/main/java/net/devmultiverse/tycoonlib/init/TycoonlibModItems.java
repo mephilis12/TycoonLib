@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.devmultiverse.tycoonlib.item.RoomBlueprintItem;
+import net.devmultiverse.tycoonlib.item.RestaurantBoardHoverItem;
 import net.devmultiverse.tycoonlib.item.RestaurantBlueprintItem;
 import net.devmultiverse.tycoonlib.block.display.CrappyCarouselDisplayItem;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
@@ -34,6 +35,7 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> RESTAURANT_BLUEPRINT = REGISTRY.register("restaurant_blueprint", () -> new RestaurantBlueprintItem());
 	public static final RegistryObject<Item> ROOM_BLUEPRINT = REGISTRY.register("room_blueprint", () -> new RoomBlueprintItem());
 	public static final RegistryObject<Item> MANNEQUIN_SPAWN_EGG = REGISTRY.register("mannequin_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.MANNEQUIN, -6057888, -15572359, new Item.Properties()));
+	public static final RegistryObject<Item> RESTAURANT_BOARD_HOVER = REGISTRY.register("restaurant_board_hover", () -> new RestaurantBoardHoverItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -29,6 +29,12 @@
         "restaurant_board": "restaurant_board_level_2"
       },
       "name": "level2"
+    },
+    "level6": {
+      "map": {
+        "restaurant_board": "restaurant_board_level_6"
+      },
+      "name": "level6"
     }
   }
 }

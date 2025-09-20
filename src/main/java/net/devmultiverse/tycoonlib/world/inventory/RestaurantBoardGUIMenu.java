@@ -19,7 +19,14 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.devmultiverse.tycoonlib.procedures.RestaurantLevel6CheckProcedure;
+import net.devmultiverse.tycoonlib.procedures.RestaurantLevel5CheckProcedure;
+import net.devmultiverse.tycoonlib.procedures.RestaurantLevel4CheckProcedure;
+import net.devmultiverse.tycoonlib.procedures.RestaurantLevel3CheckProcedure;
+import net.devmultiverse.tycoonlib.procedures.RestaurantLevel2CheckProcedure;
+import net.devmultiverse.tycoonlib.procedures.RestaurantLevel1Procedure;
 import net.devmultiverse.tycoonlib.init.TycoonlibModMenus;
+import net.devmultiverse.tycoonlib.init.TycoonlibModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -42,7 +49,7 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 		super(TycoonlibModMenus.RESTAURANT_BOARD_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(8);
+		this.internal = new ItemStackHandler(13);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -81,41 +88,191 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 			private final int slot = 0;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return TycoonlibModItems.RESTAURANT_BLUEPRINT.get() == stack.getItem();
+			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 110) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 182, 105) {
 			private final int slot = 1;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel6CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel1Procedure.execute(world, x, y, z);
+			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 110) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 182, 123) {
 			private final int slot = 2;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel1Procedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel1Procedure.execute(world, x, y, z);
+			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 110) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 182, 141) {
 			private final int slot = 3;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel2CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel2CheckProcedure.execute(world, x, y, z);
+			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 98, 110) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 182, 159) {
 			private final int slot = 4;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel2CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel2CheckProcedure.execute(world, x, y, z);
+			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 116, 110) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 182, 177) {
 			private final int slot = 5;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel3CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel3CheckProcedure.execute(world, x, y, z);
+			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 134, 110) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 182, 195) {
 			private final int slot = 6;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel3CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel3CheckProcedure.execute(world, x, y, z);
+			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 152, 110) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 200, 105) {
 			private final int slot = 7;
 			private int x = RestaurantBoardGUIMenu.this.x;
 			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel4CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel4CheckProcedure.execute(world, x, y, z);
+			}
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 200, 123) {
+			private final int slot = 8;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel4CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel4CheckProcedure.execute(world, x, y, z);
+			}
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 200, 141) {
+			private final int slot = 9;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel5CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel5CheckProcedure.execute(world, x, y, z);
+			}
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 200, 159) {
+			private final int slot = 10;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel5CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel5CheckProcedure.execute(world, x, y, z);
+			}
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 200, 177) {
+			private final int slot = 11;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel6CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel6CheckProcedure.execute(world, x, y, z);
+			}
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 200, 195) {
+			private final int slot = 12;
+			private int x = RestaurantBoardGUIMenu.this.x;
+			private int y = RestaurantBoardGUIMenu.this.y;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !RestaurantLevel6CheckProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !RestaurantLevel6CheckProcedure.execute(world, x, y, z);
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -144,16 +301,16 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 8) {
-				if (!this.moveItemStackTo(itemstack1, 8, this.slots.size(), true))
+			if (index < 13) {
+				if (!this.moveItemStackTo(itemstack1, 13, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 8, false)) {
-				if (index < 8 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 8 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 13, false)) {
+				if (index < 13 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 13 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 8, 8 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 13, 13 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -267,6 +424,16 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 						continue;
 					if (j == 7)
 						continue;
+					if (j == 8)
+						continue;
+					if (j == 9)
+						continue;
+					if (j == 10)
+						continue;
+					if (j == 11)
+						continue;
+					if (j == 12)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
@@ -286,6 +453,16 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 					if (i == 6)
 						continue;
 					if (i == 7)
+						continue;
+					if (i == 8)
+						continue;
+					if (i == 9)
+						continue;
+					if (i == 10)
+						continue;
+					if (i == 11)
+						continue;
+					if (i == 12)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}

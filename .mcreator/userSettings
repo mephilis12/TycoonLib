@@ -2,7 +2,7 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "TYPE",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
+  "projectBrowserSplitPos": 1,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Tycoon-Lib]"

@@ -47,7 +47,7 @@ import net.devmultiverse.tycoonlib.block.entity.RestaurantBoardBlockEntity;
 import io.netty.buffer.Unpooled;
 
 public class RestaurantBoardBlock extends Block implements EntityBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 4);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 5);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final IntegerProperty LEVEL = BlockStateProperties.LEVEL;
 
@@ -61,6 +61,8 @@ public class RestaurantBoardBlock extends Block implements EntityBlock {
 				if (s.getValue(BLOCKSTATE) == 3)
 					return 0;
 				if (s.getValue(BLOCKSTATE) == 4)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 5)
 					return 0;
 				return 0;
 			}
@@ -110,6 +112,14 @@ public class RestaurantBoardBlock extends Block implements EntityBlock {
 			};
 		}
 		if (state.getValue(BLOCKSTATE) == 4) {
+			return switch (state.getValue(FACING)) {
+				default -> box(-14, 1, 0, 16, 23, 1);
+				case NORTH -> box(0, 1, 15, 30, 23, 16);
+				case EAST -> box(0, 1, 0, 1, 23, 30);
+				case WEST -> box(15, 1, -14, 16, 23, 16);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 5) {
 			return switch (state.getValue(FACING)) {
 				default -> box(-14, 1, 0, 16, 23, 1);
 				case NORTH -> box(0, 1, 15, 30, 23, 16);

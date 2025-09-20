@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:painting",
+    "texture": "blueprint",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
@@ -37,6 +37,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "RestaurantBlueprintRightclicked"
+    },
     "onRightClickedOnBlock": {
       "name": "RoomBlueprintFindData"
     },

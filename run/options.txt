@@ -5,7 +5,7 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:false
+enableVsync:true
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
@@ -15,7 +15,7 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:false
 toggleCrouch:false
 toggleSprint:false
@@ -31,8 +31,8 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
-renderDistance:5
-simulationDistance:12
+renderDistance:6
+simulationDistance:10
 entityDistanceScaling:1.0
 guiScale:0
 particles:0
@@ -118,7 +118,7 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-soundCategory_master:1.0
+soundCategory_master:0.15066225165562913
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

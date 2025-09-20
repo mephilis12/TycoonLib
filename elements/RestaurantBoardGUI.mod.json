@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:RestaurantBlueprint"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -33,18 +33,20 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:RoomBlueprint"
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "RestaurantLevel1"
           },
           "id": 1,
           "disablePickup": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "RestaurantLevel6Check"
           },
           "dropItemsWhenNotBound": false,
-          "x": 142,
-          "y": 120,
+          "x": 280,
+          "y": 115,
           "locked": false
         }
       },
@@ -52,18 +54,230 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:RoomBlueprint"
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "RestaurantLevel1"
           },
           "id": 2,
           "disablePickup": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "RestaurantLevel1"
           },
           "dropItemsWhenNotBound": false,
-          "x": 160,
-          "y": 120,
+          "x": 280,
+          "y": 133,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel2Check"
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel2Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 151,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel2Check"
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel2Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel3Check"
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel3Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 187,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel3Check"
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel3Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 205,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel4Check"
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel4Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 298,
+          "y": 115,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel4Check"
+          },
+          "id": 8,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel4Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 298,
+          "y": 133,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel5Check"
+          },
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel5Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 298,
+          "y": 151,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel5Check"
+          },
+          "id": 10,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel5Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 298,
+          "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel6Check"
+          },
+          "id": 11,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel6Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 298,
+          "y": 187,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RoomBlueprint"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "RestaurantLevel6Check"
+          },
+          "id": 12,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "RestaurantLevel6Check"
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 298,
+          "y": 205,
           "locked": false
         }
       },
@@ -78,97 +292,237 @@
         }
       },
       {
-        "type": "inputslot",
+        "type": "imagebutton",
         "data": {
-          "inputLimit": {
-            "value": ""
+          "name": "imagebutton_restaurant_board_left_arrow",
+          "image": "restaurant_board_left_arrow.png",
+          "hoveredImage": "restaurant_board_left_arrow_hover.png",
+          "onClick": {
+            "name": "BackPage"
           },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 3,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": false,
-          "x": 178,
-          "y": 120,
+          "x": 216,
+          "y": 99,
           "locked": false
         }
       },
       {
-        "type": "inputslot",
+        "type": "imagebutton",
         "data": {
-          "inputLimit": {
-            "value": ""
+          "name": "imagebutton_restaurant_board_right_arrow",
+          "image": "restaurant_board_right_arrow.png",
+          "hoveredImage": "restaurant_board_right_arrow_hover.png",
+          "onClick": {
+            "name": "NextPage"
           },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 4,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": false,
-          "x": 196,
-          "y": 120,
+          "x": 308,
+          "y": 99,
           "locked": false
         }
       },
       {
-        "type": "inputslot",
+        "type": "label",
         "data": {
-          "inputLimit": {
-            "value": ""
+          "name": "label_proc_restaurant_title",
+          "text": {
+            "fixedValue": "",
+            "name": "RestaurantTitle"
           },
-          "disablePlacement": {
-            "fixedValue": false
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
           },
-          "id": 5,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": false,
-          "x": 214,
-          "y": 120,
+          "x": 131,
+          "y": 125,
           "locked": false
         }
       },
       {
-        "type": "inputslot",
+        "type": "image",
         "data": {
-          "inputLimit": {
-            "value": ""
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel2Check"
           },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 6,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": false,
-          "x": 232,
-          "y": 120,
+          "x": 280,
+          "y": 151,
           "locked": false
         }
       },
       {
-        "type": "inputslot",
+        "type": "image",
         "data": {
-          "inputLimit": {
-            "value": ""
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel2Check"
           },
-          "disablePlacement": {
-            "fixedValue": false
+          "x": 280,
+          "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel3Check"
           },
-          "id": 7,
-          "disablePickup": {
-            "fixedValue": false
+          "x": 280,
+          "y": 187,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel3Check"
           },
-          "dropItemsWhenNotBound": false,
-          "x": 250,
-          "y": 120,
+          "x": 280,
+          "y": 205,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel4Check"
+          },
+          "x": 298,
+          "y": 115,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel4Check"
+          },
+          "x": 298,
+          "y": 133,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel5Check"
+          },
+          "x": 298,
+          "y": 151,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel5Check"
+          },
+          "x": 298,
+          "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel6Check"
+          },
+          "x": 298,
+          "y": 187,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel6Check"
+          },
+          "x": 298,
+          "y": 205,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level",
+          "text": {
+            "fixedValue": "Level: --",
+            "name": "GetLevel"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 112,
+          "y": 21,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_room_name",
+          "text": {
+            "fixedValue": "<Room Name>",
+            "name": "PageTitle"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 219,
+          "y": 21,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel1"
+          },
+          "x": 280,
+          "y": 115,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "restaurant_board_locked_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RestaurantLevel1"
+          },
+          "x": 280,
+          "y": 133,
           "locked": false
         }
       }

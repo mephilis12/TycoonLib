@@ -74,6 +74,21 @@
     "facing=west,blockstate=4": {
       "model": "tycoonlib:block/restaurant_board_states_blockstate_3",
       "y": 270
+    },
+    "facing=north,blockstate=5": {
+      "model": "tycoonlib:block/restaurant_board_states_blockstate_4"
+    },
+    "facing=east,blockstate=5": {
+      "model": "tycoonlib:block/restaurant_board_states_blockstate_4",
+      "y": 90
+    },
+    "facing=south,blockstate=5": {
+      "model": "tycoonlib:block/restaurant_board_states_blockstate_4",
+      "y": 180
+    },
+    "facing=west,blockstate=5": {
+      "model": "tycoonlib:block/restaurant_board_states_blockstate_4",
+      "y": 270
     }
   }
 }

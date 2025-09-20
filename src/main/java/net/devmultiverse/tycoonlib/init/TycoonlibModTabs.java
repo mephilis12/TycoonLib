@@ -17,7 +17,7 @@ import net.devmultiverse.tycoonlib.TycoonlibMod;
 public class TycoonlibModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TycoonlibMod.MODID);
 	public static final RegistryObject<CreativeModeTab> TYCOON_LIB_TAB = REGISTRY.register("tycoon_lib_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tycoonlib.tycoon_lib_tab")).icon(() -> new ItemStack(TycoonlibModBlocks.WOODEN_STOOL.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tycoonlib.tycoon_lib_tab")).icon(() -> new ItemStack(TycoonlibModBlocks.RESTAURANT_BOARD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TycoonlibModBlocks.RESTAURANT_BOARD.get().asItem());
 				tabData.accept(TycoonlibModItems.RESTAURANT_BLUEPRINT.get());
 				tabData.accept(TycoonlibModItems.ROOM_BLUEPRINT.get());

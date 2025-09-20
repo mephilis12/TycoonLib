@@ -125,7 +125,7 @@
     "hasInventory": true,
     "guiBoundTo": "RestaurantBoardGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 13,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

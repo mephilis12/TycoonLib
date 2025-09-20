@@ -7,10 +7,14 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
+import net.devmultiverse.tycoonlib.procedures.RestaurantBlueprintRightclickedProcedure;
 import net.devmultiverse.tycoonlib.procedures.RestaurantBlueprintFindDataProcedure;
 import net.devmultiverse.tycoonlib.procedures.BlueprintTooltipProcedure;
 
@@ -31,6 +35,13 @@ public class RestaurantBlueprintItem extends Item {
 				list.add(Component.literal(line));
 			}
 		}
+	}
+
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		RestaurantBlueprintRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		return ar;
 	}
 
 	@Override

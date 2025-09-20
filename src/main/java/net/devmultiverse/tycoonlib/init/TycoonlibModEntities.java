@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.devmultiverse.tycoonlib.entity.MannequinEntity;
+import net.devmultiverse.tycoonlib.entity.ChairEntity;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -26,6 +27,8 @@ public class TycoonlibModEntities {
 			EntityType.Builder.<MannequinEntity>of(MannequinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MannequinEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChairEntity>> CHAIR = register("chair",
+			EntityType.Builder.<ChairEntity>of(ChairEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChairEntity::new).fireImmune().sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -37,11 +40,13 @@ public class TycoonlibModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			MannequinEntity.init();
+			ChairEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MANNEQUIN.get(), MannequinEntity.createAttributes().build());
+		event.put(CHAIR.get(), ChairEntity.createAttributes().build());
 	}
 }
