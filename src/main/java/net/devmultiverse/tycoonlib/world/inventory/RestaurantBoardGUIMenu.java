@@ -101,7 +101,7 @@ public class RestaurantBoardGUIMenu extends AbstractContainerMenu implements Sup
 
 			@Override
 			public boolean mayPickup(Player entity) {
-				return !RestaurantLevel6CheckProcedure.execute(world, x, y, z);
+				return !RestaurantLevel1Procedure.execute(world, x, y, z);
 			}
 
 			@Override

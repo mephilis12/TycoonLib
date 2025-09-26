@@ -36,6 +36,7 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> ROOM_BLUEPRINT = REGISTRY.register("room_blueprint", () -> new RoomBlueprintItem());
 	public static final RegistryObject<Item> MANNEQUIN_SPAWN_EGG = REGISTRY.register("mannequin_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.MANNEQUIN, -6057888, -15572359, new Item.Properties()));
 	public static final RegistryObject<Item> RESTAURANT_BOARD_HOVER = REGISTRY.register("restaurant_board_hover", () -> new RestaurantBoardHoverItem());
+	public static final RegistryObject<Item> GUEST_SPAWN_PLATE = block(TycoonlibModBlocks.GUEST_SPAWN_PLATE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

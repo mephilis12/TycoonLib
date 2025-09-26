@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.devmultiverse.tycoonlib.block.WoodenStoolBlock;
 import net.devmultiverse.tycoonlib.block.RestaurantBoardBlock;
+import net.devmultiverse.tycoonlib.block.GuestSpawnPlateBlock;
 import net.devmultiverse.tycoonlib.block.CrappyTableBlock;
 import net.devmultiverse.tycoonlib.block.CrappyOpenSignBlock;
 import net.devmultiverse.tycoonlib.block.CrappyFridgeBlock;
@@ -36,6 +37,7 @@ public class TycoonlibModBlocks {
 	public static final RegistryObject<Block> CRAPPY_OPEN_SIGN = REGISTRY.register("crappy_open_sign", () -> new CrappyOpenSignBlock());
 	public static final RegistryObject<Block> WOODEN_STOOL = REGISTRY.register("wooden_stool", () -> new WoodenStoolBlock());
 	public static final RegistryObject<Block> RESTAURANT_BOARD = REGISTRY.register("restaurant_board", () -> new RestaurantBoardBlock());
+	public static final RegistryObject<Block> GUEST_SPAWN_PLATE = REGISTRY.register("guest_spawn_plate", () -> new GuestSpawnPlateBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

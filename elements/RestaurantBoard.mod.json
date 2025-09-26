@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:barrel_bottom",
+    "texture": "restaurant_board",
     "textureTop": "minecraft:barrel_bottom",
     "textureLeft": "minecraft:barrel_bottom",
     "textureFront": "minecraft:barrel_bottom",

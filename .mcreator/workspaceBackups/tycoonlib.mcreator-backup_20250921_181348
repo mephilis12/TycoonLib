@@ -1,0 +1,1328 @@
+{
+  "mod_elements": [
+    {
+      "name": "Counter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "counter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/counter.json",
+          "src/main/resources/assets/tycoonlib/blockstates/counter.json",
+          "src/main/resources/assets/tycoonlib/models/block/counter.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CounterBlock.java",
+          "src/main/resources/assets/tycoonlib/models/item/counter.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyCarousel",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_carousel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/CrappyCarouselTileEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCarouselBlock.java",
+          "src/main/resources/assets/tycoonlib/models/custom/crappy_carousel_particle.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselDisplayModel.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_carousel.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselDisplayItemRenderer.java",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_carousel.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselBlockModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/display/CrappyCarouselDisplayItem.java",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_carousel_blockstate_0.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselTileRenderer.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyCarouselRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_carousel_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/CrappyCarouselRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Block/Procedures"
+    },
+    {
+      "name": "CrappyCarouselRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_carousel_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/CrappyCarouselRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Block/Procedures"
+    },
+    {
+      "name": "CrappyCashRegister",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_cash_register",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCashRegisterBlock.java",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_cash_register.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_cash_register.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_cash_register.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_cash_register.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyFridge",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_fridge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_fridge.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_fridge.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyFridgeBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_fridge.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_fridge.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyChair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_chair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/crappy_chair.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_chair.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_chair.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_chair.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyChairBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyArcade",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_arcade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_arcade.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyArcadeBlock.java",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_arcade.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_arcade.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_table",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyTableBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_table.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyBallpit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_ballpit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_ballpit.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_ballpit.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_ballpit.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_ballpit.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyBallpitBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyOpenSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_open_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyOpenSignBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_open_sign.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_open_sign.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "CrappyOpenSignBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crappy_open_sign_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/crappy_open_sign_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "WoodenStool",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_stool",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/wooden_stool.json",
+          "src/main/resources/assets/tycoonlib/blockstates/wooden_stool.json",
+          "src/main/resources/assets/tycoonlib/models/block/wooden_stool.json",
+          "src/main/resources/assets/tycoonlib/models/item/wooden_stool.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/WoodenStoolBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "RestaurantBoard",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/restaurant_board.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/RestaurantBoardBlock.java",
+          "src/main/resources/assets/tycoonlib/blockstates/restaurant_board.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/RestaurantBoardBlockEntity.java",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board.json",
+          "src/main/resources/assets/tycoonlib/models/item/restaurant_board.json"
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "TycoonLibTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tycoon_lib_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RestaurantBlueprintFindData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_blueprint_find_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantBlueprintFindDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantBlueprint",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/item/RestaurantBlueprintItem.java",
+          "src/main/resources/assets/tycoonlib/models/item/restaurant_blueprint.json"
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "RestaurantBoardGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_board_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/RestaurantBoardGUIScreen.java",
+          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/RestaurantBoardGUIMenu.java",
+          "src/main/java/net/devmultiverse/tycoonlib/network/RestaurantBoardGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantBoardOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_board_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantBoardOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RoomBlueprint",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "room_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/item/RoomBlueprintItem.java",
+          "src/main/resources/assets/tycoonlib/models/item/room_blueprint.json"
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "RoomBlueprintFindData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "room_blueprint_find_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RoomBlueprintFindDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "SetDefaultDataForRestaurantBoard",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_default_data_for_restaurant_board",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetDefaultDataForRestaurantBoardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "BlueprintTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/BlueprintTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "RestaurantBoardStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_board_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_0.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_3.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_2.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_4.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_1.json"
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "MannequinOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mannequin_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MannequinOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mannequin"
+    },
+    {
+      "name": "Mannequin",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mannequin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/MannequinRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/MannequinModel.java",
+          "src/main/resources/assets/tycoonlib/models/item/mannequin_spawn_egg.json",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/MannequinEntity.java"
+        ]
+      },
+      "path": "~/Mannequin"
+    },
+    {
+      "name": "MannequinRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mannequin_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MannequinRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mannequin"
+    },
+    {
+      "name": "SetNameGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_name_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetNameGUIMenu.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetNameGUIScreen.java",
+          "src/main/java/net/devmultiverse/tycoonlib/network/SetNameGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "SaveNameButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_name_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SaveNameButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "RestaurantBlueprintRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_blueprint_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantBlueprintRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "RestaurantTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_title",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantTitleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantLevel2Check",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_level_2_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantLevel2CheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantLevel3Check",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_level_3_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantLevel3CheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantLevel4Check",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_level_4_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantLevel4CheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantLevel5Check",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_level_5_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantLevel5CheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "GetLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/GetLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "Blueprint",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueprint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/command/BlueprintCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SetBlueprint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetBlueprintProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SetSettingsGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_settings_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetSettingsGUIScreen.java",
+          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetSettingsGUIMenu.java"
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "RestaurantBoardHover",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_board_hover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/item/RestaurantBoardHoverItem.java",
+          "src/main/resources/assets/tycoonlib/models/item/restaurant_board_hover.json"
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantLevel6Check",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_level_6_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantLevel6CheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantLevel1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_level_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantLevel1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "NextPage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_page",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/NextPageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "PageTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "page_title",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/PageTitleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string"
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "BackPage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_page",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/BackPageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "KillHovers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_hovers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/KillHoversProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "PickupHovers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickup_hovers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/PickupHoversProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "SeatEntityTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seat_entity_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SeatEntityTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "SeatEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seat_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/SeatEntityRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/SeatEntityEntity.java"
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "SeatOnRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seat_on_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SeatOnRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "PageSubtitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "page_subtitle",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/PageSubtitleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "GuestSpawnPlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guest_spawn_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/block/guest_spawn_plate.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/GuestSpawnPlateBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/guest_spawn_plate.json",
+          "src/main/resources/assets/tycoonlib/models/item/guest_spawn_plate.json",
+          "src/main/resources/assets/tycoonlib/blockstates/guest_spawn_plate.json"
+        ]
+      },
+      "path": "~/Restaurant/Guest Spawn Plate"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:mod:billboard": [],
+    "BLOCKS:mod:table": [
+      "CUSTOM:CrappyTable"
+    ],
+    "BLOCKS:mod:ballpit": [
+      "CUSTOM:CrappyBallpit"
+    ],
+    "BLOCKS:mod:oven": [
+      "Blocks.FURNACE",
+      "Blocks.SMOKER"
+    ],
+    "BLOCKS:mod:fridge": [
+      "CUSTOM:CrappyFridge"
+    ],
+    "BLOCKS:mod:sink": [
+      "Blocks.WATER_CAULDRON",
+      "Blocks.CAULDRON"
+    ],
+    "BLOCKS:mod:door": [
+      "Blocks.OAK_DOOR",
+      "Blocks.SPRUCE_DOOR",
+      "Blocks.BIRCH_DOOR",
+      "Blocks.JUNGLE_DOOR",
+      "Blocks.ACACIA_DOOR",
+      "Blocks.DARK_OAK_DOOR",
+      "Blocks.CRIMSON_DOOR",
+      "Blocks.WARPED_DOOR",
+      "Blocks.MANGROVE_DOOR",
+      "Blocks.CHERRY_DOOR",
+      "Blocks.BAMBOO_DOOR"
+    ],
+    "BLOCKS:mod:air_blocks": [
+      "Blocks.AIR",
+      "Blocks.CAVE_AIR"
+    ],
+    "BLOCKS:mod:chair": [
+      "CUSTOM:CrappyChair"
+    ],
+    "BLOCKS:mod:cash_register": [
+      "CUSTOM:CrappyCashRegister"
+    ],
+    "BLOCKS:mod:counter": [
+      "CUSTOM:Counter"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:RestaurantBoard",
+      "~CUSTOM:WoodenStool"
+    ],
+    "BLOCKS:mod:arcade": [
+      "CUSTOM:CrappyArcade"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:TycoonLibTab": [
+      "RestaurantBoard",
+      "RestaurantBlueprint",
+      "RoomBlueprint",
+      "WoodenStool",
+      "CrappyOpenSign",
+      "CrappyCashRegister",
+      "CrappyCarousel",
+      "CrappyFridge",
+      "CrappyChair",
+      "CrappyArcade",
+      "CrappyTable",
+      "CrappyBallpit",
+      "Counter",
+      "Mannequin"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
+      "block.tycoonlib.crappy_table": "Table",
+      "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
+      "gui.tycoonlib.restaurant_board_gui.label_room_name": "\u003cRoom Name\u003e",
+      "gui.tycoonlib.set_name_gui.set_name": "name",
+      "block.tycoonlib.counter": "Counter",
+      "gui.tycoonlib.restaurant_board_gui.FloorLevel": "0",
+      "gui.tycoonlib.set_name_gui.label_name": "Name",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_31": "Unlock at level 3",
+      "block.tycoonlib.crappy_ballpit": "Ballpit",
+      "block.tycoonlib.crappy_carousel": "Carousel",
+      "item.tycoonlib.room_blueprint": "Room Blueprint",
+      "item.tycoonlib.mannequin_spawn_egg": "Mannequin Spawn Egg",
+      "item_group.tycoonlib.tycoon_lib_tab": "Tycoon Lib",
+      "gui.tycoonlib.set_name_gui.SetName": "name",
+      "block.tycoonlib.crappy_cash_register": "Cash Register",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_2": "Unlock at level 2",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_3": "Unlock at level 3",
+      "entity.tycoonlib.mannequin": "Mannequin",
+      "gui.tycoonlib.set_name_gui.button_save": "Save",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_5": "Unlock at level 5",
+      "block.tycoonlib.crappy_arcade": "Arcade",
+      "block.tycoonlib.crappy_open_sign": "Open Sign",
+      "gui.tycoonlib.restaurant_board_gui.label_level": "Level: --",
+      "gui.tycoonlib.restaurant_board_gui.label_level_1": "Level: 1",
+      "block.tycoonlib.crappy_chair": "Chair",
+      "gui.tycoonlib.restaurant_board_gui.label_no_rooms": "No Rooms",
+      "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_21": "Unlock at level 2",
+      "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
+      "block.tycoonlib.restaurant_board": "Restaurant Board",
+      "block.tycoonlib.crappy_fridge": "Cooler",
+      "entity.tycoonlib.seat_entity": "Seat Entity",
+      "block.tycoonlib.wooden_stool": "Wooden Stool",
+      "item.tycoonlib.restaurant_board_hover": "Restaurant Board Hover"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Block",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Restaurant",
+        "children": [
+          {
+            "name": "Blueprints",
+            "children": []
+          },
+          {
+            "name": "Guest Spawn Plate",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mannequin",
+        "children": []
+      },
+      {
+        "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Seat",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tycoonlib",
+    "modName": "Tycoon-Lib",
+    "version": "1.0.0",
+    "author": "chill, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.devmultiverse.tycoonlib"
+  },
+  "mcreatorVersion": 202400452410
+}

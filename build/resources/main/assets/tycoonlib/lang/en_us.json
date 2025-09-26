@@ -1,6 +1,7 @@
 {
   "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "block.tycoonlib.crappy_table": "Table",
+  "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
   "gui.tycoonlib.restaurant_board_gui.label_room_name": "\u003cRoom Name\u003e",
   "gui.tycoonlib.set_name_gui.set_name": "name",
   "block.tycoonlib.counter": "Counter",
@@ -29,7 +30,7 @@
   "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
   "block.tycoonlib.restaurant_board": "Restaurant Board",
   "block.tycoonlib.crappy_fridge": "Cooler",
-  "entity.tycoonlib.chair": "Chair",
+  "entity.tycoonlib.seat_entity": "Seat Entity",
   "block.tycoonlib.wooden_stool": "Wooden Stool",
   "item.tycoonlib.restaurant_board_hover": "Restaurant Board Hover"
 }

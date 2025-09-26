@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "all": "minecraft:cauldron_inner"
+      },
+      "name": "default"
+    },
+    "hide": {
+      "map": {
+        "all": "air"
+      },
+      "name": "hide"
+    }
+  }
+}

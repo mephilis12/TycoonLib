@@ -1,0 +1,8 @@
+{
+  "parent": "tycoonlib:custom/guest_spawn_plate",
+  "textures": {
+    "all": "minecraft:block/cauldron_inner",
+    "particle": "minecraft:block/cauldron_inner"
+  },
+  "render_type": "cutout"
+}
