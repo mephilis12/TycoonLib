@@ -18,6 +18,8 @@ import net.minecraft.world.entity.Entity;
 
 import net.devmultiverse.tycoonlib.entity.SeatEntityEntity;
 import net.devmultiverse.tycoonlib.entity.MannequinEntity;
+import net.devmultiverse.tycoonlib.entity.ChildEntity;
+import net.devmultiverse.tycoonlib.entity.AdultEntity;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -29,6 +31,14 @@ public class TycoonlibModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SeatEntityEntity>> SEAT_ENTITY = register("seat_entity", EntityType.Builder.<SeatEntityEntity>of(SeatEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(SeatEntityEntity::new).fireImmune().sized(0.25f, 0.25f));
+	public static final RegistryObject<EntityType<AdultEntity>> ADULT = register("adult",
+			EntityType.Builder.<AdultEntity>of(AdultEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdultEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChildEntity>> CHILD = register("child",
+			EntityType.Builder.<ChildEntity>of(ChildEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChildEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -41,6 +51,8 @@ public class TycoonlibModEntities {
 		event.enqueueWork(() -> {
 			MannequinEntity.init();
 			SeatEntityEntity.init();
+			AdultEntity.init();
+			ChildEntity.init();
 		});
 	}
 
@@ -48,5 +60,7 @@ public class TycoonlibModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MANNEQUIN.get(), MannequinEntity.createAttributes().build());
 		event.put(SEAT_ENTITY.get(), SeatEntityEntity.createAttributes().build());
+		event.put(ADULT.get(), AdultEntity.createAttributes().build());
+		event.put(CHILD.get(), ChildEntity.createAttributes().build());
 	}
 }

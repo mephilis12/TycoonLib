@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.devmultiverse.tycoonlib.client.gui.SetSettingsGUIScreen;
+import net.devmultiverse.tycoonlib.client.gui.SetRestaurantBlueprintSettingsGUIScreen;
 import net.devmultiverse.tycoonlib.client.gui.SetNameGUIScreen;
 import net.devmultiverse.tycoonlib.client.gui.RestaurantBoardGUIScreen;
 
@@ -23,6 +24,7 @@ public class TycoonlibModScreens {
 			MenuScreens.register(TycoonlibModMenus.RESTAURANT_BOARD_GUI.get(), RestaurantBoardGUIScreen::new);
 			MenuScreens.register(TycoonlibModMenus.SET_NAME_GUI.get(), SetNameGUIScreen::new);
 			MenuScreens.register(TycoonlibModMenus.SET_SETTINGS_GUI.get(), SetSettingsGUIScreen::new);
+			MenuScreens.register(TycoonlibModMenus.SET_RESTAURANT_BLUEPRINT_SETTINGS_GUI.get(), SetRestaurantBlueprintSettingsGUIScreen::new);
 		});
 	}
 }

@@ -26,7 +26,6 @@ public class RestaurantBoardOnTickUpdateProcedure {
 		ItemStack level5 = ItemStack.EMPTY;
 		ItemStack level6 = ItemStack.EMPTY;
 		ItemStack level1 = ItemStack.EMPTY;
-		SetDefaultDataForRestaurantBoardProcedure.execute(world, x, y, z);
 		{
 			int _value = (int) (new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -819,5 +818,6 @@ public class RestaurantBoardOnTickUpdateProcedure {
 				}
 			}
 		}
+		RestaurantItemsProcedure.execute();
 	}
 }

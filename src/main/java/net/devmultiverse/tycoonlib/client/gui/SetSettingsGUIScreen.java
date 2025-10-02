@@ -6,9 +6,13 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Checkbox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.devmultiverse.tycoonlib.world.inventory.SetSettingsGUIMenu;
+import net.devmultiverse.tycoonlib.network.SetSettingsGUIButtonMessage;
+import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 import java.util.HashMap;
 
@@ -19,6 +23,8 @@ public class SetSettingsGUIScreen extends AbstractContainerScreen<SetSettingsGUI
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Checkbox employees_only;
+	Button button_save;
 
 	public SetSettingsGUIScreen(SetSettingsGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -65,5 +71,16 @@ public class SetSettingsGUIScreen extends AbstractContainerScreen<SetSettingsGUI
 	@Override
 	public void init() {
 		super.init();
+		button_save = Button.builder(Component.translatable("gui.tycoonlib.set_settings_gui.button_save"), e -> {
+			if (true) {
+				TycoonlibMod.PACKET_HANDLER.sendToServer(new SetSettingsGUIButtonMessage(0, x, y, z));
+				SetSettingsGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 5, this.topPos + 141, 46, 20).build();
+		guistate.put("button:button_save", button_save);
+		this.addRenderableWidget(button_save);
+		employees_only = new Checkbox(this.leftPos + 6, this.topPos + 6, 20, 20, Component.translatable("gui.tycoonlib.set_settings_gui.employees_only"), false);
+		guistate.put("checkbox:employees_only", employees_only);
+		this.addRenderableWidget(employees_only);
 	}
 }

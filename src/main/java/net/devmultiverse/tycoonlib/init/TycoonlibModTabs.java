@@ -33,5 +33,7 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
 				tabData.accept(TycoonlibModItems.MANNEQUIN_SPAWN_EGG.get());
 				tabData.accept(TycoonlibModBlocks.GUEST_SPAWN_PLATE.get().asItem());
+				tabData.accept(TycoonlibModItems.ADULT_SPAWN_EGG.get());
+				tabData.accept(TycoonlibModItems.CHILD_SPAWN_EGG.get());
 			}).build());
 }

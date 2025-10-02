@@ -9,7 +9,34 @@
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
-    "components": [],
+    "components": [
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "employees_only",
+          "text": "Employees Only",
+          "x": 132,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_save",
+          "text": "Save",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SaveSettingsButton"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 131,
+          "y": 178,
+          "locked": false
+        }
+      }
+    ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tycoonlib:crappy_chair"
+    "tycoonlib:crappy_chair",
+    "tycoonlib:wooden_stool"
   ]
 }

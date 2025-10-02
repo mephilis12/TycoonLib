@@ -19,6 +19,8 @@ import net.devmultiverse.tycoonlib.procedures.RestaurantLevel2CheckProcedure;
 import net.devmultiverse.tycoonlib.procedures.RestaurantLevel1Procedure;
 import net.devmultiverse.tycoonlib.procedures.PageTitleProcedure;
 import net.devmultiverse.tycoonlib.procedures.PageSubtitleProcedure;
+import net.devmultiverse.tycoonlib.procedures.PageEmployeesOnlyProcedure;
+import net.devmultiverse.tycoonlib.procedures.GetStarProcedure;
 import net.devmultiverse.tycoonlib.procedures.GetLevelProcedure;
 import net.devmultiverse.tycoonlib.network.RestaurantBoardGUIButtonMessage;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
@@ -126,6 +128,12 @@ public class RestaurantBoardGUIScreen extends AbstractContainerScreen<Restaurant
 		guiGraphics.drawString(this.font,
 
 				PageSubtitleProcedure.execute(world, x, y, z), 120, 20, -1, false);
+		guiGraphics.drawString(this.font,
+
+				GetStarProcedure.execute(entity), 13, 22, -1, false);
+		guiGraphics.drawString(this.font,
+
+				PageEmployeesOnlyProcedure.execute(world, x, y, z), 120, 30, -1, false);
 	}
 
 	@Override

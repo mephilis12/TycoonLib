@@ -416,37 +416,6 @@
       "path": "~/Restaurant/Blueprints"
     },
     {
-      "name": "SetDefaultDataForRestaurantBoard",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_default_data_for_restaurant_board",
-      "metadata": {
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetDefaultDataForRestaurantBoardProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Restaurant"
-    },
-    {
       "name": "BlueprintTooltip",
       "type": "procedure",
       "compiles": true,
@@ -589,6 +558,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -792,25 +765,6 @@
       "path": "~/Commands"
     },
     {
-      "name": "SetBlueprint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_blueprint",
-      "metadata": {
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetBlueprintProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          }
-        ]
-      },
-      "path": "~/Commands"
-    },
-    {
       "name": "SetSettingsGUI",
       "type": "gui",
       "compiles": true,
@@ -819,6 +773,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetSettingsGUIScreen.java",
+          "src/main/java/net/devmultiverse/tycoonlib/network/SetSettingsGUIButtonMessage.java",
           "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetSettingsGUIMenu.java"
         ]
       },
@@ -1222,6 +1177,297 @@
         ]
       },
       "path": "~/Addons"
+    },
+    {
+      "name": "SetBlueprintLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blueprint_level",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetBlueprintLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SetBlueprintStar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blueprint_star",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetBlueprintStarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "RestaurantFindItems",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_find_items",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantFindItemsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "GetStar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_star",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/GetStarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "SetRestaurantBlueprintSettingsGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_restaurant_blueprint_settings_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetRestaurantBlueprintSettingsGUIMenu.java",
+          "src/main/java/net/devmultiverse/tycoonlib/network/SetRestaurantBlueprintSettingsGUIButtonMessage.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetRestaurantBlueprintSettingsGUIScreen.java"
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "SaveRBSettingsButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_rb_settings_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SaveRBSettingsButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "SetRestaurantBlueprintSettingsGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_restaurant_blueprint_settings_gui_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetRestaurantBlueprintSettingsGUIThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "AddBlueprintLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_blueprint_level",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/AddBlueprintLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "AddBlueprintStar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_blueprint_star",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/AddBlueprintStarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "Adult",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adult",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/AdultEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/AdultRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/AdultModel.java",
+          "src/main/resources/assets/tycoonlib/models/item/adult_spawn_egg.json"
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "AdultLocker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adult_locker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/AdultLockerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/NPC/Adult"
+    },
+    {
+      "name": "Child",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "child",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/child_spawn_egg.json",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/ChildEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/ChildRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/ChildModel.java"
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "SaveSettingsButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_settings_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SaveSettingsButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Restaurant/Blueprints"
+    },
+    {
+      "name": "PageEmployeesOnly",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "page_employees_only",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/PageEmployeesOnlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Restaurant"
+    },
+    {
+      "name": "RestaurantItems",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restaurant_items",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantItemsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Restaurant"
     }
   ],
   "variable_elements": [],
@@ -1263,7 +1509,8 @@
       "Blocks.CAVE_AIR"
     ],
     "BLOCKS:mod:chair": [
-      "CUSTOM:CrappyChair"
+      "CUSTOM:CrappyChair",
+      "CUSTOM:WoodenStool"
     ],
     "BLOCKS:mod:cash_register": [
       "CUSTOM:CrappyCashRegister"
@@ -1298,7 +1545,9 @@
       "CrappyBallpit",
       "Counter",
       "Mannequin",
-      "GuestSpawnPlate"
+      "GuestSpawnPlate",
+      "Adult",
+      "Child"
     ]
   },
   "language_map": {
@@ -1306,10 +1555,12 @@
       "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "block.tycoonlib.crappy_table": "Table",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
+      "item.tycoonlib.adult_spawn_egg": "Adult Spawn Egg",
       "gui.tycoonlib.restaurant_board_gui.label_room_name": "\u003cRoom Name\u003e",
       "gui.tycoonlib.set_name_gui.set_name": "name",
       "block.tycoonlib.counter": "Counter",
       "gui.tycoonlib.restaurant_board_gui.FloorLevel": "0",
+      "gui.tycoonlib.set_restaurant_blueprint_settings_gui.button_save": "Save",
       "gui.tycoonlib.set_name_gui.label_name": "Name",
       "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_31": "Unlock at level 3",
       "block.tycoonlib.crappy_ballpit": "Ballpit",
@@ -1323,15 +1574,22 @@
       "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_3": "Unlock at level 3",
       "entity.tycoonlib.mannequin": "Mannequin",
       "gui.tycoonlib.set_name_gui.button_save": "Save",
+      "gui.tycoonlib.set_restaurant_blueprint_settings_gui.label_floor_level": "Floor Level",
       "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_5": "Unlock at level 5",
+      "entity.tycoonlib.child": "Child",
       "block.tycoonlib.crappy_arcade": "Arcade",
+      "gui.tycoonlib.set_settings_gui.employees_only": "Employees Only",
+      "item.tycoonlib.child_spawn_egg": "Child Spawn Egg",
       "block.tycoonlib.crappy_open_sign": "Open Sign",
       "gui.tycoonlib.restaurant_board_gui.label_level": "Level: --",
+      "gui.tycoonlib.set_settings_gui.button_save": "Save",
+      "entity.tycoonlib.adult": "Adult",
       "gui.tycoonlib.restaurant_board_gui.label_level_1": "Level: 1",
       "block.tycoonlib.crappy_chair": "Chair",
       "gui.tycoonlib.restaurant_board_gui.label_no_rooms": "No Rooms",
       "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_21": "Unlock at level 2",
       "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
+      "gui.tycoonlib.set_restaurant_blueprint_settings_gui.floor_level": "00",
       "block.tycoonlib.restaurant_board": "Restaurant Board",
       "block.tycoonlib.crappy_fridge": "Cooler",
       "entity.tycoonlib.seat_entity": "Seat Entity",
@@ -1379,6 +1637,15 @@
       {
         "name": "Addons",
         "children": []
+      },
+      {
+        "name": "NPC",
+        "children": [
+          {
+            "name": "Adult",
+            "children": []
+          }
+        ]
       }
     ]
   },
