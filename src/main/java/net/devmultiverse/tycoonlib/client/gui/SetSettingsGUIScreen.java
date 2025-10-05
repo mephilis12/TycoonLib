@@ -6,9 +6,11 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.devmultiverse.tycoonlib.world.inventory.SetSettingsGUIMenu;
 import net.devmultiverse.tycoonlib.network.SetSettingsGUIButtonMessage;
@@ -23,6 +25,7 @@ public class SetSettingsGUIScreen extends AbstractContainerScreen<SetSettingsGUI
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	EditBox room_type;
 	Checkbox employees_only;
 	Button button_save;
 
@@ -43,6 +46,7 @@ public class SetSettingsGUIScreen extends AbstractContainerScreen<SetSettingsGUI
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		room_type.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
@@ -61,16 +65,55 @@ public class SetSettingsGUIScreen extends AbstractContainerScreen<SetSettingsGUI
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+		if (room_type.isFocused())
+			return room_type.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
+	public void containerTick() {
+		super.containerTick();
+		room_type.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String room_typeValue = room_type.getValue();
+		super.resize(minecraft, width, height);
+		room_type.setValue(room_typeValue);
+	}
+
+	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.tycoonlib.set_settings_gui.label_room"), 7, 29, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
+		room_type = new EditBox(this.font, this.leftPos + 7, this.topPos + 41, 118, 18, Component.translatable("gui.tycoonlib.set_settings_gui.room_type")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.tycoonlib.set_settings_gui.room_type").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.tycoonlib.set_settings_gui.room_type").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		room_type.setSuggestion(Component.translatable("gui.tycoonlib.set_settings_gui.room_type").getString());
+		room_type.setMaxLength(32767);
+		guistate.put("text:room_type", room_type);
+		this.addWidget(this.room_type);
 		button_save = Button.builder(Component.translatable("gui.tycoonlib.set_settings_gui.button_save"), e -> {
 			if (true) {
 				TycoonlibMod.PACKET_HANDLER.sendToServer(new SetSettingsGUIButtonMessage(0, x, y, z));

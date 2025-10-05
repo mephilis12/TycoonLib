@@ -14,8 +14,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
+import net.devmultiverse.tycoonlib.procedures.RoomBlueprintFindDataProcedure;
 import net.devmultiverse.tycoonlib.procedures.RestaurantBlueprintRightclickedProcedure;
-import net.devmultiverse.tycoonlib.procedures.RestaurantBlueprintFindDataProcedure;
 import net.devmultiverse.tycoonlib.procedures.BlueprintTooltipProcedure;
 
 import java.util.List;
@@ -47,7 +47,7 @@ public class RestaurantBlueprintItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		RestaurantBlueprintFindDataProcedure.execute(context.getClickedPos().getX(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
+		RoomBlueprintFindDataProcedure.execute(context.getClickedPos().getX(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
 		return InteractionResult.SUCCESS;
 	}
 }

@@ -1,0 +1,7 @@
+
+[Restaurant]
+	#In difficulty 1 there are no disturbances in your restaurant. 
+	#In difficulty 2 there are rodents and a health inspector. 
+	#In difficulty 3 there are sometimes a killer that will put on any mascot suit and kill the children.
+	difficulty = 2.0
+

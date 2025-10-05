@@ -41,7 +41,7 @@
       "name": "RestaurantBlueprintRightclicked"
     },
     "onRightClickedOnBlock": {
-      "name": "RestaurantBlueprintFindData"
+      "name": "RoomBlueprintFindData"
     },
     "enableRanged": false,
     "shootConstantly": false,

@@ -32,6 +32,7 @@
   "gui.tycoonlib.set_settings_gui.button_save": "Save",
   "entity.tycoonlib.adult": "Adult",
   "gui.tycoonlib.restaurant_board_gui.label_level_1": "Level: 1",
+  "gui.tycoonlib.set_settings_gui.label_room": "Room Type",
   "block.tycoonlib.crappy_chair": "Chair",
   "gui.tycoonlib.restaurant_board_gui.label_no_rooms": "No Rooms",
   "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_21": "Unlock at level 2",
@@ -39,6 +40,7 @@
   "gui.tycoonlib.set_restaurant_blueprint_settings_gui.floor_level": "00",
   "block.tycoonlib.restaurant_board": "Restaurant Board",
   "block.tycoonlib.crappy_fridge": "Cooler",
+  "gui.tycoonlib.set_settings_gui.room_type": "Room",
   "entity.tycoonlib.seat_entity": "Seat Entity",
   "block.tycoonlib.wooden_stool": "Wooden Stool",
   "item.tycoonlib.restaurant_board_hover": "Restaurant Board Hover"

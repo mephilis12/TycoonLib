@@ -337,6 +337,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:piglin": "2025-10-04 21:01:18 -0500",
       "minecraft:zombie": "2025-09-15 20:17:38 -0500"
     },
     "done": false

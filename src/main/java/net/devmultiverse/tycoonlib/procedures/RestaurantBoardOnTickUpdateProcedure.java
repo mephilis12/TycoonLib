@@ -818,6 +818,6 @@ public class RestaurantBoardOnTickUpdateProcedure {
 				}
 			}
 		}
-		RestaurantItemsProcedure.execute();
+		RestaurantItemsProcedure.execute(world, x, y, z);
 	}
 }

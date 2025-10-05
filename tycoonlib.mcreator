@@ -267,7 +267,7 @@
           "src/main/resources/assets/tycoonlib/models/item/restaurant_board.json"
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "TycoonLibTab",
@@ -278,37 +278,6 @@
       "metadata": {
         "files": []
       }
-    },
-    {
-      "name": "RestaurantBlueprintFindData",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "restaurant_blueprint_find_data",
-      "metadata": {
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantBlueprintFindDataProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Restaurant"
     },
     {
       "name": "RestaurantBlueprint",
@@ -322,7 +291,7 @@
           "src/main/resources/assets/tycoonlib/models/item/restaurant_blueprint.json"
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "RestaurantBoardGUI",
@@ -337,7 +306,7 @@
           "src/main/java/net/devmultiverse/tycoonlib/network/RestaurantBoardGUIButtonMessage.java"
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantBoardOnTickUpdate",
@@ -368,7 +337,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RoomBlueprint",
@@ -382,7 +351,7 @@
           "src/main/resources/assets/tycoonlib/models/item/room_blueprint.json"
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "RoomBlueprintFindData",
@@ -413,7 +382,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "BlueprintTooltip",
@@ -433,7 +402,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "RestaurantBoardStates",
@@ -450,7 +419,7 @@
           "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_1.json"
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "MannequinOnInitialEntitySpawn",
@@ -519,7 +488,7 @@
           "src/main/java/net/devmultiverse/tycoonlib/network/SetNameGUIButtonMessage.java"
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "SaveNameButton",
@@ -542,7 +511,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "RestaurantBlueprintRightclicked",
@@ -581,7 +550,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "RestaurantTitle",
@@ -601,7 +570,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantLevel2Check",
@@ -633,7 +602,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantLevel3Check",
@@ -665,7 +634,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantLevel4Check",
@@ -697,7 +666,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantLevel5Check",
@@ -729,7 +698,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "GetLevel",
@@ -749,20 +718,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
-    },
-    {
-      "name": "Blueprint",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blueprint",
-      "metadata": {
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/command/BlueprintCommand.java"
-        ]
-      },
-      "path": "~/Commands"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "SetSettingsGUI",
@@ -777,7 +733,7 @@
           "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetSettingsGUIMenu.java"
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "RestaurantBoardHover",
@@ -791,7 +747,7 @@
           "src/main/resources/assets/tycoonlib/models/item/restaurant_board_hover.json"
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantLevel6Check",
@@ -823,7 +779,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantLevel1",
@@ -855,7 +811,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "NextPage",
@@ -886,7 +842,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "PageTitle",
@@ -918,7 +874,7 @@
         ],
         "return_type": "string"
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "BackPage",
@@ -949,7 +905,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "KillHovers",
@@ -972,7 +928,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "PickupHovers",
@@ -991,7 +947,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "SeatEntityTick",
@@ -1107,7 +1063,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "GuestSpawnPlate",
@@ -1124,7 +1080,7 @@
           "src/main/resources/assets/tycoonlib/blockstates/guest_spawn_plate.json"
         ]
       },
-      "path": "~/Restaurant/Guest Spawn Plate"
+      "path": "~/Block/Restaurant/Guest Spawn Plate"
     },
     {
       "name": "GuestSpawnPlateBS",
@@ -1137,7 +1093,7 @@
           "src/main/resources/assets/tycoonlib/models/block/guest_spawn_plate_bs_blockstate_0.json"
         ]
       },
-      "path": "~/Restaurant/Guest Spawn Plate"
+      "path": "~/Block/Restaurant/Guest Spawn Plate"
     },
     {
       "name": "WrenchOnClickGuestSpawnPlate",
@@ -1228,7 +1184,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "GetStar",
@@ -1248,7 +1204,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "SetRestaurantBlueprintSettingsGUI",
@@ -1263,7 +1219,7 @@
           "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetRestaurantBlueprintSettingsGUIScreen.java"
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "SaveRBSettingsButton",
@@ -1286,7 +1242,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "SetRestaurantBlueprintSettingsGUIThisGUIIsOpened",
@@ -1309,7 +1265,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "AddBlueprintLevel",
@@ -1421,7 +1377,7 @@
           }
         ]
       },
-      "path": "~/Restaurant/Blueprints"
+      "path": "~/Block/Restaurant/Blueprints"
     },
     {
       "name": "PageEmployeesOnly",
@@ -1453,7 +1409,7 @@
           }
         ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
     },
     {
       "name": "RestaurantItems",
@@ -1465,15 +1421,175 @@
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/procedures/RestaurantItemsProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
-      "path": "~/Restaurant"
+      "path": "~/Block/Restaurant"
+    },
+    {
+      "name": "ForceRestirantDifficulty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "force_restirant_difficulty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/ForceRestirantDifficultyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "TycoolLibCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tycool_lib_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/command/TycoolLibCommandCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "ForceRestirantDifficultyActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "force_restirant_difficulty_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/ForceRestirantDifficultyActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "ItemRList",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_r_list",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/ItemRListProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "index",
+            "type": "number"
+          },
+          {
+            "name": "listX",
+            "type": "number"
+          },
+          {
+            "name": "listY",
+            "type": "number"
+          },
+          {
+            "name": "listZ",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Block/Restaurant"
+    },
+    {
+      "name": "SetBlueprintKitchen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blueprint_kitchen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetBlueprintKitchenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SetBlueprintEmpty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blueprint_empty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/SetBlueprintEmptyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:mod:billboard": [],
     "BLOCKS:mod:table": [
       "CUSTOM:CrappyTable"
     ],
@@ -1518,6 +1634,9 @@
     "BLOCKS:mod:counter": [
       "CUSTOM:Counter"
     ],
+    "BLOCKS:mod:risk1": [
+      "CUSTOM:CrappyBallpit"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:RestaurantBoard",
       "~CUSTOM:WoodenStool"
@@ -1525,8 +1644,30 @@
     "BLOCKS:mod:arcade": [
       "CUSTOM:CrappyArcade"
     ],
+    "BLOCKS:mod:safety1": [
+      "Blocks.CAKE"
+    ],
     "ITEMS:mod:wrench": [
       "Items.STICK"
+    ],
+    "BLOCKS:mod:risk9": [
+      "Blocks.LAVA",
+      "Blocks.FLOWING_LAVA"
+    ],
+    "BLOCKS:mod:risk7": [
+      "Blocks.SKULL#2",
+      "Blocks.SKULL#3",
+      "Blocks.SKULL#4",
+      "Blocks.SKULL#5",
+      "Blocks.PIGLIN_HEAD",
+      "Blocks.ZOMBIE_WALL_HEAD",
+      "Blocks.PLAYER_WALL_HEAD",
+      "Blocks.CREEPER_WALL_HEAD",
+      "Blocks.DRAGON_WALL_HEAD",
+      "Blocks.PIGLIN_WALL_HEAD"
+    ],
+    "BLOCKS:mod:risk6": [
+      "Blocks.POINTED_DRIPSTONE"
     ]
   },
   "tab_element_order": {
@@ -1585,6 +1726,7 @@
       "gui.tycoonlib.set_settings_gui.button_save": "Save",
       "entity.tycoonlib.adult": "Adult",
       "gui.tycoonlib.restaurant_board_gui.label_level_1": "Level: 1",
+      "gui.tycoonlib.set_settings_gui.label_room": "Room Type",
       "block.tycoonlib.crappy_chair": "Chair",
       "gui.tycoonlib.restaurant_board_gui.label_no_rooms": "No Rooms",
       "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_21": "Unlock at level 2",
@@ -1592,6 +1734,7 @@
       "gui.tycoonlib.set_restaurant_blueprint_settings_gui.floor_level": "00",
       "block.tycoonlib.restaurant_board": "Restaurant Board",
       "block.tycoonlib.crappy_fridge": "Cooler",
+      "gui.tycoonlib.set_settings_gui.room_type": "Room",
       "entity.tycoonlib.seat_entity": "Seat Entity",
       "block.tycoonlib.wooden_stool": "Wooden Stool",
       "item.tycoonlib.restaurant_board_hover": "Restaurant Board Hover"
@@ -1606,19 +1749,19 @@
           {
             "name": "Procedures",
             "children": []
-          }
-        ]
-      },
-      {
-        "name": "Restaurant",
-        "children": [
-          {
-            "name": "Blueprints",
-            "children": []
           },
           {
-            "name": "Guest Spawn Plate",
-            "children": []
+            "name": "Restaurant",
+            "children": [
+              {
+                "name": "Blueprints",
+                "children": []
+              },
+              {
+                "name": "Guest Spawn Plate",
+                "children": []
+              }
+            ]
           }
         ]
       },
