@@ -45,7 +45,14 @@ public class PageEmployeesOnlyProcedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "page") + 1))).getOrCreateTag().getBoolean("employees_only")) {
-				return "Max Guests: 00";
+				return "Max Guests: " + (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "maxGuests"));
 			}
 		}
 		return "Max Guests: --";

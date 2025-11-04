@@ -36,7 +36,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.devmultiverse.tycoonlib.procedures.AdultLockerProcedure;
+import net.devmultiverse.tycoonlib.procedures.AdultOnEntityTickUpdateProcedure;
 import net.devmultiverse.tycoonlib.init.TycoonlibModEntities;
 
 public class AdultEntity extends PathfinderMob implements GeoEntity {
@@ -45,6 +45,10 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> DATA_type = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> DATA_animation = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_xBoardPosition = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_yBoardPosition = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_zBoardPosition = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_adult_age = SynchedEntityData.defineId(AdultEntity.class, EntityDataSerializers.INT);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
@@ -71,6 +75,10 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 		this.entityData.define(TEXTURE, "john_yorker");
 		this.entityData.define(DATA_type, "guest");
 		this.entityData.define(DATA_animation, 0);
+		this.entityData.define(DATA_xBoardPosition, 0);
+		this.entityData.define(DATA_yBoardPosition, 0);
+		this.entityData.define(DATA_zBoardPosition, 0);
+		this.entityData.define(DATA_adult_age, 0);
 	}
 
 	public void setTexture(String texture) {
@@ -120,6 +128,10 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 		compound.putString("Texture", this.getTexture());
 		compound.putString("Datatype", this.entityData.get(DATA_type));
 		compound.putInt("Dataanimation", this.entityData.get(DATA_animation));
+		compound.putInt("DataxBoardPosition", this.entityData.get(DATA_xBoardPosition));
+		compound.putInt("DatayBoardPosition", this.entityData.get(DATA_yBoardPosition));
+		compound.putInt("DatazBoardPosition", this.entityData.get(DATA_zBoardPosition));
+		compound.putInt("Dataadult_age", this.entityData.get(DATA_adult_age));
 	}
 
 	@Override
@@ -131,12 +143,20 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 			this.entityData.set(DATA_type, compound.getString("Datatype"));
 		if (compound.contains("Dataanimation"))
 			this.entityData.set(DATA_animation, compound.getInt("Dataanimation"));
+		if (compound.contains("DataxBoardPosition"))
+			this.entityData.set(DATA_xBoardPosition, compound.getInt("DataxBoardPosition"));
+		if (compound.contains("DatayBoardPosition"))
+			this.entityData.set(DATA_yBoardPosition, compound.getInt("DatayBoardPosition"));
+		if (compound.contains("DatazBoardPosition"))
+			this.entityData.set(DATA_zBoardPosition, compound.getInt("DatazBoardPosition"));
+		if (compound.contains("Dataadult_age"))
+			this.entityData.set(DATA_adult_age, compound.getInt("Dataadult_age"));
 	}
 
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		AdultLockerProcedure.execute(this);
+		AdultOnEntityTickUpdateProcedure.execute(this.level(), this);
 		this.refreshDimensions();
 	}
 

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tycoonlib:block/battery_tear_1_top",
+    "up": "tycoonlib:block/battery_tear_1_top",
+    "north": "tycoonlib:block/battery_tear_1_side",
+    "east": "tycoonlib:block/battery_tear_1_side",
+    "south": "tycoonlib:block/battery_tear_1_side",
+    "west": "tycoonlib:block/battery_tear_1_side",
+    "particle": "tycoonlib:block/battery_tear_1_top"
+  },
+  "render_type": "solid"
+}

@@ -21,7 +21,12 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.RESTAURANT_BOARD.get().asItem());
 				tabData.accept(TycoonlibModItems.RESTAURANT_BLUEPRINT.get());
 				tabData.accept(TycoonlibModItems.ROOM_BLUEPRINT.get());
+				tabData.accept(TycoonlibModBlocks.BATTERY_TEAR_1.get().asItem());
+				tabData.accept(TycoonlibModBlocks.BATTERY_TEAR_2.get().asItem());
+				tabData.accept(TycoonlibModBlocks.CRAPPY_BALLPIT.get().asItem());
+				tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
 				tabData.accept(TycoonlibModBlocks.WOODEN_STOOL.get().asItem());
+				tabData.accept(TycoonlibModBlocks.GUEST_SPAWN_PLATE.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_OPEN_SIGN.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_CASH_REGISTER.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_CAROUSEL.get().asItem());
@@ -29,10 +34,7 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.CRAPPY_CHAIR.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_ARCADE.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_TABLE.get().asItem());
-				tabData.accept(TycoonlibModBlocks.CRAPPY_BALLPIT.get().asItem());
-				tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
 				tabData.accept(TycoonlibModItems.MANNEQUIN_SPAWN_EGG.get());
-				tabData.accept(TycoonlibModBlocks.GUEST_SPAWN_PLATE.get().asItem());
 				tabData.accept(TycoonlibModItems.ADULT_SPAWN_EGG.get());
 				tabData.accept(TycoonlibModItems.CHILD_SPAWN_EGG.get());
 			}).build());

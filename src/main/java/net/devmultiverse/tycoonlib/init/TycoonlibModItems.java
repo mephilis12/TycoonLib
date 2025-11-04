@@ -39,6 +39,8 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> GUEST_SPAWN_PLATE = block(TycoonlibModBlocks.GUEST_SPAWN_PLATE);
 	public static final RegistryObject<Item> ADULT_SPAWN_EGG = REGISTRY.register("adult_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.ADULT, -13421773, -13395457, new Item.Properties()));
 	public static final RegistryObject<Item> CHILD_SPAWN_EGG = REGISTRY.register("child_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.CHILD, -13395457, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> BATTERY_TEAR_1 = block(TycoonlibModBlocks.BATTERY_TEAR_1);
+	public static final RegistryObject<Item> BATTERY_TEAR_2 = block(TycoonlibModBlocks.BATTERY_TEAR_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -22,6 +22,8 @@ import net.devmultiverse.tycoonlib.block.CrappyCarouselBlock;
 import net.devmultiverse.tycoonlib.block.CrappyBallpitBlock;
 import net.devmultiverse.tycoonlib.block.CrappyArcadeBlock;
 import net.devmultiverse.tycoonlib.block.CounterBlock;
+import net.devmultiverse.tycoonlib.block.BatteryTear2Block;
+import net.devmultiverse.tycoonlib.block.BatteryTear1Block;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 public class TycoonlibModBlocks {
@@ -38,6 +40,8 @@ public class TycoonlibModBlocks {
 	public static final RegistryObject<Block> WOODEN_STOOL = REGISTRY.register("wooden_stool", () -> new WoodenStoolBlock());
 	public static final RegistryObject<Block> RESTAURANT_BOARD = REGISTRY.register("restaurant_board", () -> new RestaurantBoardBlock());
 	public static final RegistryObject<Block> GUEST_SPAWN_PLATE = REGISTRY.register("guest_spawn_plate", () -> new GuestSpawnPlateBlock());
+	public static final RegistryObject<Block> BATTERY_TEAR_1 = REGISTRY.register("battery_tear_1", () -> new BatteryTear1Block());
+	public static final RegistryObject<Block> BATTERY_TEAR_2 = REGISTRY.register("battery_tear_2", () -> new BatteryTear2Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

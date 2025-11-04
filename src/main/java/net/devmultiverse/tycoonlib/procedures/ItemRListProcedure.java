@@ -11,8 +11,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.devmultiverse.tycoonlib.TycoonlibMod;
-
 import java.util.concurrent.atomic.AtomicReference;
 
 public class ItemRListProcedure {
@@ -43,7 +41,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Chair");
 			}
 			if ((world.getBlockState(BlockPos.containing(listX, listY, listZ))).is(BlockTags.create(new ResourceLocation("tycoonlib:cash_register")))) {
 				if (!world.isClientSide()) {
@@ -62,7 +59,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Cash Register");
 			}
 			if ((world.getBlockState(BlockPos.containing(listX, listY, listZ))).is(BlockTags.create(new ResourceLocation("tycoonlib:arcade")))) {
 				if (!world.isClientSide()) {
@@ -81,7 +77,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Arcade");
 			}
 			if ((world.getBlockState(BlockPos.containing(listX, listY, listZ))).is(BlockTags.create(new ResourceLocation("tycoonlib:ballpit")))) {
 				if (!world.isClientSide()) {
@@ -100,7 +95,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Ballpit");
 			}
 		}
 		if (("kitchen").equals((new Object() {
@@ -129,7 +123,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Fridge");
 			}
 			if ((world.getBlockState(BlockPos.containing(listX, listY, listZ))).is(BlockTags.create(new ResourceLocation("tycoonlib:oven")))) {
 				if (!world.isClientSide()) {
@@ -148,7 +141,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Oven");
 			}
 			if ((world.getBlockState(BlockPos.containing(listX, listY, listZ))).is(BlockTags.create(new ResourceLocation("tycoonlib:sink")))) {
 				if (!world.isClientSide()) {
@@ -167,7 +159,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Sink");
 			}
 		}
 		for (int atmosphere = (int) 0; atmosphere < (int) 9; atmosphere++) {
@@ -188,7 +179,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Atmosphere " + new java.text.DecimalFormat("0").format(atmosphere + 1));
 			}
 		}
 		for (int safety = (int) 0; safety < (int) 9; safety++) {
@@ -209,7 +199,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Safety " + new java.text.DecimalFormat("0").format(safety + 1));
 			}
 		}
 		for (int entertainment = (int) 0; entertainment < (int) 9; entertainment++) {
@@ -231,7 +220,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Entertainment " + new java.text.DecimalFormat("0").format(entertainment + 1));
 			}
 		}
 		for (int bonus_revenue = (int) 0; bonus_revenue < (int) 9; bonus_revenue++) {
@@ -253,7 +241,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Bonus Revenue " + new java.text.DecimalFormat("0").format(bonus_revenue + 1));
 			}
 		}
 		for (int risk = (int) 0; risk < (int) 9; risk++) {
@@ -274,7 +261,6 @@ public class ItemRListProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				TycoonlibMod.LOGGER.info("Risk " + new java.text.DecimalFormat("0").format(risk + 1));
 			}
 		}
 	}

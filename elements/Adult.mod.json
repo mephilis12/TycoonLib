@@ -24,6 +24,34 @@
         "name": "animation",
         "type": "integer",
         "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "xBoardPosition",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "yBoardPosition",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "zBoardPosition",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "adult_age",
+        "type": "integer",
+        "value": 0
       }
     ],
     "modelWidth": 0.6,
@@ -120,7 +148,7 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "AdultLocker"
+      "name": "AdultOnEntityTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",

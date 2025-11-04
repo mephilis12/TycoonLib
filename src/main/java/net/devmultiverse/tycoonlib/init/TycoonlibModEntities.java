@@ -36,7 +36,7 @@ public class TycoonlibModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ChildEntity>> CHILD = register("child",
-			EntityType.Builder.<ChildEntity>of(ChildEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChildEntity::new)
+			EntityType.Builder.<ChildEntity>of(ChildEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(ChildEntity::new)
 
 					.sized(0.6f, 1.8f));
 

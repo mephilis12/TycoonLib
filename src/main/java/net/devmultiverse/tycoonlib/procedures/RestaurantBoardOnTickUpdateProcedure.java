@@ -819,5 +819,6 @@ public class RestaurantBoardOnTickUpdateProcedure {
 			}
 		}
 		RestaurantItemsProcedure.execute(world, x, y, z);
+		FullRestaurantItemsProcedure.execute(world, x, y, z);
 	}
 }
