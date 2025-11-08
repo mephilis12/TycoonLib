@@ -15,8 +15,12 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
+import net.minecraft.world.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -97,9 +101,12 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(3, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.DEBUG_STICK), false));
+		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
+		this.goalSelector.addGoal(3, new OpenDoorGoal(this, true));
+		this.goalSelector.addGoal(4, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
 	}
 
 	@Override
@@ -156,7 +163,7 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		AdultOnEntityTickUpdateProcedure.execute(this.level(), this);
+		AdultOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
@@ -180,17 +187,12 @@ public class AdultEntity extends PathfinderMob implements GeoEntity {
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 128);
 		return builder;
 	}
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
-
-			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.walk"));
-			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.idle"));
 		}
 		return PlayState.STOP;

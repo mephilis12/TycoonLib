@@ -9,6 +9,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -210,46 +212,11 @@ public class FullRestaurantItemsProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, BlockPos.containing(x, y, z), "Adults") < Math.floor(maxGuests / 2)) {
-								if (world instanceof ServerLevel _serverLevel) {
-									Entity entityinstance = TycoonlibModEntities.ADULT.get().create(_serverLevel, null, null, BlockPos.containing(startPostionX + positionX, y - 5 + positionY, startPostionZ + positionZ), MobSpawnType.MOB_SUMMONED,
-											false, false);
-									if (entityinstance != null) {
-										entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-										entityinstance.getPersistentData().putDouble("xBoardPosition", x);
-										entityinstance.getPersistentData().putDouble("yBoardPosition", y);
-										entityinstance.getPersistentData().putDouble("zBoardPosition", z);
-										_serverLevel.addFreshEntity(entityinstance);
-									}
-								}
-								if (!world.isClientSide()) {
-									BlockPos _bp = BlockPos.containing(x, y, z);
-									BlockEntity _blockEntity = world.getBlockEntity(_bp);
-									BlockState _bs = world.getBlockState(_bp);
-									if (_blockEntity != null)
-										_blockEntity.getPersistentData().putDouble("Adults", (new Object() {
-											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-												BlockEntity blockEntity = world.getBlockEntity(pos);
-												if (blockEntity != null)
-													return blockEntity.getPersistentData().getDouble(tag);
-												return -1;
-											}
-										}.getValue(world, BlockPos.containing(x, y, z), "Adults") + 1));
-									if (world instanceof Level _level)
-										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-								}
-							}
-							if (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
 							}.getValue(world, BlockPos.containing(x, y, z), "Childen") < Math.floor(maxGuests / 2)) {
 								if (world instanceof ServerLevel _serverLevel) {
-									Entity entityinstance = TycoonlibModEntities.CHILD.get().create(_serverLevel, null, null, BlockPos.containing(startPostionX + positionX, y - 5 + positionY, startPostionZ + positionZ), MobSpawnType.MOB_SUMMONED,
-											false, false);
+									Entity entityinstance = TycoonlibModEntities.CHILD.get().create(_serverLevel, null, null,
+											BlockPos.containing(startPostionX + positionX + Mth.nextInt(RandomSource.create(), -1, 1), y - 5 + positionY, startPostionZ + positionZ + Mth.nextInt(RandomSource.create(), -1, 1)),
+											MobSpawnType.MOB_SUMMONED, false, false);
 									if (entityinstance != null) {
 										entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
 										entityinstance.getPersistentData().putDouble("xBoardPosition", x);
@@ -274,6 +241,47 @@ public class FullRestaurantItemsProcedure {
 												return -1;
 											}
 										}.getValue(world, BlockPos.containing(x, y, z), "Childen") + 1));
+									if (world instanceof Level _level)
+										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+								}
+							}
+							if (new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "Adults") < Math.floor(maxGuests / 2)) {
+								if (world instanceof ServerLevel _serverLevel) {
+									Entity entityinstance = TycoonlibModEntities.ADULT.get().create(_serverLevel, null, null,
+											BlockPos.containing(startPostionX + positionX + Mth.nextInt(RandomSource.create(), -1, 1), y - 5 + positionY, startPostionZ + positionZ + Mth.nextInt(RandomSource.create(), -1, 1)),
+											MobSpawnType.MOB_SUMMONED, false, false);
+									if (entityinstance != null) {
+										entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+										entityinstance.getPersistentData().putString("CurrentTask", "FindChair");
+										entityinstance.getPersistentData().putDouble("xBoardPosition", x);
+										entityinstance.getPersistentData().putDouble("yBoardPosition", y);
+										entityinstance.getPersistentData().putDouble("zBoardPosition", z);
+										entityinstance.getPersistentData().putDouble("xSpawn", (startPostionX + positionX));
+										entityinstance.getPersistentData().putDouble("ySpawn", (y - 5 + positionY));
+										entityinstance.getPersistentData().putDouble("zSpawn", (startPostionZ + positionZ));
+										_serverLevel.addFreshEntity(entityinstance);
+									}
+								}
+								if (!world.isClientSide()) {
+									BlockPos _bp = BlockPos.containing(x, y, z);
+									BlockEntity _blockEntity = world.getBlockEntity(_bp);
+									BlockState _bs = world.getBlockState(_bp);
+									if (_blockEntity != null)
+										_blockEntity.getPersistentData().putDouble("Adults", (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(x, y, z), "Adults") + 1));
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}

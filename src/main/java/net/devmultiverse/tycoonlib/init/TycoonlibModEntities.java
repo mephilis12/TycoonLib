@@ -32,7 +32,7 @@ public class TycoonlibModEntities {
 	public static final RegistryObject<EntityType<SeatEntityEntity>> SEAT_ENTITY = register("seat_entity", EntityType.Builder.<SeatEntityEntity>of(SeatEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(SeatEntityEntity::new).fireImmune().sized(0.25f, 0.25f));
 	public static final RegistryObject<EntityType<AdultEntity>> ADULT = register("adult",
-			EntityType.Builder.<AdultEntity>of(AdultEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdultEntity::new)
+			EntityType.Builder.<AdultEntity>of(AdultEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(AdultEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ChildEntity>> CHILD = register("child",

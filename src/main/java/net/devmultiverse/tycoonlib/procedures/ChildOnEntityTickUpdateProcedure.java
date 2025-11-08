@@ -15,8 +15,8 @@ public class ChildOnEntityTickUpdateProcedure {
 		if (!((world.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("xBoardPosition"), entity.getPersistentData().getDouble("yBoardPosition"), entity.getPersistentData().getDouble("zBoardPosition"))))
 				.getBlock() == TycoonlibModBlocks.RESTAURANT_BOARD.get()) && entity.getPersistentData().getDouble("child_age") > 10) {
 			if (entity instanceof Mob _entity)
-				_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("xSpawn")), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn")), 1);
-			if (1 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("xSpawn")), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn"))))) {
+				_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("xSpawn") + 0.5), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn") + 0.5), 1);
+			if (1.25 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("xSpawn") + 0.5), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn") + 0.5)))) {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}

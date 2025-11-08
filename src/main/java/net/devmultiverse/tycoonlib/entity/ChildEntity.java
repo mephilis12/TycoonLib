@@ -88,7 +88,7 @@ public class ChildEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.COOKIE), false));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.DEBUG_STICK), false));
 		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
 		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(4, new FloatGoal(this));
