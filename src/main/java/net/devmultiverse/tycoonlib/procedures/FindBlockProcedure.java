@@ -16,7 +16,7 @@ public class FindBlockProcedure {
 		double OutY = 0;
 		double OutZ = 0;
 		boolean Found = false;
-		FindRange = 5;
+		FindRange = 20;
 		FindRangeHight = 2;
 		for (int checkY = (int) 0; checkY < (int) (1 + FindRangeHight * 2); checkY++) {
 			for (int checkX = (int) 0; checkX < (int) (1 + FindRange * 2); checkX++) {

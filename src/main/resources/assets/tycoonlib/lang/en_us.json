@@ -44,6 +44,7 @@
   "gui.tycoonlib.set_restaurant_blueprint_settings_gui.label_floor_level": "Floor Level",
   "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_5": "Unlock at level 5",
   "entity.tycoonlib.child": "Child",
+  "item.tycoonlib.spawn_adult_guest": "Spawn Adult Guest",
   "block.tycoonlib.crappy_open_sign": "Open Sign",
   "gui.tycoonlib.maintenance_gui.button_break": "Break",
   "gui.tycoonlib.set_settings_gui.button_save": "Save",

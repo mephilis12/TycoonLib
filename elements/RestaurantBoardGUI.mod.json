@@ -559,23 +559,6 @@
           "y": 33,
           "locked": false
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_page_employees_only",
-          "text": {
-            "fixedValue": "",
-            "name": "PageEmployeesOnly"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "x": 219,
-          "y": 41,
-          "locked": false
-        }
       }
     ],
     "gridSettings": {

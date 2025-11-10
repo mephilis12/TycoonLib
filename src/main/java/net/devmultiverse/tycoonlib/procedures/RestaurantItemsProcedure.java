@@ -37,10 +37,7 @@ public class RestaurantItemsProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		chairsInRestrant = 0;
-		validRoomCounter = 0;
-		while (validRoomCounter < 12) {
-			chairs = 0;
+		for (int rooms = (int) 0; rooms < (int) 12; rooms++) {
 			if (TycoonlibModItems.ROOM_BLUEPRINT.get() == (new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -49,9 +46,11 @@ public class RestaurantItemsProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getItem()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getItem()) {
 				blockScaleX = 0;
 				blockScaleZ = 0;
+				startPostionX = 0;
+				startPostionZ = 0;
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -60,7 +59,7 @@ public class RestaurantItemsProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-x") > (new Object() {
+				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-x") > (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
@@ -68,7 +67,7 @@ public class RestaurantItemsProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-x")) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-x")) {
 					blockScaleX = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -77,7 +76,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-x") - (new Object() {
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-x") - (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 							BlockEntity _ent = world.getBlockEntity(pos);
@@ -85,7 +84,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-x");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-x");
 					startPostionX = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -94,7 +93,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-x");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-x");
 				} else {
 					blockScaleX = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -104,7 +103,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-x") - (new Object() {
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-x") - (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 							BlockEntity _ent = world.getBlockEntity(pos);
@@ -112,7 +111,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-x");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-x");
 					startPostionX = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -121,7 +120,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-x");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-x");
 				}
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -131,7 +130,7 @@ public class RestaurantItemsProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-z") > (new Object() {
+				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-z") > (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
@@ -139,7 +138,7 @@ public class RestaurantItemsProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-z")) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-z")) {
 					blockScaleZ = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -148,7 +147,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-z") - (new Object() {
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-z") - (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 							BlockEntity _ent = world.getBlockEntity(pos);
@@ -156,7 +155,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-z");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-z");
 					startPostionZ = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -165,7 +164,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-z");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-z");
 				} else {
 					blockScaleZ = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -175,7 +174,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-2-z") - (new Object() {
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-2-z") - (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 							BlockEntity _ent = world.getBlockEntity(pos);
@@ -183,7 +182,7 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-z");
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-z");
 					startPostionZ = (new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -192,23 +191,16 @@ public class RestaurantItemsProcedure {
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (validRoomCounter + 1))).getOrCreateTag().getDouble("block-1-z");
-				}
-				positionX = 0;
-				while (positionX < blockScaleX + 1) {
-					positionY = 0;
-					while (positionY < 10) {
-						positionZ = 0;
-						while (positionZ < blockScaleZ + 1) {
-							ItemRListProcedure.execute(world, x, y, z, validRoomCounter, startPostionX + positionX, y - 5 + positionY, startPostionZ + positionZ);
-							positionZ = positionZ + 1;
+					}.getItemStack(world, BlockPos.containing(x, y, z), (int) (rooms + 1))).getOrCreateTag().getDouble("block-1-z");
+					for (int listX = (int) 0; listX < (int) (blockScaleX + 1); listX++) {
+						for (int listY = (int) 0; listY < (int) 10; listY++) {
+							for (int listZ = (int) 0; listZ < (int) (blockScaleZ + 1); listZ++) {
+								ItemRListProcedure.execute(world, x, y, z, rooms, startPostionX + listX, y - 5 + listY, startPostionZ + listZ);
+							}
 						}
-						positionY = positionY + 1;
 					}
-					positionX = positionX + 1;
 				}
 			}
-			validRoomCounter = validRoomCounter + 1;
 		}
 	}
 }

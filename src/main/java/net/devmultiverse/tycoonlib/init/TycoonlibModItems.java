@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.devmultiverse.tycoonlib.item.SpawnAdultGuestItem;
 import net.devmultiverse.tycoonlib.item.RoomBlueprintItem;
 import net.devmultiverse.tycoonlib.item.RestaurantBoardHoverItem;
 import net.devmultiverse.tycoonlib.item.RestaurantBlueprintItem;
@@ -41,6 +42,7 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> CHILD_SPAWN_EGG = REGISTRY.register("child_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.CHILD, -13395457, -13421773, new Item.Properties()));
 	public static final RegistryObject<Item> BATTERY_TEAR_1 = block(TycoonlibModBlocks.BATTERY_TEAR_1);
 	public static final RegistryObject<Item> BATTERY_TEAR_2 = block(TycoonlibModBlocks.BATTERY_TEAR_2);
+	public static final RegistryObject<Item> SPAWN_ADULT_GUEST = REGISTRY.register("spawn_adult_guest", () -> new SpawnAdultGuestItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
