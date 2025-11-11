@@ -35,8 +35,6 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.CRAPPY_ARCADE.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_TABLE.get().asItem());
 				tabData.accept(TycoonlibModItems.MANNEQUIN_SPAWN_EGG.get());
-				tabData.accept(TycoonlibModItems.ADULT_SPAWN_EGG.get());
-				tabData.accept(TycoonlibModItems.CHILD_SPAWN_EGG.get());
-				tabData.accept(TycoonlibModItems.SPAWN_ADULT_GUEST.get());
+				tabData.accept(TycoonlibModItems.SPAWN_NPC.get());
 			}).build());
 }

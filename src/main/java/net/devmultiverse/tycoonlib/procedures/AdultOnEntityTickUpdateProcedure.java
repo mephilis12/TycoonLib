@@ -13,7 +13,7 @@ public class AdultOnEntityTickUpdateProcedure {
 		if (entity == null)
 			return;
 		AdultTaskManagerProcedure.execute(world, x, y, z, entity);
-		AdultStateManagerProcedure.execute(entity);
+		AdultStateManagerProcedure.execute(world, entity);
 		AdultLockerProcedure.execute(entity);
 		if (!entity.getPersistentData().getBoolean("CantLeave")) {
 			if (!((world.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("xBoardPosition"), entity.getPersistentData().getDouble("yBoardPosition"), entity.getPersistentData().getDouble("zBoardPosition"))))
@@ -26,9 +26,12 @@ public class AdultOnEntityTickUpdateProcedure {
 				if (1.25 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("xSpawn") + 0.5), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn") + 0.5)))) {
 					if (!entity.level().isClientSide())
 						entity.discard();
+				} else if (500 < entity.getPersistentData().getDouble("adult_age")) {
+					if (!entity.level().isClientSide())
+						entity.discard();
 				}
+				entity.getPersistentData().putDouble("adult_age", (entity.getPersistentData().getDouble("adult_age") + 1));
 			}
-			entity.getPersistentData().putDouble("adult_age", (entity.getPersistentData().getDouble("adult_age") + 1));
 		}
 	}
 }

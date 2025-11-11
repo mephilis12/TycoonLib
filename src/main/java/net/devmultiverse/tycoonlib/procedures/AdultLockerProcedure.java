@@ -8,6 +8,9 @@ public class AdultLockerProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof AdultEntity) {
+			((AdultEntity) entity).setAnimation("empty");
+		}
 		if (0 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
 				((AdultEntity) entity).setAnimation("animation.model.idle");

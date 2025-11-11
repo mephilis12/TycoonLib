@@ -33,7 +33,13 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "name": "CUSTOM:claimed",
+        "type": "logic",
+        "value": false
+      }
+    ],
     "name": "Arcade",
     "specialInformation": {
       "fixedValue": []

@@ -12,6 +12,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.devmultiverse.tycoonlib.world.inventory.StaffManagerNewspaperGUIMenu;
+import net.devmultiverse.tycoonlib.world.inventory.SpawnNPCGUIMenu;
 import net.devmultiverse.tycoonlib.world.inventory.SetSettingsGUIMenu;
 import net.devmultiverse.tycoonlib.world.inventory.SetRestaurantBlueprintSettingsGUIMenu;
 import net.devmultiverse.tycoonlib.world.inventory.SetNameGUIMenu;
@@ -30,4 +31,5 @@ public class TycoonlibModMenus {
 	public static final RegistryObject<MenuType<NewspaperGUIMenu>> NEWSPAPER_GUI = REGISTRY.register("newspaper_gui", () -> IForgeMenuType.create(NewspaperGUIMenu::new));
 	public static final RegistryObject<MenuType<StaffManagerNewspaperGUIMenu>> STAFF_MANAGER_NEWSPAPER_GUI = REGISTRY.register("staff_manager_newspaper_gui", () -> IForgeMenuType.create(StaffManagerNewspaperGUIMenu::new));
 	public static final RegistryObject<MenuType<MaintenanceGUIMenu>> MAINTENANCE_GUI = REGISTRY.register("maintenance_gui", () -> IForgeMenuType.create(MaintenanceGUIMenu::new));
+	public static final RegistryObject<MenuType<SpawnNPCGUIMenu>> SPAWN_NPCGUI = REGISTRY.register("spawn_npcgui", () -> IForgeMenuType.create(SpawnNPCGUIMenu::new));
 }

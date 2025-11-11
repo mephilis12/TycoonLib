@@ -22,6 +22,11 @@ public class AdultTaskManagerProcedure {
 						_entity.getNavigation().moveTo(ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("X") + "X".length(), (int) GetBlockData.lastIndexOf("X"))),
 								ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Y") + "Y".length(), (int) GetBlockData.lastIndexOf("Y"))),
 								ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Z") + "Z".length(), (int) GetBlockData.lastIndexOf("Z"))), 1);
+					if (2 > new Vec3(x, y, z).distanceTo(new Vec3((ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("X") + "X".length(), (int) GetBlockData.lastIndexOf("X"))) + 0.5),
+							ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Y") + "Y".length(), (int) GetBlockData.lastIndexOf("Y"))),
+							(ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Z") + "Z".length(), (int) GetBlockData.lastIndexOf("Z"))) + 0.5)))) {
+						entity.getPersistentData().putString("CurrentTask", "FindChair");
+					}
 				}
 			}
 		} else if (("FindChair").equals(entity.getPersistentData().getString("CurrentTask"))) {
@@ -65,10 +70,10 @@ public class AdultTaskManagerProcedure {
 			if (entity.getPersistentData().getBoolean("InChair")) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo((entity.getPersistentData().getDouble("chairPositionX") + 0.5), (entity.getPersistentData().getDouble("chairPositionY") + 0.75), (entity.getPersistentData().getDouble("chairPositionZ") + 0.5));
+					_ent.teleportTo((entity.getPersistentData().getDouble("chairPositionX") + 0.5), (entity.getPersistentData().getDouble("chairPositionY") + 0.625), (entity.getPersistentData().getDouble("chairPositionZ") + 0.5));
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("chairPositionX") + 0.5), (entity.getPersistentData().getDouble("chairPositionY") + 0.75), (entity.getPersistentData().getDouble("chairPositionZ") + 0.5),
-								_ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("chairPositionX") + 0.5), (entity.getPersistentData().getDouble("chairPositionY") + 0.625),
+								(entity.getPersistentData().getDouble("chairPositionZ") + 0.5), _ent.getYRot(), _ent.getXRot());
 				}
 			}
 		}
