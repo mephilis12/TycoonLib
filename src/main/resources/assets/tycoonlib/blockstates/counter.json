@@ -1,10 +1,7 @@
 {
   "variants": {
-    "blockstate=0": {
+    "": {
       "model": "tycoonlib:block/counter"
-    },
-    "blockstate=1": {
-      "model": "tycoonlib:block/guest_spawn_plate_bs_blockstate_0"
     }
   }
 }

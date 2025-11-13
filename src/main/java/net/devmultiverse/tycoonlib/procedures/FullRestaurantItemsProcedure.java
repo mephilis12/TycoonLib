@@ -219,7 +219,7 @@ public class FullRestaurantItemsProcedure {
 											MobSpawnType.MOB_SUMMONED, false, false);
 									if (entityinstance != null) {
 										entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-										entityinstance.getPersistentData().putString("CurrentTask", "FindChair");
+										entityinstance.getPersistentData().putString("CurrentTask", "GetEntryPass");
 										entityinstance.getPersistentData().putDouble("xBoardPosition", x);
 										entityinstance.getPersistentData().putDouble("yBoardPosition", y);
 										entityinstance.getPersistentData().putDouble("zBoardPosition", z);
@@ -260,7 +260,7 @@ public class FullRestaurantItemsProcedure {
 											MobSpawnType.MOB_SUMMONED, false, false);
 									if (entityinstance != null) {
 										entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-										entityinstance.getPersistentData().putString("CurrentTask", "FindChair");
+										entityinstance.getPersistentData().putString("CurrentTask", "GetEntryPass");
 										entityinstance.getPersistentData().putDouble("xBoardPosition", x);
 										entityinstance.getPersistentData().putDouble("yBoardPosition", y);
 										entityinstance.getPersistentData().putDouble("zBoardPosition", z);

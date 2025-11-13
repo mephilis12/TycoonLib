@@ -29,6 +29,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -39,7 +40,9 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.devmultiverse.tycoonlib.procedures.LockNormalTasksProcedure;
 import net.devmultiverse.tycoonlib.procedures.ChildOnEntityTickUpdateProcedure;
+import net.devmultiverse.tycoonlib.procedures.ChildEntityDiesProcedure;
 import net.devmultiverse.tycoonlib.init.TycoonlibModEntities;
 
 public class ChildEntity extends PathfinderMob implements GeoEntity {
@@ -90,10 +93,90 @@ public class ChildEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.DEBUG_STICK), false));
-		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
-		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(4, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.DEBUG_STICK), false) {
+			@Override
+			public boolean canUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canUse() && LockNormalTasksProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canContinueToUse() && LockNormalTasksProcedure.execute(entity);
+			}
+		});
+		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2) {
+			@Override
+			public boolean canUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canUse() && LockNormalTasksProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canContinueToUse() && LockNormalTasksProcedure.execute(entity);
+			}
+		});
+		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canUse() && LockNormalTasksProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canContinueToUse() && LockNormalTasksProcedure.execute(entity);
+			}
+		});
+		this.goalSelector.addGoal(4, new FloatGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canUse() && LockNormalTasksProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = ChildEntity.this.getX();
+				double y = ChildEntity.this.getY();
+				double z = ChildEntity.this.getZ();
+				Entity entity = ChildEntity.this;
+				Level world = ChildEntity.this.level();
+				return super.canContinueToUse() && LockNormalTasksProcedure.execute(entity);
+			}
+		});
 	}
 
 	@Override
@@ -114,6 +197,12 @@ public class ChildEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		ChildEntityDiesProcedure.execute(this.level(), this);
 	}
 
 	@Override

@@ -116,6 +116,8 @@ public class ChildTaskManagerProcedure {
 					entity.getPersistentData().putDouble("arcadePositionY", ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Y") + "Y".length(), (int) GetBlockData.lastIndexOf("Y"))));
 					entity.getPersistentData().putDouble("arcadePositionZ", ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Z") + "Z".length(), (int) GetBlockData.lastIndexOf("Z"))));
 					entity.getPersistentData().putBoolean("foundArcade", true);
+				} else {
+					entity.getPersistentData().putString("CurrentTask", "FindChair");
 				}
 			}
 		} else if (("PlayArcade").equals(entity.getPersistentData().getString("CurrentTask"))) {
@@ -220,6 +222,33 @@ public class ChildTaskManagerProcedure {
 					if (_ent instanceof ServerPlayer _serverPlayer)
 						_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("chairPositionX") + 0.5), (entity.getPersistentData().getDouble("chairPositionY") + 0.625),
 								(entity.getPersistentData().getDouble("chairPositionZ") + 0.5), _ent.getYRot(), _ent.getXRot());
+				}
+			}
+		} else if (("Leave").equals(entity.getPersistentData().getString("CurrentTask"))) {
+			if (entity.getPersistentData().getBoolean("InChair")) {
+				entity.getPersistentData().putBoolean("foundChair", false);
+				entity.getPersistentData().putBoolean("InChair", false);
+				{
+					BlockPos _pos = BlockPos.containing(entity.getPersistentData().getDouble("chairPositionX"), entity.getPersistentData().getDouble("chairPositionY"), entity.getPersistentData().getDouble("chairPositionZ"));
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("claimed") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+				}
+			}
+			if (entity.getPersistentData().getBoolean("PlayingArcade")) {
+				entity.getPersistentData().putBoolean("foundArcade", false);
+				entity.getPersistentData().putBoolean("PlayingArcade", false);
+				{
+					BlockPos _pos = BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"));
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("claimed") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+				}
+				if (entity instanceof Mob _entity)
+					_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("xSpawn") + 0.5), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn") + 0.5), 1);
+				if (1.25 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("xSpawn") + 0.5), (entity.getPersistentData().getDouble("ySpawn")), (entity.getPersistentData().getDouble("zSpawn") + 0.5)))) {
+					if (!entity.level().isClientSide())
+						entity.discard();
 				}
 			}
 		}
