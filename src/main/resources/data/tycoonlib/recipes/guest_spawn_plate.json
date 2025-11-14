@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "item": "tycoonlib:guest_spawn_plate",
+    "count": 4
+  }
+}

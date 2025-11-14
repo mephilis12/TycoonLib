@@ -1,11 +1,11 @@
 {
-  "item.tycoonlib.spawn_npc": "Spawn NPC",
   "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
+  "item.tycoonlib.spawn_npc": "Spawn NPC",
   "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
   "block.tycoonlib.crappy_table": "Table",
   "gui.tycoonlib.set_name_gui.set_name": "name",
-  "block.tycoonlib.counter": "Counter",
   "gui.tycoonlib.restaurant_board_gui.FloorLevel": "0",
+  "block.tycoonlib.counter": "Counter",
   "gui.tycoonlib.spawn_npcgui.is_child": "Is Child",
   "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_31": "Unlock at level 3",
   "block.tycoonlib.crappy_carousel": "Carousel",

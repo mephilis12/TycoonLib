@@ -31,6 +31,26 @@ public class ChildLockerProcedure {
 			if (entity instanceof ChildEntity) {
 				((ChildEntity) entity).setAnimation("animation.child.arcadeinteract");
 			}
+		} else if (5 == (entity instanceof ChildEntity _datEntI ? _datEntI.getEntityData().get(ChildEntity.DATA_animation) : 0)) {
+			if (entity instanceof ChildEntity) {
+				((ChildEntity) entity).setAnimation("animation.child.baller");
+			}
+		} else if (6 == (entity instanceof ChildEntity _datEntI ? _datEntI.getEntityData().get(ChildEntity.DATA_animation) : 0)) {
+			if (entity instanceof ChildEntity) {
+				((ChildEntity) entity).setAnimation("animation.child.jig1");
+			}
+		} else if (7 == (entity instanceof ChildEntity _datEntI ? _datEntI.getEntityData().get(ChildEntity.DATA_animation) : 0)) {
+			if (entity instanceof ChildEntity) {
+				((ChildEntity) entity).setAnimation("animation.child.jig2");
+			}
+		} else if (8 == (entity instanceof ChildEntity _datEntI ? _datEntI.getEntityData().get(ChildEntity.DATA_animation) : 0)) {
+			if (entity instanceof ChildEntity) {
+				((ChildEntity) entity).setAnimation("animation.child.jig3");
+			}
+		} else if (9 == (entity instanceof ChildEntity _datEntI ? _datEntI.getEntityData().get(ChildEntity.DATA_animation) : 0)) {
+			if (entity instanceof ChildEntity) {
+				((ChildEntity) entity).setAnimation("animation.child.jig4");
+			}
 		}
 	}
 }

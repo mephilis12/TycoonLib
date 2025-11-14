@@ -23,7 +23,7 @@ public class ChildStateManagerProcedure {
 					.is(BlockTags.create(new ResourceLocation("tycoonlib:chair")))) {
 				entity.getPersistentData().putBoolean("InChair", false);
 				entity.getPersistentData().putBoolean("foundChair", false);
-				entity.getPersistentData().putString("CurrentTask", "FindChair");
+				entity.getPersistentData().putString("CurrentTask", "FindTask");
 			} else {
 				if (entity instanceof ChildEntity _datEntSetI)
 					_datEntSetI.getEntityData().set(ChildEntity.DATA_animation, 2);
@@ -120,7 +120,7 @@ public class ChildStateManagerProcedure {
 					.is(BlockTags.create(new ResourceLocation("tycoonlib:arcade")))) {
 				entity.getPersistentData().putBoolean("PlayingArcade", false);
 				entity.getPersistentData().putBoolean("foundArcade", false);
-				entity.getPersistentData().putString("CurrentTask", "FindArcade");
+				entity.getPersistentData().putString("CurrentTask", "FindTask");
 			} else {
 				if (entity instanceof ChildEntity _datEntSetI)
 					_datEntSetI.getEntityData().set(ChildEntity.DATA_animation, 4);

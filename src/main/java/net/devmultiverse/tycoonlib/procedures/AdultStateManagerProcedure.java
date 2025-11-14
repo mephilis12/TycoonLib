@@ -23,10 +23,10 @@ public class AdultStateManagerProcedure {
 					.is(BlockTags.create(new ResourceLocation("tycoonlib:chair")))) {
 				entity.getPersistentData().putBoolean("InChair", false);
 				entity.getPersistentData().putBoolean("foundChair", false);
-				entity.getPersistentData().putString("CurrentTask", "FindChair");
+				entity.getPersistentData().putString("CurrentTask", "FindTask");
 			} else {
 				if (entity instanceof AdultEntity _datEntSetI)
-					_datEntSetI.getEntityData().set(AdultEntity.DATA_animation, 7);
+					_datEntSetI.getEntityData().set(AdultEntity.DATA_animation, 4);
 				if (Direction.NORTH == (new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -64,7 +64,7 @@ public class AdultStateManagerProcedure {
 				}.getDirection((world.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("chairPositionX"), entity.getPersistentData().getDouble("chairPositionY"), entity.getPersistentData().getDouble("chairPositionZ"))))))) {
 					{
 						Entity _ent = entity;
-						_ent.setYRot(-90);
+						_ent.setYRot(90);
 						_ent.setXRot(0);
 						_ent.setYBodyRot(_ent.getYRot());
 						_ent.setYHeadRot(_ent.getYRot());
@@ -102,7 +102,7 @@ public class AdultStateManagerProcedure {
 				} else {
 					{
 						Entity _ent = entity;
-						_ent.setYRot(90);
+						_ent.setYRot(-90);
 						_ent.setXRot(0);
 						_ent.setYBodyRot(_ent.getYRot());
 						_ent.setYHeadRot(_ent.getYRot());

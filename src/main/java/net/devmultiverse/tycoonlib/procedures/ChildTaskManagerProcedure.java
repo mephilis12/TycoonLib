@@ -18,7 +18,27 @@ public class ChildTaskManagerProcedure {
 		if (entity == null)
 			return;
 		String GetBlockData = "";
-		if (("GetEntryPass").equals(entity.getPersistentData().getString("CurrentTask"))) {
+		if (("FindTask").equals(entity.getPersistentData().getString("CurrentTask"))) {
+			if (Math.random() < (1) / ((float) 2)) {
+				GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:chair");
+				if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
+					entity.getPersistentData().putString("CurrentTask", "FindChair");
+				}
+				GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:arcade");
+				if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
+					entity.getPersistentData().putString("CurrentTask", "FindArcade");
+				}
+			} else {
+				GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:arcade");
+				if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
+					entity.getPersistentData().putString("CurrentTask", "FindArcade");
+				}
+				GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:chair");
+				if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
+					entity.getPersistentData().putString("CurrentTask", "FindChair");
+				}
+			}
+		} else if (("GetEntryPass").equals(entity.getPersistentData().getString("CurrentTask"))) {
 			if (!entity.getPersistentData().getBoolean("InChair")) {
 				GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:cash_register");
 				if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
@@ -29,7 +49,7 @@ public class ChildTaskManagerProcedure {
 					if (2 > new Vec3(x, y, z).distanceTo(new Vec3((ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("X") + "X".length(), (int) GetBlockData.lastIndexOf("X"))) + 0.5),
 							ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Y") + "Y".length(), (int) GetBlockData.lastIndexOf("Y"))),
 							(ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Z") + "Z".length(), (int) GetBlockData.lastIndexOf("Z"))) + 0.5)))) {
-						entity.getPersistentData().putString("CurrentTask", "FindArcade");
+						entity.getPersistentData().putString("CurrentTask", "FindTask");
 					}
 				}
 			}
@@ -43,7 +63,7 @@ public class ChildTaskManagerProcedure {
 					entity.getPersistentData().putString("CurrentTask", "PlayArcade");
 					{
 						Entity _ent = entity;
-						_ent.teleportTo((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + (new Object() {
+						_ent.teleportTo((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + 0.75 * (new Object() {
 							public Direction getDirection(BlockState _bs) {
 								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 								if (_prop instanceof DirectionProperty _dp)
@@ -55,7 +75,7 @@ public class ChildTaskManagerProcedure {
 							}
 						}.getDirection(
 								(world.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"))))))
-								.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + (new Object() {
+								.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + 0.75 * (new Object() {
 									public Direction getDirection(BlockState _bs) {
 										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 										if (_prop instanceof DirectionProperty _dp)
@@ -69,7 +89,7 @@ public class ChildTaskManagerProcedure {
 										.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"))))))
 										.getStepZ()));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + (new Object() {
+							_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + 0.75 * (new Object() {
 								public Direction getDirection(BlockState _bs) {
 									Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 									if (_prop instanceof DirectionProperty _dp)
@@ -81,7 +101,7 @@ public class ChildTaskManagerProcedure {
 								}
 							}.getDirection((world
 									.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"))))))
-									.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + (new Object() {
+									.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + 0.75 * (new Object() {
 										public Direction getDirection(BlockState _bs) {
 											Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 											if (_prop instanceof DirectionProperty _dp)
@@ -117,14 +137,14 @@ public class ChildTaskManagerProcedure {
 					entity.getPersistentData().putDouble("arcadePositionZ", ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Z") + "Z".length(), (int) GetBlockData.lastIndexOf("Z"))));
 					entity.getPersistentData().putBoolean("foundArcade", true);
 				} else {
-					entity.getPersistentData().putString("CurrentTask", "FindChair");
+					entity.getPersistentData().putString("CurrentTask", "FindTask");
 				}
 			}
 		} else if (("PlayArcade").equals(entity.getPersistentData().getString("CurrentTask"))) {
 			if (entity.getPersistentData().getBoolean("PlayingArcade")) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + (new Object() {
+					_ent.teleportTo((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + 0.75 * (new Object() {
 						public Direction getDirection(BlockState _bs) {
 							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 							if (_prop instanceof DirectionProperty _dp)
@@ -135,7 +155,7 @@ public class ChildTaskManagerProcedure {
 									: Direction.NORTH;
 						}
 					}.getDirection((world.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"))))))
-							.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + (new Object() {
+							.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + 0.75 * (new Object() {
 								public Direction getDirection(BlockState _bs) {
 									Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 									if (_prop instanceof DirectionProperty _dp)
@@ -149,7 +169,7 @@ public class ChildTaskManagerProcedure {
 									.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"))))))
 									.getStepZ()));
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + (new Object() {
+						_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("arcadePositionX") + 0.5 + 0.75 * (new Object() {
 							public Direction getDirection(BlockState _bs) {
 								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 								if (_prop instanceof DirectionProperty _dp)
@@ -161,7 +181,7 @@ public class ChildTaskManagerProcedure {
 							}
 						}.getDirection(
 								(world.getBlockState(BlockPos.containing(entity.getPersistentData().getDouble("arcadePositionX"), entity.getPersistentData().getDouble("arcadePositionY"), entity.getPersistentData().getDouble("arcadePositionZ"))))))
-								.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + (new Object() {
+								.getStepX()), (entity.getPersistentData().getDouble("arcadePositionY")), (entity.getPersistentData().getDouble("arcadePositionZ") + 0.5 + 0.75 * (new Object() {
 									public Direction getDirection(BlockState _bs) {
 										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 										if (_prop instanceof DirectionProperty _dp)

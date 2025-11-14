@@ -149,10 +149,13 @@
     "onMobTickUpdate": {
       "name": "AdultOnEntityTickUpdate"
     },
+    "onInitialSpawn": {
+      "name": "AdultOnInitialEntitySpawn"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">LockNormalTasks,LockNormalTasks</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.DEBUG_STICK</field></block></value><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">LockNormalTasks,LockNormalTasks</field><next><block type=\"look_around\"><field name=\"condition\">LockNormalTasks,LockNormalTasks</field><next><block type=\"swim_in_water\"><field name=\"condition\">LockNormalTasks,LockNormalTasks</field></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "npc.geo.json",
+    "model": "adult.geo.json",
     "groupName": "Head",
     "animation1": "animation.model.idle",
     "animation2": "",

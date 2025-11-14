@@ -14,12 +14,12 @@ import net.devmultiverse.tycoonlib.entity.AdultEntity;
 public class AdultModel extends GeoModel<AdultEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(AdultEntity entity) {
-		return new ResourceLocation("tycoonlib", "animations/npc.animation.json");
+		return new ResourceLocation("tycoonlib", "animations/adult.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(AdultEntity entity) {
-		return new ResourceLocation("tycoonlib", "geo/npc.geo.json");
+		return new ResourceLocation("tycoonlib", "geo/adult.geo.json");
 	}
 
 	@Override

@@ -10,6 +10,8 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -57,6 +59,7 @@ public class SpawnNPCRightclickedOnBlockProcedure {
 					Entity entityinstance = TycoonlibModEntities.ADULT.get().create(_serverLevel, null, null, BlockPos.containing(x + direction.getStepX(), y + direction.getStepY(), z + direction.getStepZ()), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putDouble("Skin", (Mth.nextInt(RandomSource.create(), 0, 8)));
 						entityinstance.getPersistentData().putString("CurrentTask", (itemstack.getOrCreateTag().getString("CurrentTask")));
 						entityinstance.getPersistentData().putBoolean("CantLeave", true);
 						_serverLevel.addFreshEntity(entityinstance);

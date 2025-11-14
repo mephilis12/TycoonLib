@@ -13,35 +13,39 @@ public class AdultLockerProcedure {
 		}
 		if (0 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.idle");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.idle");
 			}
 		} else if (1 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.walk");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.walk");
 			}
 		} else if (2 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.moping");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.moping");
 			}
 		} else if (3 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.handing");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.givingtoy");
 			}
 		} else if (4 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.cash_give");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.sit");
 			}
 		} else if (5 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.cash_take");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.sitsoda");
 			}
 		} else if (6 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.fix");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.soda");
 			}
 		} else if (7 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
 			if (entity instanceof AdultEntity) {
-				((AdultEntity) entity).setAnimation("animation.model.siting");
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.fixing");
+			}
+		} else if (8 == (entity instanceof AdultEntity _datEntI ? _datEntI.getEntityData().get(AdultEntity.DATA_animation) : 0)) {
+			if (entity instanceof AdultEntity) {
+				((AdultEntity) entity).setAnimation("animation.TycoonNPC.capitalism");
 			}
 		}
 	}

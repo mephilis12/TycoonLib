@@ -14,7 +14,12 @@ public class AdultTaskManagerProcedure {
 		if (entity == null)
 			return;
 		String GetBlockData = "";
-		if (("GetEntryPass").equals(entity.getPersistentData().getString("CurrentTask"))) {
+		if (("FindTask").equals(entity.getPersistentData().getString("CurrentTask"))) {
+			GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:chair");
+			if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
+				entity.getPersistentData().putString("CurrentTask", "FindChair");
+			}
+		} else if (("GetEntryPass").equals(entity.getPersistentData().getString("CurrentTask"))) {
 			if (!entity.getPersistentData().getBoolean("InChair")) {
 				GetBlockData = FindBlockProcedure.execute(world, x, y, z, true, "tycoonlib:cash_register");
 				if (("True").equals(GetBlockData.substring((int) GetBlockData.indexOf("T") + "T".length(), (int) GetBlockData.lastIndexOf("T")))) {
@@ -25,7 +30,7 @@ public class AdultTaskManagerProcedure {
 					if (2 > new Vec3(x, y, z).distanceTo(new Vec3((ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("X") + "X".length(), (int) GetBlockData.lastIndexOf("X"))) + 0.5),
 							ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Y") + "Y".length(), (int) GetBlockData.lastIndexOf("Y"))),
 							(ConvertStringToNumberProcedure.execute(GetBlockData.substring((int) GetBlockData.indexOf("Z") + "Z".length(), (int) GetBlockData.lastIndexOf("Z"))) + 0.5)))) {
-						entity.getPersistentData().putString("CurrentTask", "FindChair");
+						entity.getPersistentData().putString("CurrentTask", "FindTask");
 					}
 				}
 			}
