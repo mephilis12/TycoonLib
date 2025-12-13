@@ -1,0 +1,143 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 207,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "shop.png",
+          "use1Xscale": false,
+          "x": 109,
+          "y": 21,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shop_icon_arcade.png",
+          "use1Xscale": false,
+          "x": 196,
+          "y": 61,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_shop_gui_buy_button",
+          "image": "shop_gui_buy_button.png",
+          "hoveredImage": "shop_gui_buy_button_hover.png",
+          "onClick": {
+            "name": "ShopBuyButtonPressed"
+          },
+          "x": 196,
+          "y": 173,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_shop_gui_left_cycle_button",
+          "image": "shop_gui_left_cycle_button.png",
+          "hoveredImage": "shop_gui_left_cycle_button_hover.png",
+          "x": 199,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_shop_gui_right_cycle_button",
+          "image": "shop_gui_right_cycle_button.png",
+          "hoveredImage": "shop_gui_right_cycle_button_hover.png",
+          "x": 287,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_buy",
+          "text": {
+            "fixedValue": "Buy"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 177,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_monday",
+          "text": {
+            "fixedValue": "Monday"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 245,
+          "y": 34,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10000",
+          "text": {
+            "fixedValue": "5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 224,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_100001",
+          "text": {
+            "fixedValue": "10,000",
+            "name": "YourFunds"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 205,
+          "y": 156,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "shop.buy": {
+    "subtitle": "subtitles.shop.buy",
+    "sounds": [
+      {
+        "name": "tycoonlib:buy",
+        "stream": false
+      }
+    ]
+  },
+  "shop.error": {
+    "subtitle": "subtitles.shop.error",
+    "sounds": [
+      {
+        "name": "tycoonlib:error-02",
+        "stream": false
+      }
+    ]
+  }
+}

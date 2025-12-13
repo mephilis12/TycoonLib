@@ -41,6 +41,8 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> BATTERY_TEAR_1 = block(TycoonlibModBlocks.BATTERY_TEAR_1);
 	public static final RegistryObject<Item> BATTERY_TEAR_2 = block(TycoonlibModBlocks.BATTERY_TEAR_2);
 	public static final RegistryObject<Item> SPAWN_NPC = REGISTRY.register("spawn_npc", () -> new SpawnNPCItem());
+	public static final RegistryObject<Item> EXAMPLE_SHOP_BLOCK = block(TycoonlibModBlocks.EXAMPLE_SHOP_BLOCK);
+	public static final RegistryObject<Item> EXAMPLE_SHOP_NPC_SPAWN_EGG = REGISTRY.register("example_shop_npc_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.EXAMPLE_SHOP_NPC, -13421773, -13395457, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

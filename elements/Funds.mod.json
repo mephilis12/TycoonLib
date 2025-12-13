@@ -1,0 +1,13 @@
+{
+  "_fv": 73,
+  "_type": "attribute",
+  "definition": {
+    "name": "Funds",
+    "minValue": 0.0,
+    "maxValue": 2000000.0,
+    "defaultValue": 200.0,
+    "addToAllEntities": false,
+    "addToPlayers": true,
+    "entities": []
+  }
+}

@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.devmultiverse.tycoonlib.client.gui.StaffManagerNewspaperGUIScreen;
 import net.devmultiverse.tycoonlib.client.gui.SpawnNPCGUIScreen;
+import net.devmultiverse.tycoonlib.client.gui.ShopGUIScreen;
 import net.devmultiverse.tycoonlib.client.gui.SetSettingsGUIScreen;
 import net.devmultiverse.tycoonlib.client.gui.SetRestaurantBlueprintSettingsGUIScreen;
 import net.devmultiverse.tycoonlib.client.gui.SetNameGUIScreen;
@@ -33,6 +34,7 @@ public class TycoonlibModScreens {
 			MenuScreens.register(TycoonlibModMenus.STAFF_MANAGER_NEWSPAPER_GUI.get(), StaffManagerNewspaperGUIScreen::new);
 			MenuScreens.register(TycoonlibModMenus.MAINTENANCE_GUI.get(), MaintenanceGUIScreen::new);
 			MenuScreens.register(TycoonlibModMenus.SPAWN_NPCGUI.get(), SpawnNPCGUIScreen::new);
+			MenuScreens.register(TycoonlibModMenus.SHOP_GUI.get(), ShopGUIScreen::new);
 		});
 	}
 }

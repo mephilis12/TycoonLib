@@ -1,0 +1,6 @@
+{
+    "price": 5,
+    "name": "block.tycoonlib.arcade",
+    "texture": "shops/example_shop/arcade",
+    "item_given": "tycoonlib:crappy_arcade"
+}

@@ -18,11 +18,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.devmultiverse.tycoonlib.init.TycoonlibModTabs;
+import net.devmultiverse.tycoonlib.init.TycoonlibModSounds;
 import net.devmultiverse.tycoonlib.init.TycoonlibModMenus;
 import net.devmultiverse.tycoonlib.init.TycoonlibModItems;
 import net.devmultiverse.tycoonlib.init.TycoonlibModEntities;
 import net.devmultiverse.tycoonlib.init.TycoonlibModBlocks;
 import net.devmultiverse.tycoonlib.init.TycoonlibModBlockEntities;
+import net.devmultiverse.tycoonlib.init.TycoonlibModAttributes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -43,7 +45,7 @@ public class TycoonlibMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		TycoonlibModSounds.REGISTRY.register(bus);
 		TycoonlibModBlocks.REGISTRY.register(bus);
 		TycoonlibModBlockEntities.REGISTRY.register(bus);
 		TycoonlibModItems.REGISTRY.register(bus);
@@ -52,7 +54,7 @@ public class TycoonlibMod {
 		TycoonlibModTabs.REGISTRY.register(bus);
 
 		TycoonlibModMenus.REGISTRY.register(bus);
-
+		TycoonlibModAttributes.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
