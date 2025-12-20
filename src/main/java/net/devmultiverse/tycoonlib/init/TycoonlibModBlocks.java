@@ -15,7 +15,6 @@ import net.devmultiverse.tycoonlib.block.RestaurantBoardBlock;
 import net.devmultiverse.tycoonlib.block.GuestSpawnPlateBlock;
 import net.devmultiverse.tycoonlib.block.ExampleShopBlockBlock;
 import net.devmultiverse.tycoonlib.block.CrappyTableBlock;
-import net.devmultiverse.tycoonlib.block.CrappyOpenSignBlock;
 import net.devmultiverse.tycoonlib.block.CrappyFridgeBlock;
 import net.devmultiverse.tycoonlib.block.CrappyChairBlock;
 import net.devmultiverse.tycoonlib.block.CrappyCashRegisterBlock;
@@ -37,7 +36,6 @@ public class TycoonlibModBlocks {
 	public static final RegistryObject<Block> CRAPPY_ARCADE = REGISTRY.register("crappy_arcade", () -> new CrappyArcadeBlock());
 	public static final RegistryObject<Block> CRAPPY_TABLE = REGISTRY.register("crappy_table", () -> new CrappyTableBlock());
 	public static final RegistryObject<Block> CRAPPY_BALLPIT = REGISTRY.register("crappy_ballpit", () -> new CrappyBallpitBlock());
-	public static final RegistryObject<Block> CRAPPY_OPEN_SIGN = REGISTRY.register("crappy_open_sign", () -> new CrappyOpenSignBlock());
 	public static final RegistryObject<Block> WOODEN_STOOL = REGISTRY.register("wooden_stool", () -> new WoodenStoolBlock());
 	public static final RegistryObject<Block> RESTAURANT_BOARD = REGISTRY.register("restaurant_board", () -> new RestaurantBoardBlock());
 	public static final RegistryObject<Block> GUEST_SPAWN_PLATE = REGISTRY.register("guest_spawn_plate", () -> new GuestSpawnPlateBlock());

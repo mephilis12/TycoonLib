@@ -30,7 +30,6 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> CRAPPY_ARCADE = block(TycoonlibModBlocks.CRAPPY_ARCADE);
 	public static final RegistryObject<Item> CRAPPY_TABLE = block(TycoonlibModBlocks.CRAPPY_TABLE);
 	public static final RegistryObject<Item> CRAPPY_BALLPIT = block(TycoonlibModBlocks.CRAPPY_BALLPIT);
-	public static final RegistryObject<Item> CRAPPY_OPEN_SIGN = block(TycoonlibModBlocks.CRAPPY_OPEN_SIGN);
 	public static final RegistryObject<Item> WOODEN_STOOL = block(TycoonlibModBlocks.WOODEN_STOOL);
 	public static final RegistryObject<Item> RESTAURANT_BOARD = block(TycoonlibModBlocks.RESTAURANT_BOARD);
 	public static final RegistryObject<Item> RESTAURANT_BLUEPRINT = REGISTRY.register("restaurant_blueprint", () -> new RestaurantBlueprintItem());

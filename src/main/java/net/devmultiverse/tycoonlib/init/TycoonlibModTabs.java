@@ -27,7 +27,6 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.COUNTER.get().asItem());
 				tabData.accept(TycoonlibModBlocks.WOODEN_STOOL.get().asItem());
 				tabData.accept(TycoonlibModBlocks.GUEST_SPAWN_PLATE.get().asItem());
-				tabData.accept(TycoonlibModBlocks.CRAPPY_OPEN_SIGN.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_CASH_REGISTER.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_CAROUSEL.get().asItem());
 				tabData.accept(TycoonlibModBlocks.CRAPPY_FRIDGE.get().asItem());

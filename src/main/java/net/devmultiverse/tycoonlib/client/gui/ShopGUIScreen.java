@@ -11,6 +11,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.devmultiverse.tycoonlib.world.inventory.ShopGUIMenu;
 import net.devmultiverse.tycoonlib.procedures.YourFundsProcedure;
+import net.devmultiverse.tycoonlib.procedures.ShopItemCostProcedure;
 import net.devmultiverse.tycoonlib.network.ShopGUIButtonMessage;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
@@ -53,7 +54,7 @@ public class ShopGUIScreen extends AbstractContainerScreen<ShopGUIMenu> {
 
 		guiGraphics.blit(new ResourceLocation("tycoonlib:textures/screens/shop.png"), this.leftPos + -1, this.topPos + -1, 0, 0, 209, 198, 209, 198);
 
-		guiGraphics.blit(new ResourceLocation("tycoonlib:textures/screens/shop_icon_arcade.png"), this.leftPos + 86, this.topPos + 39, 0, 0, 112, 90, 112, 90);
+		guiGraphics.blit(new ResourceLocation(entity.getPersistentData().getString("shop_item_namespace") + ":textures/screens/shop/icons/" + entity.getPersistentData().getString("shop_item_name") + ".png"), this.leftPos + 86, this.topPos + 39, 0, 0, 112, 90, 112, 90);
 
 		RenderSystem.disableBlend();
 	}
@@ -70,8 +71,9 @@ public class ShopGUIScreen extends AbstractContainerScreen<ShopGUIMenu> {
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.tycoonlib.shop_gui.label_buy"), 106, 155, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.tycoonlib.shop_gui.label_monday"), 135, 12, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.tycoonlib.shop_gui.label_10000"), 114, 44, -1, false);
+		guiGraphics.drawString(this.font,
+
+				ShopItemCostProcedure.execute(entity), 114, 44, -1, false);
 		guiGraphics.drawString(this.font,
 
 				YourFundsProcedure.execute(entity), 95, 134, -1, false);
@@ -89,10 +91,18 @@ public class ShopGUIScreen extends AbstractContainerScreen<ShopGUIMenu> {
 		guistate.put("button:imagebutton_shop_gui_buy_button", imagebutton_shop_gui_buy_button);
 		this.addRenderableWidget(imagebutton_shop_gui_buy_button);
 		imagebutton_shop_gui_left_cycle_button = new ImageButton(this.leftPos + 89, this.topPos + 102, 18, 20, 0, 0, 20, new ResourceLocation("tycoonlib:textures/screens/atlas/imagebutton_shop_gui_left_cycle_button.png"), 18, 40, e -> {
+			if (true) {
+				TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(1, x, y, z));
+				ShopGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_shop_gui_left_cycle_button", imagebutton_shop_gui_left_cycle_button);
 		this.addRenderableWidget(imagebutton_shop_gui_left_cycle_button);
 		imagebutton_shop_gui_right_cycle_button = new ImageButton(this.leftPos + 177, this.topPos + 102, 18, 20, 0, 0, 20, new ResourceLocation("tycoonlib:textures/screens/atlas/imagebutton_shop_gui_right_cycle_button.png"), 18, 40, e -> {
+			if (true) {
+				TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(2, x, y, z));
+				ShopGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_shop_gui_right_cycle_button", imagebutton_shop_gui_right_cycle_button);
 		this.addRenderableWidget(imagebutton_shop_gui_right_cycle_button);

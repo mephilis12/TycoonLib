@@ -12,6 +12,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.devmultiverse.tycoonlib.world.inventory.ShopGUIMenu;
+import net.devmultiverse.tycoonlib.procedures.ShopPageRightProcedure;
+import net.devmultiverse.tycoonlib.procedures.ShopPageLeftProcedure;
 import net.devmultiverse.tycoonlib.procedures.ShopBuyButtonPressedProcedure;
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
@@ -65,6 +67,14 @@ public class ShopGUIButtonMessage {
 		if (buttonID == 0) {
 
 			ShopBuyButtonPressedProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			ShopPageLeftProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			ShopPageRightProcedure.execute(entity);
 		}
 	}
 

@@ -1,16 +1,14 @@
 {
-  "workspacePanelIconSize": "TILES",
+  "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "TYPE",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 343,
+  "projectBrowserSplitPos": 0,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Tycoon-Lib]",
       "[, Tycoon-Lib, Resources (Gradle)]",
       "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data]",
       "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\market]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\market, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\market\\example_shop]",
       "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\shops]"
     ]
   }

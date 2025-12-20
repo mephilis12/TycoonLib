@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "item": "minecraft:copper_ingot", "sell": 15 },
+    { "item": "minecraft:iron_ingot", "sell": 20 },
+    { "item": "minecraft:diamond", "sell": 55 }
+  ]
+}

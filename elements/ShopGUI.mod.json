@@ -50,6 +50,9 @@
           "name": "imagebutton_shop_gui_left_cycle_button",
           "image": "shop_gui_left_cycle_button.png",
           "hoveredImage": "shop_gui_left_cycle_button_hover.png",
+          "onClick": {
+            "name": "ShopPageLeft"
+          },
           "x": 199,
           "y": 124,
           "locked": false
@@ -61,6 +64,9 @@
           "name": "imagebutton_shop_gui_right_cycle_button",
           "image": "shop_gui_right_cycle_button.png",
           "hoveredImage": "shop_gui_right_cycle_button_hover.png",
+          "onClick": {
+            "name": "ShopPageRight"
+          },
           "x": 287,
           "y": 124,
           "locked": false
@@ -85,25 +91,10 @@
       {
         "type": "label",
         "data": {
-          "name": "label_monday",
-          "text": {
-            "fixedValue": "Monday"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 245,
-          "y": 34,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
           "name": "label_10000",
           "text": {
-            "fixedValue": "5"
+            "fixedValue": "5",
+            "name": "ShopItemCost"
           },
           "color": {
             "value": -1,
