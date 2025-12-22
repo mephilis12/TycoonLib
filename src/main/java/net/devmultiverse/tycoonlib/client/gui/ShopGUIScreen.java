@@ -93,29 +93,53 @@ public class ShopGUIScreen extends AbstractContainerScreen<ShopGUIMenu> {
 	@Override
 	public void init() {
 		super.init();
+
 		imagebutton_shop_gui_buy_button = new ImageButton(this.leftPos + 130, this.topPos + 151, 58, 18, 0, 0, 18, new ResourceLocation("tycoonlib:textures/screens/atlas/imagebutton_shop_gui_buy_button.png"), 58, 36, e -> {
+
 			if (true) {
+
 				TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(0, x, y, z));
+
 				ShopGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+
 			}
+
 		});
+
 		guistate.put("button:imagebutton_shop_gui_buy_button", imagebutton_shop_gui_buy_button);
+
 		this.addRenderableWidget(imagebutton_shop_gui_buy_button);
-		imagebutton_shop_gui_left_cycle_button = new ImageButton(this.leftPos + 133, this.topPos + 102, 18, 20, 0, 0, 20, new ResourceLocation("tycoonlib:textures/screens/atlas/imagebutton_shop_gui_left_cycle_button.png"), 18, 40, e -> {
-			if (true) {
-				TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(1, x, y, z));
-				ShopGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_shop_gui_left_cycle_button", imagebutton_shop_gui_left_cycle_button);
-		this.addRenderableWidget(imagebutton_shop_gui_left_cycle_button);
-		imagebutton_shop_gui_right_cycle_button = new ImageButton(this.leftPos + 221, this.topPos + 102, 18, 20, 0, 0, 20, new ResourceLocation("tycoonlib:textures/screens/atlas/imagebutton_shop_gui_right_cycle_button.png"), 18, 40, e -> {
-			if (true) {
-				TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(2, x, y, z));
-				ShopGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_shop_gui_right_cycle_button", imagebutton_shop_gui_right_cycle_button);
-		this.addRenderableWidget(imagebutton_shop_gui_right_cycle_button);
+
+		imagebutton_shop_gui_left_cycle_button = new ImageButton(this.leftPos + 133, this.topPos + 102, 18, 20, 0, 0, 20, new ResourceLocation(entity.getPersistentData().getString("shop_background") + "_left_cycle_button.png"), 18, 40, e -> {
+
+           if (true) {
+
+               TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(1, x, y, z));
+
+               ShopGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+
+           }
+
+       });
+
+       guistate.put("button:imagebutton_shop_gui_left_cycle_button", imagebutton_shop_gui_left_cycle_button);
+
+       this.addRenderableWidget(imagebutton_shop_gui_left_cycle_button);
+
+       imagebutton_shop_gui_right_cycle_button = new ImageButton(this.leftPos + 221, this.topPos + 102, 18, 20, 0, 0, 20, new ResourceLocation(entity.getPersistentData().getString("shop_background") + "_right_cycle_button.png"), 18, 40, e -> {
+
+           if (true) {
+
+               TycoonlibMod.PACKET_HANDLER.sendToServer(new ShopGUIButtonMessage(2, x, y, z));
+
+               ShopGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+
+           }
+
+       });
+
+       guistate.put("button:imagebutton_shop_gui_right_cycle_button", imagebutton_shop_gui_right_cycle_button);
+
+       this.addRenderableWidget(imagebutton_shop_gui_right_cycle_button);
 	}
 }
