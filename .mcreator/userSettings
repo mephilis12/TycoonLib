@@ -2,14 +2,16 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "TYPE",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
+  "projectBrowserSplitPos": 327,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Tycoon-Lib]",
       "[, Tycoon-Lib, Resources (Gradle)]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\shops]"
+      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets]",
+      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib]",
+      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib\\textures]",
+      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib\\textures, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib\\textures\\screens]",
+      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib\\textures, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib\\textures\\screens, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib\\textures\\screens\\shop]"
     ]
   }
 }

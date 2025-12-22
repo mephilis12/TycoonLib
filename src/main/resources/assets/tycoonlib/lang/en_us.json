@@ -1,6 +1,6 @@
 {
-  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "item.tycoonlib.spawn_npc": "Spawn NPC",
+  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
   "block.tycoonlib.crappy_table": "Table",
   "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -16,7 +16,6 @@
   "item.tycoonlib.child_spawn_egg": "Child Spawn Egg",
   "block.tycoonlib.battery_tear_2": "Battery Tear 2",
   "block.tycoonlib.battery_tear_1": "Battery Tear 1",
-  "gui.tycoonlib.shop_gui.label_10000": "5",
   "gui.tycoonlib.spawn_npcgui.button_save": "Save",
   "gui.tycoonlib.restaurant_board_gui.label_level": "Level: --",
   "subtitles.shopbuy": "Player buying in shop",
@@ -27,7 +26,6 @@
   "block.tycoonlib.restaurant_board": "Restaurant Board",
   "subtitles.shop.error": "Player failing to buy in shop",
   "subtitles.shop.error-02": "Player failing to buy in shop",
-  "gui.tycoonlib.shop_gui.label_monday": "Monday",
   "block.tycoonlib.crappy_fridge": "Cooler",
   "gui.tycoonlib.set_settings_gui.room_type": "Room",
   "entity.tycoonlib.seat_entity": "Seat Entity",

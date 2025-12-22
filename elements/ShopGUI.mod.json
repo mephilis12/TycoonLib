@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 207,
+    "width": 251,
     "height": 196,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -15,17 +15,17 @@
         "data": {
           "image": "shop.png",
           "use1Xscale": false,
-          "x": 109,
+          "x": 87,
           "y": 21,
-          "locked": true
+          "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "shop_icon_arcade.png",
+          "image": "shop_icon_template.png",
           "use1Xscale": false,
-          "x": 196,
+          "x": 218,
           "y": 61,
           "locked": false
         }
@@ -39,7 +39,7 @@
           "onClick": {
             "name": "ShopBuyButtonPressed"
           },
-          "x": 196,
+          "x": 218,
           "y": 173,
           "locked": false
         }
@@ -53,7 +53,7 @@
           "onClick": {
             "name": "ShopPageLeft"
           },
-          "x": 199,
+          "x": 221,
           "y": 124,
           "locked": false
         }
@@ -67,7 +67,7 @@
           "onClick": {
             "name": "ShopPageRight"
           },
-          "x": 287,
+          "x": 309,
           "y": 124,
           "locked": false
         }
@@ -83,8 +83,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 216,
-          "y": 177,
+          "x": 239,
+          "y": 175,
           "locked": false
         }
       },
@@ -100,7 +100,7 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 224,
+          "x": 247,
           "y": 66,
           "locked": false
         }
@@ -117,8 +117,184 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 205,
+          "x": 228,
           "y": 156,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_code_line_01",
+          "text": {
+            "fixedValue": "Code Line 01"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 61,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_code_line_02",
+          "text": {
+            "fixedValue": "Code Line 02"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 82,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_code_line_03",
+          "text": {
+            "fixedValue": "Code Line 03"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_code_line_04",
+          "text": {
+            "fixedValue": "Code Line 04"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_code_line_05",
+          "text": {
+            "fixedValue": "Code Line 05"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 112,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_code_line_051",
+          "text": {
+            "fixedValue": "Code Line 06"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 122,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_atmoshere",
+          "text": {
+            "fixedValue": "Atmoshere: "
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 140,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_health_safey",
+          "text": {
+            "fixedValue": "Health & Safey:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 151,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bonus_revenue",
+          "text": {
+            "fixedValue": "Bonus Revenue:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 173,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_liability_risk",
+          "text": {
+            "fixedValue": "Liability Risk:"
+          },
+          "color": {
+            "value": -39322,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_entertainment",
+          "text": {
+            "fixedValue": "Entertainment:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 162,
           "locked": false
         }
       }

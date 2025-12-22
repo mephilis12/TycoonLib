@@ -37,23 +37,8 @@ public class ShopReloadListener extends SimpleJsonResourceReloadListener {
         jsons.forEach((id, json) -> {
             JsonObject obj = json.getAsJsonObject();
 
-            // --- BLOCKS ---
-            List<ResourceLocation> blocks = new ArrayList<>();
-            JsonArray blockArray = obj.getAsJsonArray("block");
-            for (JsonElement e : blockArray) {
-                blocks.add(new ResourceLocation(e.getAsString()));
-            }
-
-            // --- ENTITIES ---
-            List<ResourceLocation> entities = new ArrayList<>();
-            JsonArray entityArray = obj.getAsJsonArray("entity");
-            for (JsonElement e : entityArray) {
-                entities.add(new ResourceLocation(e.getAsString()));
-            }
-
-            // --- TEXTURE ---
-            ResourceLocation texture =
-                    new ResourceLocation(obj.get("texture").getAsString());
+            // --- NAME ---
+            String texture = obj.get("name").getAsString();
 
             // --- ITEMS ---
             List<DataSpace.ShopItem> items = new ArrayList<>();
@@ -64,14 +49,17 @@ public class ShopReloadListener extends SimpleJsonResourceReloadListener {
 
                 items.add(new DataSpace.ShopItem(
                         new ResourceLocation(entry.get("item").getAsString()),
+                        entry.get("description_line_1").getAsString(),
+                        entry.get("description_line_2").getAsString(),
+                        entry.get("description_line_3").getAsString(),
+                        entry.get("description_line_4").getAsString(),
+                        entry.get("description_line_5").getAsString(),
                         entry.get("cost").getAsInt(),
                         entry.get("stack").getAsInt()
                 ));
             }
 
             SHOPS.put(id, new DataSpace.ShopData(
-                    blocks,
-                    entities,
                     texture,
                     items
             ));

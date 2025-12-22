@@ -7,13 +7,16 @@ import java.util.List;
 public class DataSpace {
 	public record ShopItem(
         ResourceLocation item,
+		String line1,
+		String line2,
+		String line3,
+		String line4,
+		String line5,
         int cost,
         int stack
 	) {}
 	public record ShopData(
-		List<ResourceLocation> blocks,
-		List<ResourceLocation> entities,
-        ResourceLocation texture,
+		String name,
         List<ShopItem> items
 	) {}
 	public record SalvageItem(
