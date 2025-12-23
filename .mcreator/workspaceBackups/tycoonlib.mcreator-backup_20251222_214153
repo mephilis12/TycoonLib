@@ -2223,41 +2223,6 @@
       "path": "~/Example"
     },
     {
-      "name": "OpenExampleShopEntity",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_example_shop_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenExampleShopEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Example"
-    },
-    {
       "name": "ExampleShopNPC",
       "type": "animatedentity",
       "compiles": true,
@@ -2462,24 +2427,6 @@
       }
     },
     {
-      "name": "OpenJunkStuff",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_junk_stuff",
-      "metadata": {
-        "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenJunkStuffProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          }
-        ]
-      }
-    },
-    {
       "name": "ShopItemName",
       "type": "procedure",
       "compiles": true,
@@ -2493,6 +2440,97 @@
         "dependencies": []
       },
       "path": "~/GUI/Shop"
+    },
+    {
+      "name": "OpenBlockExampleJunkStuffStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_example_junk_stuff_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockExampleJunkStuffStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenEntityExampleJunkStuffStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_entity_example_junk_stuff_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenEntityExampleJunkStuffStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Money",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/particles/money.json",
+          "src/main/java/net/devmultiverse/tycoonlib/client/particle/MoneyParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "MoneyCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MoneyCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2580,6 +2618,9 @@
     ],
     "ITEMS:mod:wrench": [
       "Items.STICK"
+    ],
+    "ENTITIES:mod:junk_and_stuff": [
+      "CUSTOM:ExampleShopNPC"
     ],
     "BLOCKS:mod:battery_tier_2": [
       "CUSTOM:BatteryTear2"
@@ -2714,20 +2755,20 @@
       "gui.tycoonlib.restaurant_board_gui.label_level_1": "Level: 1",
       "item.tycoonlib.restaurant_blueprint": "Restaurant Blueprint",
       "subtitles.shoperror": "Player failing to buy in shop",
-      "shop.tycoonlib.health_safety.1": "Health Safety: 1",
-      "shop.tycoonlib.health_safety.0": "Health Safety: 0",
+      "shop.tycoonlib.health_safety.1": "Health \u0026 Safety: 1",
+      "shop.tycoonlib.health_safety.0": "Health \u0026 Safety: 0",
       "gui.tycoonlib.maintenance_gui.label_this_gui_is_for_testing": "This GUI is for Testing",
       "item.tycoonlib.example_shop_npc_spawn_egg": "Adult Spawn Egg",
-      "shop.tycoonlib.health_safety.7": "Health Safety: 7",
-      "shop.tycoonlib.health_safety.6": "Health Safety: 6",
-      "shop.tycoonlib.health_safety.9": "Health Safety: 9",
-      "shop.tycoonlib.health_safety.8": "Health Safety: 8",
-      "shop.tycoonlib.health_safety.3": "Health Safety: 3",
+      "shop.tycoonlib.health_safety.7": "Health \u0026 Safety: 7",
+      "shop.tycoonlib.health_safety.6": "Health \u0026 Safety: 6",
+      "shop.tycoonlib.health_safety.9": "Health \u0026 Safety: 9",
+      "shop.tycoonlib.health_safety.8": "Health \u0026 Safety: 8",
+      "shop.tycoonlib.health_safety.3": "Health \u0026 Safety: 3",
       "item.tycoonlib.restaurant_board_hover": "Restaurant Board Hover",
-      "shop.tycoonlib.health_safety.2": "Health Safety: 2",
-      "shop.tycoonlib.health_safety.5": "Health Safety: 5",
+      "shop.tycoonlib.health_safety.2": "Health \u0026 Safety: 2",
+      "shop.tycoonlib.health_safety.5": "Health \u0026 Safety: 5",
       "gui.tycoonlib.newspaper_gui.button_staff_manager": "Staff Manager",
-      "shop.tycoonlib.health_safety.4": "Health Safety: 4"
+      "shop.tycoonlib.health_safety.4": "Health \u0026 Safety: 4"
     }
   },
   "foldersRoot": {

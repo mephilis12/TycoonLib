@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.devmultiverse.tycoonlib.init.TycoonlibModTabs;
 import net.devmultiverse.tycoonlib.init.TycoonlibModSounds;
+import net.devmultiverse.tycoonlib.init.TycoonlibModParticleTypes;
 import net.devmultiverse.tycoonlib.init.TycoonlibModMenus;
 import net.devmultiverse.tycoonlib.init.TycoonlibModItems;
 import net.devmultiverse.tycoonlib.init.TycoonlibModEntities;
@@ -52,6 +53,8 @@ public class TycoonlibMod {
 		TycoonlibModEntities.REGISTRY.register(bus);
 
 		TycoonlibModTabs.REGISTRY.register(bus);
+
+		TycoonlibModParticleTypes.REGISTRY.register(bus);
 
 		TycoonlibModMenus.REGISTRY.register(bus);
 		TycoonlibModAttributes.REGISTRY.register(bus);
