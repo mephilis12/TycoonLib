@@ -1,0 +1,15 @@
+{
+	"name": "stans_budget_tech",
+	"list": [
+		{
+			"item": "tycoonlib:battery_tear_2",
+			"description_line_1": "tycoonlib.example_line",
+			"description_line_2": "tycoonlib.example_line",
+			"description_line_3": "tycoonlib.example_line",
+			"description_line_4": "tycoonlib.example_line",
+			"description_line_5": "tycoonlib.example_line",
+			"cost": 32,
+			"stack": 1
+		}
+	]
+}

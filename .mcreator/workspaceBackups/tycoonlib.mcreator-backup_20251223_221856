@@ -2501,6 +2501,70 @@
           "src/main/java/net/devmultiverse/tycoonlib/client/particle/MoneyParticle.java"
         ]
       }
+    },
+    {
+      "name": "MoneyCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MoneyCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockStansBudgetTechStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_stans_budget_tech_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockStansBudgetTechStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2624,8 +2688,8 @@
   },
   "language_map": {
     "en_us": {
-      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "item.tycoonlib.spawn_npc": "Spawn NPC",
+      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
       "block.tycoonlib.crappy_table": "Table",
       "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -2650,8 +2714,8 @@
       "shop.tycoonlib.liability_risk.5": "Liability Risk: 5",
       "entity.tycoonlib.example_shop_npc": "Adult",
       "shop.tycoonlib.liability_risk.2": "Liability Risk: 2",
-      "gui.tycoonlib.set_restaurant_blueprint_settings_gui.button_save": "Save",
       "shop.tycoonlib.liability_risk.3": "Liability Risk: 3",
+      "gui.tycoonlib.set_restaurant_blueprint_settings_gui.button_save": "Save",
       "shop.tycoonlib.liability_risk.0": "",
       "shop.tycoonlib.liability_risk.1": "Liability Risk: 1",
       "gui.tycoonlib.set_name_gui.label_name": "Name",

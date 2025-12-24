@@ -4,7 +4,7 @@
   "definition": {
     "name": "Funds",
     "minValue": 0.0,
-    "maxValue": 2000000.0,
+    "maxValue": 2.0E9,
     "defaultValue": 200.0,
     "addToAllEntities": false,
     "addToPlayers": true,

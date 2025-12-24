@@ -2488,6 +2488,83 @@
           }
         ]
       }
+    },
+    {
+      "name": "Money",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/particles/money.json",
+          "src/main/java/net/devmultiverse/tycoonlib/client/particle/MoneyParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "MoneyCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/MoneyCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockStansBudgetTechStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_stans_budget_tech_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockStansBudgetTechStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2532,6 +2609,9 @@
     "BLOCKS:mod:sink": [
       "Blocks.WATER_CAULDRON",
       "Blocks.CAULDRON"
+    ],
+    "BLOCKS:mod:stans_budget_tech": [
+      "CUSTOM:BatteryTear1"
     ],
     "BLOCKS:mod:door": [
       "Blocks.OAK_DOOR",
