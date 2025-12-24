@@ -2514,6 +2514,100 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockStansBudgetTechStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_stans_budget_tech_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockStansBudgetTechStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockSmilesNServosInc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_smiles_n_servos_inc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockSmilesNServosIncProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockRareFindsAuction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_rare_finds_auction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockRareFindsAuctionProcedure.java"
+        ],
+        "dependencies": [
+          {
             "name": "x",
             "type": "number"
           },
@@ -2576,6 +2670,9 @@
       "Blocks.WATER_CAULDRON",
       "Blocks.CAULDRON"
     ],
+    "BLOCKS:mod:stans_budget_tech": [
+      "CUSTOM:BatteryTear1"
+    ],
     "BLOCKS:mod:door": [
       "Blocks.OAK_DOOR",
       "Blocks.SPRUCE_DOOR",
@@ -2596,6 +2693,9 @@
     "BLOCKS:mod:chair": [
       "CUSTOM:CrappyChair",
       "CUSTOM:WoodenStool"
+    ],
+    "BLOCKS:mod:smiles_and_servos_inc": [
+      "CUSTOM:BatteryTear2"
     ],
     "BLOCKS:mod:cash_register": [
       "CUSTOM:CrappyCashRegister"
@@ -2654,8 +2754,8 @@
   },
   "language_map": {
     "en_us": {
-      "item.tycoonlib.spawn_npc": "Spawn NPC",
       "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
+      "item.tycoonlib.spawn_npc": "Spawn NPC",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
       "block.tycoonlib.crappy_table": "Table",
       "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -2680,8 +2780,8 @@
       "shop.tycoonlib.liability_risk.5": "Liability Risk: 5",
       "entity.tycoonlib.example_shop_npc": "Adult",
       "shop.tycoonlib.liability_risk.2": "Liability Risk: 2",
-      "shop.tycoonlib.liability_risk.3": "Liability Risk: 3",
       "gui.tycoonlib.set_restaurant_blueprint_settings_gui.button_save": "Save",
+      "shop.tycoonlib.liability_risk.3": "Liability Risk: 3",
       "shop.tycoonlib.liability_risk.0": "",
       "shop.tycoonlib.liability_risk.1": "Liability Risk: 1",
       "gui.tycoonlib.set_name_gui.label_name": "Name",

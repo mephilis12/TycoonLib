@@ -2535,6 +2535,66 @@
           }
         ]
       }
+    },
+    {
+      "name": "OpenBlockStansBudgetTechStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_stans_budget_tech_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockStansBudgetTechStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockSmilesNServosInc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_smiles_n_servos_inc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockSmilesNServosIncProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2579,6 +2639,9 @@
     "BLOCKS:mod:sink": [
       "Blocks.WATER_CAULDRON",
       "Blocks.CAULDRON"
+    ],
+    "BLOCKS:mod:stans_budget_tech": [
+      "CUSTOM:BatteryTear1"
     ],
     "BLOCKS:mod:door": [
       "Blocks.OAK_DOOR",

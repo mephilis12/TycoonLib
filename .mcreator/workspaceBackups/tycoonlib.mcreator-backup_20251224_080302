@@ -1580,12 +1580,12 @@
       "registry_name": "battery_tear_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/blockstates/battery_tear_1.json",
           "src/main/resources/assets/tycoonlib/models/item/battery_tear_1.json",
+          "src/main/resources/assets/tycoonlib/models/block/battery_tear_1.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_1.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/BatteryTear1Block.java",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/BatteryTear1BlockEntity.java",
-          "src/main/resources/assets/tycoonlib/models/block/battery_tear_1.json",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_1.json"
+          "src/main/resources/assets/tycoonlib/blockstates/battery_tear_1.json"
         ]
       },
       "path": "~/Block"
@@ -1598,12 +1598,12 @@
       "registry_name": "battery_tear_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/models/block/battery_tear_2.json",
           "src/main/resources/assets/tycoonlib/blockstates/battery_tear_2.json",
-          "src/main/resources/assets/tycoonlib/models/item/battery_tear_2.json",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_2.json",
+          "src/main/resources/assets/tycoonlib/models/block/battery_tear_2.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/BatteryTear2BlockEntity.java",
-          "src/main/java/net/devmultiverse/tycoonlib/block/BatteryTear2Block.java"
+          "src/main/java/net/devmultiverse/tycoonlib/block/BatteryTear2Block.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_2.json",
+          "src/main/resources/assets/tycoonlib/models/item/battery_tear_2.json"
         ]
       },
       "path": "~/Block"
@@ -2535,6 +2535,96 @@
           }
         ]
       }
+    },
+    {
+      "name": "OpenBlockStansBudgetTechStore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_stans_budget_tech_store",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockStansBudgetTechStoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockSmilesNServosInc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_smiles_n_servos_inc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockSmilesNServosIncProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBlockRareFindsAuction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_block_rare_finds_auction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/OpenBlockRareFindsAuctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2580,6 +2670,9 @@
       "Blocks.WATER_CAULDRON",
       "Blocks.CAULDRON"
     ],
+    "BLOCKS:mod:stans_budget_tech": [
+      "CUSTOM:BatteryTear1"
+    ],
     "BLOCKS:mod:door": [
       "Blocks.OAK_DOOR",
       "Blocks.SPRUCE_DOOR",
@@ -2600,6 +2693,9 @@
     "BLOCKS:mod:chair": [
       "CUSTOM:CrappyChair",
       "CUSTOM:WoodenStool"
+    ],
+    "BLOCKS:mod:smiles_and_servos_inc": [
+      "CUSTOM:BatteryTear2"
     ],
     "BLOCKS:mod:cash_register": [
       "CUSTOM:CrappyCashRegister"
@@ -2622,6 +2718,9 @@
     ],
     "ITEMS:mod:wrench": [
       "Items.STICK"
+    ],
+    "BLOCKS:mod:rare_finds_auction": [
+      "CUSTOM:CrappyBallpit"
     ],
     "ENTITIES:mod:junk_and_stuff": [
       "CUSTOM:ExampleShopNPC"
@@ -2668,8 +2767,8 @@
       "gui.tycoonlib.shop_gui.label_buy": "Buy",
       "block.tycoonlib.crappy_carousel": "Carousel",
       "block.tycoonlib.crappy_arcade": "Arcade",
-      "block.tycoonlib.battery_tear_2": "Battery Tear 2",
-      "block.tycoonlib.battery_tear_1": "Battery Tear 1",
+      "block.tycoonlib.battery_tear_2": "Battery Tier 2",
+      "block.tycoonlib.battery_tear_1": "Battery Tier 1",
       "block.tycoonlib.crappy_chair": "Chair",
       "block.tycoonlib.restaurant_board": "Restaurant Board",
       "subtitles.shop.error-02": "Player failing to buy in shop",

@@ -91,7 +91,7 @@ public class BatteryTear1BlockEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Battery Tear 1");
+		return Component.literal("Battery Tier 1");
 	}
 
 	@Override
