@@ -3,91 +3,42 @@
 	"list": [
 		{
 			"item": "tycoonlib:restaurant_package",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
-			"cost": 256,
-			"stack": 1
+			"cost": 256
 		},
 		{
 			"item": "tycoonlib:crappy_arcade",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
-			"cost": 16,
-			"stack": 1
+			"cost": 16
 		},
 		{
 			"item": "tycoonlib:crappy_fridge",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
-			"cost": 8,
-			"stack": 1
+			"cost": 8
 		},
 		{
 			"item": "tycoonlib:crappy_cash_register",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
-			"cost": 8,
-			"stack": 1
+			"cost": 8
 		},
 		{
 			"item": "tycoonlib:wooden_stool",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
 			"cost": 4,
 			"stack": 8
 		},
 		{
 			"item": "tycoonlib:crappy_chair",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
 			"cost": 8,
 			"stack": 4
 		},
 		{
 			"item": "tycoonlib:counter",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
 			"cost": 2,
 			"stack": 4
 		},
 		{
 			"item": "tycoonlib:crappy_ballpit",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
 			"cost": 8,
 			"stack": 16
 		},
 		{
 			"item": "tycoonlib:crappy_carousel",
-			"description_line_1": "tycoonlib.example_line",
-			"description_line_2": "tycoonlib.example_line",
-			"description_line_3": "tycoonlib.example_line",
-			"description_line_4": "tycoonlib.example_line",
-			"description_line_5": "tycoonlib.example_line",
 			"cost": 32,
 			"stack": 1
 		}

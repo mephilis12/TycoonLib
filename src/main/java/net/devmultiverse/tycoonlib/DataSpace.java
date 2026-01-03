@@ -16,8 +16,9 @@ public class DataSpace {
         int stack
 	) {}
 	public record ShopData(
-		String name,
-        List<ShopItem> items
+			String name,
+			boolean override,
+			List<ShopItem> items
 	) {}
 	public record SalvageItem(
         ResourceLocation item,

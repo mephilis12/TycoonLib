@@ -1,6 +1,6 @@
 {
-  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "item.tycoonlib.spawn_npc": "Spawn NPC",
+  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
   "block.tycoonlib.crappy_table": "Table",
   "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -25,8 +25,8 @@
   "shop.tycoonlib.liability_risk.5": "Liability Risk: 5",
   "entity.tycoonlib.example_shop_npc": "Adult",
   "shop.tycoonlib.liability_risk.2": "Liability Risk: 2",
-  "gui.tycoonlib.set_restaurant_blueprint_settings_gui.button_save": "Save",
   "shop.tycoonlib.liability_risk.3": "Liability Risk: 3",
+  "gui.tycoonlib.set_restaurant_blueprint_settings_gui.button_save": "Save",
   "shop.tycoonlib.liability_risk.0": "",
   "shop.tycoonlib.liability_risk.1": "Liability Risk: 1",
   "gui.tycoonlib.set_name_gui.label_name": "Name",

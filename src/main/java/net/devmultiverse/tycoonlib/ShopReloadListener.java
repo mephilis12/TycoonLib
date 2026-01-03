@@ -16,15 +16,26 @@ public class ShopReloadListener extends SimpleJsonResourceReloadListener {
     private static final Gson GSON = new GsonBuilder().create();
 
     public static final Map<ResourceLocation, DataSpace.ShopData> SHOPS = new HashMap<>();
-    
-    /* EXAMPLE: 
-    DataSpace.ShopData shop = ShopReloadListener.SHOPS.get(
-        new ResourceLocation("tycoonlib", "wallmart")
-	);
-	*/
 
     public ShopReloadListener() {
         super(GSON, "shops");
+    }
+
+    public static DataSpace.ShopData getShop(String shop)
+    {
+        ArrayList<DataSpace.ShopItem> data = new ArrayList<>();
+        String texture = "";
+        for (Map.Entry<ResourceLocation, DataSpace.ShopData> entry : SHOPS.entrySet()) {
+            if (entry.getKey().getPath().equals(shop))
+            {
+                if (entry.getValue().override())
+                    return entry.getValue();
+
+                data.addAll(entry.getValue().items());
+                texture = entry.getValue().name();
+            }
+        }
+        return new DataSpace.ShopData(texture, false, data);
     }
 
     @Override
@@ -38,29 +49,68 @@ public class ShopReloadListener extends SimpleJsonResourceReloadListener {
             JsonObject obj = json.getAsJsonObject();
 
             // --- NAME ---
-            String texture = obj.get("name").getAsString();
+            String texture = "";
+            if (obj.has("name"))
+                texture = obj.get("name").getAsString();
+
+            boolean override = false;
+            if (obj.has("override"))
+                override = obj.get("override").getAsBoolean();
+
 
             // --- ITEMS ---
             List<DataSpace.ShopItem> items = new ArrayList<>();
             JsonArray list = obj.getAsJsonArray("list");
 
-            for (JsonElement e : list) {
-                JsonObject entry = e.getAsJsonObject();
+            if (obj.has("list")) {
+                for (JsonElement e : list) {
+                    JsonObject entry = e.getAsJsonObject();
 
-                items.add(new DataSpace.ShopItem(
-                        new ResourceLocation(entry.get("item").getAsString()),
-                        entry.get("description_line_1").getAsString(),
-                        entry.get("description_line_2").getAsString(),
-                        entry.get("description_line_3").getAsString(),
-                        entry.get("description_line_4").getAsString(),
-                        entry.get("description_line_5").getAsString(),
-                        entry.get("cost").getAsInt(),
-                        entry.get("stack").getAsInt()
-                ));
+                    String description_line_1 = "blank";
+                    if (entry.has("description_line_1"))
+                        description_line_1 = entry.get("description_line_1").getAsString();
+
+                    String description_line_2 = "blank";
+                    if (entry.has("description_line_2"))
+                        description_line_2 = entry.get("description_line_2").getAsString();
+
+                    String description_line_3 = "blank";
+                    if (entry.has("description_line_3"))
+                        description_line_3 = entry.get("description_line_3").getAsString();
+
+                    String description_line_4 = "blank";
+                    if (entry.has("description_line_4"))
+                        description_line_4 = entry.get("description_line_4").getAsString();
+
+                    String description_line_5 = "blank";
+                    if (entry.has("description_line_5"))
+                        description_line_5 = entry.get("description_line_5").getAsString();
+
+                    int stack = 1;
+                    if (entry.has("stack"))
+                        stack = entry.get("stack").getAsInt();
+
+                    int cost = 1;
+                    if (entry.has("cost"))
+                        cost = entry.get("cost").getAsInt();
+
+                    items.add(new DataSpace.ShopItem(
+                            new ResourceLocation(entry.get("item").getAsString()),
+                            description_line_1,
+                            description_line_2,
+                            description_line_3,
+                            description_line_4,
+                            description_line_5,
+                            cost,
+                            stack
+                    ));
+                }
             }
+
 
             SHOPS.put(id, new DataSpace.ShopData(
                     texture,
+                    override,
                     items
             ));
         });

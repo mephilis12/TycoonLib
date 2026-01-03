@@ -7,18 +7,17 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-import net.devmultiverse.tycoonlib.ShopReloadListener;
 import net.devmultiverse.tycoonlib.DataSpace;
 
 public class FindExampleShopItemsProcedure {
 	public static void execute(Entity entity, double id) {
 		if (entity == null)
 			return;
-		String namespace = "";
 		String shop = "";
+		String namespace = "";
 		shop = entity.getPersistentData().getString("shop_gui_name");
 		namespace = entity.getPersistentData().getString("shop_gui_namespace");
-		DataSpace.ShopData shopData = ShopReloadListener.SHOPS.get(new ResourceLocation(namespace, shop));
+		DataSpace.ShopData shopData = net.devmultiverse.tycoonlib.ShopReloadListener.getShop(shop);
 		entity.getPersistentData().putDouble("max_pages", (shopData.items().size() - 1));
 		if (id < shopData.items().size()) {
 			entity.getPersistentData().putString("shop_item_namespace", shopData.items().get((int) id).item().getNamespace());
