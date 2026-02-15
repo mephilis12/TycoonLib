@@ -1,6 +1,6 @@
 package net.devmultiverse.tycoonlib.procedures;
 
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
@@ -22,8 +22,14 @@ public class FindBlockProcedure {
 			for (int checkX = (int) 0; checkX < (int) (1 + FindRange * 2); checkX++) {
 				for (int checkZ = (int) 0; checkZ < (int) (1 + FindRange * 2); checkZ++) {
 					if (CantBeUsed) {
-						if (!((world.getBlockState(BlockPos.containing((x + checkX) - FindRange, (y + checkY) - FindRangeHight, (z + checkZ) - FindRange))).getBlock().getStateDefinition().getProperty("claimed") instanceof BooleanProperty _getbp1
-								&& (world.getBlockState(BlockPos.containing((x + checkX) - FindRange, (y + checkY) - FindRangeHight, (z + checkZ) - FindRange))).getValue(_getbp1))) {
+						if (!(new Object() {
+							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getBoolean(tag);
+								return false;
+							}
+						}.getValue(world, BlockPos.containing((x + checkX) - FindRange, (y + checkY) - FindRangeHight, (z + checkZ) - FindRange), "claimed"))) {
 							if ((world.getBlockState(BlockPos.containing((x + checkX) - FindRange, (y + checkY) - FindRangeHight, (z + checkZ) - FindRange)))
 									.is(BlockTags.create(new ResourceLocation((BlockTag).toLowerCase(java.util.Locale.ENGLISH))))) {
 								OutX = (x + checkX) - FindRange;

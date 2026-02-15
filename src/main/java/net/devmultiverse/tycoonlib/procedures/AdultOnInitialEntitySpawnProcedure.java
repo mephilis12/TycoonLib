@@ -10,13 +10,13 @@ public class AdultOnInitialEntitySpawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		TycoonlibMod.queueServerWork(4, () -> {
+		TycoonlibMod.queueServerWork(2, () -> {
 			if (0 == entity.getPersistentData().getDouble("Skin")) {
 				if (entity instanceof AdultEntity animatable)
 					animatable.setTexture("stephan");
 			} else if (1 == entity.getPersistentData().getDouble("Skin")) {
 				if (entity instanceof AdultEntity animatable)
-					animatable.setTexture("staticcloudy");
+					animatable.setTexture("stelle");
 			} else if (2 == entity.getPersistentData().getDouble("Skin")) {
 				if (entity instanceof AdultEntity animatable)
 					animatable.setTexture("marcelogtoonz");
@@ -35,9 +35,6 @@ public class AdultOnInitialEntitySpawnProcedure {
 			} else if (7 == entity.getPersistentData().getDouble("Skin")) {
 				if (entity instanceof AdultEntity animatable)
 					animatable.setTexture("somethingfunky");
-			} else if (8 == entity.getPersistentData().getDouble("Skin")) {
-				if (entity instanceof AdultEntity animatable)
-					animatable.setTexture("stelle");
 			}
 		});
 	}

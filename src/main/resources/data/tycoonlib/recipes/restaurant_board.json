@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "pattern": [
     "aba",
     "bcb",
@@ -11,7 +11,7 @@
       "item": "minecraft:stick"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_nugget"
     },
     "c": {
       "item": "minecraft:paper"

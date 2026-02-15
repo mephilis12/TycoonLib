@@ -8,32 +8,32 @@
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "BUILDING",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": "Items.STICK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": "Items.STICK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": "Items.PAPER"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": "Items.STICK"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": "Items.STICK"

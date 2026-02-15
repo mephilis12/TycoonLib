@@ -124,6 +124,30 @@ public class RestaurantBoardBlockEntity extends RandomizableContainerBlockEntity
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+		if (index == 1)
+			return false;
+		if (index == 2)
+			return false;
+		if (index == 3)
+			return false;
+		if (index == 4)
+			return false;
+		if (index == 5)
+			return false;
+		if (index == 6)
+			return false;
+		if (index == 7)
+			return false;
+		if (index == 8)
+			return false;
+		if (index == 9)
+			return false;
+		if (index == 10)
+			return false;
+		if (index == 11)
+			return false;
+		if (index == 12)
+			return false;
 		return true;
 	}
 
