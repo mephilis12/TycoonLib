@@ -60,7 +60,7 @@ public class SeatEntityEntity extends PathfinderMob {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 0.15;
+		return super.getPassengersRidingOffset() + 0.2;
 	}
 
 	@Override
@@ -107,7 +107,7 @@ public class SeatEntityEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		SeatEntityTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		SeatEntityTickProcedure.execute(this.level(), this.getX(), this.getZ(), this);
 	}
 
 	@Override

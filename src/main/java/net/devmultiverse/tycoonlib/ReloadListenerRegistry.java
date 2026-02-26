@@ -11,5 +11,6 @@ public class ReloadListenerRegistry {
     public static void onReload(AddReloadListenerEvent event) {
         event.addListener(new ShopReloadListener());
         event.addListener(new SalvageReloadListener());
+        event.addListener(new SeatPositionReloadListener());
     }
 }

@@ -15,6 +15,9 @@ public class DataSpace {
         int cost,
         int stack
 	) {}
+	public record SeatPositionData(
+        double height
+	) {}
 	public record ShopData(
 			String name,
 			boolean override,

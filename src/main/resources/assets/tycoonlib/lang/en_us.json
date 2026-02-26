@@ -1,6 +1,6 @@
 {
-  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "item.tycoonlib.spawn_npc": "Spawn NPC",
+  "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
   "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
   "block.tycoonlib.crappy_table": "Table",
   "gui.tycoonlib.set_name_gui.set_name": "name",
