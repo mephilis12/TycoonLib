@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.devmultiverse.tycoonlib.client.renderer.SeatEntityRenderer;
+import net.devmultiverse.tycoonlib.client.renderer.NPCRenderer;
 import net.devmultiverse.tycoonlib.client.renderer.MannequinRenderer;
 import net.devmultiverse.tycoonlib.client.renderer.ExampleShopNPCRenderer;
 import net.devmultiverse.tycoonlib.client.renderer.ChildRenderer;
@@ -24,5 +25,6 @@ public class TycoonlibModEntityRenderers {
 		event.registerEntityRenderer(TycoonlibModEntities.ADULT.get(), AdultRenderer::new);
 		event.registerEntityRenderer(TycoonlibModEntities.CHILD.get(), ChildRenderer::new);
 		event.registerEntityRenderer(TycoonlibModEntities.EXAMPLE_SHOP_NPC.get(), ExampleShopNPCRenderer::new);
+		event.registerEntityRenderer(TycoonlibModEntities.NPC.get(), NPCRenderer::new);
 	}
 }

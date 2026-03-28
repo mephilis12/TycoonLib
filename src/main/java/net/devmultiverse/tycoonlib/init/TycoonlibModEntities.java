@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.devmultiverse.tycoonlib.entity.SeatEntityEntity;
+import net.devmultiverse.tycoonlib.entity.NPCEntity;
 import net.devmultiverse.tycoonlib.entity.MannequinEntity;
 import net.devmultiverse.tycoonlib.entity.ExampleShopNPCEntity;
 import net.devmultiverse.tycoonlib.entity.ChildEntity;
@@ -42,6 +43,10 @@ public class TycoonlibModEntities {
 					.sized(0.6f, 1.3f));
 	public static final RegistryObject<EntityType<ExampleShopNPCEntity>> EXAMPLE_SHOP_NPC = register("example_shop_npc", EntityType.Builder.<ExampleShopNPCEntity>of(ExampleShopNPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(ExampleShopNPCEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<NPCEntity>> NPC = register("npc",
+			EntityType.Builder.<NPCEntity>of(NPCEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NPCEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -57,6 +62,7 @@ public class TycoonlibModEntities {
 			AdultEntity.init();
 			ChildEntity.init();
 			ExampleShopNPCEntity.init();
+			NPCEntity.init();
 		});
 	}
 
@@ -67,5 +73,6 @@ public class TycoonlibModEntities {
 		event.put(ADULT.get(), AdultEntity.createAttributes().build());
 		event.put(CHILD.get(), ChildEntity.createAttributes().build());
 		event.put(EXAMPLE_SHOP_NPC.get(), ExampleShopNPCEntity.createAttributes().build());
+		event.put(NPC.get(), NPCEntity.createAttributes().build());
 	}
 }

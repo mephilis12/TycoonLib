@@ -6,14 +6,19 @@ package net.devmultiverse.tycoonlib.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.devmultiverse.tycoonlib.TycoonlibMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TycoonlibModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TycoonlibMod.MODID);
 	public static final RegistryObject<CreativeModeTab> TYCOON_LIB_TAB = REGISTRY.register("tycoon_lib_tab",
@@ -38,4 +43,11 @@ public class TycoonlibModTabs {
 				tabData.accept(TycoonlibModBlocks.EXAMPLE_SHOP_BLOCK.get().asItem());
 				tabData.accept(TycoonlibModItems.EXAMPLE_SHOP_NPC_SPAWN_EGG.get());
 			}).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(TycoonlibModItems.NPC_SPAWN_EGG.get());
+		}
+	}
 }

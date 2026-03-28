@@ -1,6 +1,6 @@
 {
-  "item.tycoonlib.spawn_npc": "Spawn NPC",
   "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
+  "item.tycoonlib.spawn_npc": "Spawn NPC",
   "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
   "block.tycoonlib.crappy_table": "Table",
   "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -57,6 +57,7 @@
   "shop.tycoonlib.bonus_revenue.2": "Bonus Revenue: 2",
   "shop.tycoonlib.bonus_revenue.1": "Bonus Revenue: 1",
   "shop.tycoonlib.bonus_revenue.0": "Bonus Revenue: 0",
+  "entity.tycoonlib.npc": "NPC",
   "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_31": "Unlock at level 3",
   "shop.tycoonlib.entertainment.9": "Entertainment: 9",
   "shop.tycoonlib.entertainment.7": "Entertainment: 7",
@@ -112,6 +113,7 @@
   "item.tycoonlib.example_shop_npc_spawn_egg": "Adult Spawn Egg",
   "shop.tycoonlib.health_safety.7": "Health \u0026 Safety: 7",
   "shop.tycoonlib.health_safety.6": "Health \u0026 Safety: 6",
+  "item.tycoonlib.npc_spawn_egg": "NPC Spawn Egg",
   "shop.tycoonlib.health_safety.9": "Health \u0026 Safety: 9",
   "shop.tycoonlib.health_safety.8": "Health \u0026 Safety: 8",
   "shop.tycoonlib.health_safety.3": "Health \u0026 Safety: 3",
