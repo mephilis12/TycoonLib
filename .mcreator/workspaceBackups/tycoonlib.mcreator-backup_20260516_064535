@@ -2739,9 +2739,111 @@
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/procedures/NPCTaskUpdateProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/NPC Infomation Data"
+    },
+    {
+      "name": "NPC",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java",
+          "src/main/resources/assets/tycoonlib/models/item/npc_spawn_egg.json",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/NPCRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java"
+        ]
+      },
+      "path": "~/NPC Infomation Data"
+    },
+    {
+      "name": "LocatorEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/LocatorEntityEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/LocatorEntityRenderer.java"
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "LocatorEntityTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_entity_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/LocatorEntityTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "FindClosestBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_closest_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/FindClosestBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/test_tool.json",
+          "src/main/java/net/devmultiverse/tycoonlib/item/TestToolItem.java"
+        ]
+      },
+      "path": "~/Test Items"
     }
   ],
   "variable_elements": [],
@@ -2883,6 +2985,7 @@
       "gui.tycoonlib.spawn_npcgui.is_child": "Is Child",
       "gui.tycoonlib.shop_gui.label_buy": "Buy",
       "block.tycoonlib.crappy_carousel": "Carousel",
+      "entity.tycoonlib.locator_entity": "Locator Entity",
       "block.tycoonlib.crappy_arcade": "Arcade",
       "block.tycoonlib.battery_tear_2": "Battery Tier 2",
       "block.tycoonlib.battery_tear_1": "Battery Tier 1",
@@ -2928,10 +3031,12 @@
       "gui.tycoonlib.restaurant_board.unlock_level_5": "Unlock At Level 5",
       "gui.tycoonlib.restaurant_board.unlock_level_2": "Unlock At Level 2",
       "gui.tycoonlib.restaurant_board.unlock_level_3": "Unlock At Level 3",
+      "item.tycoonlib.test_tool": "Test Tool",
       "gui.tycoonlib.restaurant_board.unlock_level_1": "Unlock At Level 1",
       "shop.tycoonlib.bonus_revenue.2": "Bonus Revenue: 2",
       "shop.tycoonlib.bonus_revenue.1": "Bonus Revenue: 1",
       "shop.tycoonlib.bonus_revenue.0": "Bonus Revenue: 0",
+      "entity.tycoonlib.npc": "NPC",
       "gui.tycoonlib.restaurant_board_gui.tooltip_unlock_at_level_31": "Unlock at level 3",
       "shop.tycoonlib.entertainment.9": "Entertainment: 9",
       "shop.tycoonlib.entertainment.7": "Entertainment: 7",
@@ -2987,6 +3092,7 @@
       "item.tycoonlib.example_shop_npc_spawn_egg": "Adult Spawn Egg",
       "shop.tycoonlib.health_safety.7": "Health \u0026 Safety: 7",
       "shop.tycoonlib.health_safety.6": "Health \u0026 Safety: 6",
+      "item.tycoonlib.npc_spawn_egg": "NPC Spawn Egg",
       "shop.tycoonlib.health_safety.9": "Health \u0026 Safety: 9",
       "shop.tycoonlib.health_safety.8": "Health \u0026 Safety: 8",
       "shop.tycoonlib.health_safety.3": "Health \u0026 Safety: 3",

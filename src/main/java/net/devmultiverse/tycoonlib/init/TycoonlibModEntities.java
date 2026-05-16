@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.devmultiverse.tycoonlib.entity.SeatEntityEntity;
 import net.devmultiverse.tycoonlib.entity.NPCEntity;
 import net.devmultiverse.tycoonlib.entity.MannequinEntity;
+import net.devmultiverse.tycoonlib.entity.LocatorEntityEntity;
 import net.devmultiverse.tycoonlib.entity.ExampleShopNPCEntity;
 import net.devmultiverse.tycoonlib.entity.ChildEntity;
 import net.devmultiverse.tycoonlib.entity.AdultEntity;
@@ -47,6 +48,8 @@ public class TycoonlibModEntities {
 			EntityType.Builder.<NPCEntity>of(NPCEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NPCEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LocatorEntityEntity>> LOCATOR_ENTITY = register("locator_entity", EntityType.Builder.<LocatorEntityEntity>of(LocatorEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LocatorEntityEntity::new).fireImmune().sized(0.25f, 0.25f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -63,6 +66,7 @@ public class TycoonlibModEntities {
 			ChildEntity.init();
 			ExampleShopNPCEntity.init();
 			NPCEntity.init();
+			LocatorEntityEntity.init();
 		});
 	}
 
@@ -74,5 +78,6 @@ public class TycoonlibModEntities {
 		event.put(CHILD.get(), ChildEntity.createAttributes().build());
 		event.put(EXAMPLE_SHOP_NPC.get(), ExampleShopNPCEntity.createAttributes().build());
 		event.put(NPC.get(), NPCEntity.createAttributes().build());
+		event.put(LOCATOR_ENTITY.get(), LocatorEntityEntity.createAttributes().build());
 	}
 }

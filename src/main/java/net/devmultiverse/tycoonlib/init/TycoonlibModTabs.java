@@ -48,6 +48,10 @@ public class TycoonlibModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(TycoonlibModItems.NPC_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+			if (tabData.hasPermissions()) {
+				tabData.accept(TycoonlibModItems.TEST_TOOL.get());
+			}
 		}
 	}
 }

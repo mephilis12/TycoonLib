@@ -16,5 +16,13 @@
         "stream": false
       }
     ]
+  },
+  "silence": {
+    "sounds": [
+      {
+        "name": "tycoonlib:silence",
+        "stream": false
+      }
+    ]
   }
 }

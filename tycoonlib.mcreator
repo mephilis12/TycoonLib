@@ -9,10 +9,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/tycoonlib/loot_tables/blocks/counter.json",
-          "src/main/resources/assets/tycoonlib/blockstates/counter.json",
           "src/main/resources/assets/tycoonlib/models/block/counter.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/CounterBlock.java",
-          "src/main/resources/assets/tycoonlib/models/item/counter.json"
+          "src/main/resources/assets/tycoonlib/models/item/counter.json",
+          "src/main/resources/assets/tycoonlib/blockstates/counter.json"
         ]
       },
       "path": "~/Block"
@@ -25,17 +25,17 @@
       "registry_name": "crappy_carousel",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/block/entity/CrappyCarouselTileEntity.java",
-          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCarouselBlock.java",
-          "src/main/resources/assets/tycoonlib/models/custom/crappy_carousel_particle.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselDisplayModel.java",
-          "src/main/resources/assets/tycoonlib/blockstates/crappy_carousel.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselDisplayItemRenderer.java",
-          "src/main/resources/assets/tycoonlib/models/item/crappy_carousel.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselBlockModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselTileRenderer.java",
           "src/main/java/net/devmultiverse/tycoonlib/block/display/CrappyCarouselDisplayItem.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCarouselBlock.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/CrappyCarouselTileEntity.java",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_carousel.json",
           "src/main/resources/assets/tycoonlib/models/block/crappy_carousel_blockstate_0.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselTileRenderer.java"
+          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselBlockModel.java",
+          "src/main/resources/assets/tycoonlib/models/custom/crappy_carousel_particle.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_carousel.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/renderer/CrappyCarouselDisplayItemRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/block/model/CrappyCarouselDisplayModel.java"
         ]
       },
       "path": "~/Block"
@@ -110,12 +110,12 @@
       "registry_name": "crappy_cash_register",
       "metadata": {
         "files": [
+          "src/main/resources/assets/tycoonlib/models/item/crappy_cash_register.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/CrappyCashRegisterBlock.java",
           "src/main/resources/assets/tycoonlib/models/block/crappy_cash_register.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_cash_register.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/CrappyCashRegisterBlockEntity.java",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_cash_register.json",
-          "src/main/resources/assets/tycoonlib/models/item/crappy_cash_register.json",
-          "src/main/resources/assets/tycoonlib/blockstates/crappy_cash_register.json"
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_cash_register.json"
         ]
       },
       "path": "~/Block"
@@ -129,10 +129,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tycoonlib/blockstates/crappy_fridge.json",
-          "src/main/resources/assets/tycoonlib/models/block/crappy_fridge.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyFridgeBlock.java",
           "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_fridge.json",
-          "src/main/resources/assets/tycoonlib/models/item/crappy_fridge.json"
+          "src/main/resources/assets/tycoonlib/models/item/crappy_fridge.json",
+          "src/main/resources/assets/tycoonlib/models/block/crappy_fridge.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyFridgeBlock.java"
         ]
       },
       "path": "~/Block"
@@ -145,12 +145,12 @@
       "registry_name": "crappy_chair",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/models/block/crappy_chair.json",
           "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_chair.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyChairBlock.java",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/CrappyChairBlockEntity.java",
-          "src/main/resources/assets/tycoonlib/models/item/crappy_chair.json",
           "src/main/resources/assets/tycoonlib/blockstates/crappy_chair.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyChairBlock.java"
+          "src/main/resources/assets/tycoonlib/models/block/crappy_chair.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_chair.json"
         ]
       },
       "path": "~/Block"
@@ -163,10 +163,10 @@
       "registry_name": "crappy_arcade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/models/item/crappy_arcade.json",
-          "src/main/resources/assets/tycoonlib/blockstates/crappy_arcade.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyArcadeBlock.java",
           "src/main/resources/assets/tycoonlib/models/block/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_arcade.json",
+          "src/main/resources/assets/tycoonlib/models/item/crappy_arcade.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyArcadeBlock.java",
           "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_arcade.json"
         ]
       },
@@ -180,11 +180,11 @@
       "registry_name": "crappy_table",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyTableBlock.java",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_table.json",
           "src/main/resources/assets/tycoonlib/models/item/crappy_table.json",
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_table.json",
           "src/main/resources/assets/tycoonlib/models/block/crappy_table.json",
-          "src/main/resources/assets/tycoonlib/blockstates/crappy_table.json"
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_table.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyTableBlock.java"
         ]
       },
       "path": "~/Block"
@@ -197,11 +197,11 @@
       "registry_name": "crappy_ballpit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/blockstates/crappy_ballpit.json",
           "src/main/resources/assets/tycoonlib/models/block/crappy_ballpit.json",
           "src/main/resources/assets/tycoonlib/models/item/crappy_ballpit.json",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_ballpit.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyBallpitBlock.java"
+          "src/main/resources/assets/tycoonlib/blockstates/crappy_ballpit.json",
+          "src/main/java/net/devmultiverse/tycoonlib/block/CrappyBallpitBlock.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/crappy_ballpit.json"
         ]
       },
       "path": "~/Block"
@@ -228,8 +228,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/tycoonlib/loot_tables/blocks/wooden_stool.json",
-          "src/main/resources/assets/tycoonlib/blockstates/wooden_stool.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/WoodenStoolBlockEntity.java",
+          "src/main/resources/assets/tycoonlib/blockstates/wooden_stool.json",
           "src/main/resources/assets/tycoonlib/models/block/wooden_stool.json",
           "src/main/resources/assets/tycoonlib/models/item/wooden_stool.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/WoodenStoolBlock.java"
@@ -245,12 +245,12 @@
       "registry_name": "restaurant_board",
       "metadata": {
         "files": [
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/restaurant_board.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/RestaurantBoardBlock.java",
-          "src/main/resources/assets/tycoonlib/blockstates/restaurant_board.json",
-          "src/main/java/net/devmultiverse/tycoonlib/block/entity/RestaurantBoardBlockEntity.java",
           "src/main/resources/assets/tycoonlib/models/block/restaurant_board.json",
-          "src/main/resources/assets/tycoonlib/models/item/restaurant_board.json"
+          "src/main/java/net/devmultiverse/tycoonlib/block/entity/RestaurantBoardBlockEntity.java",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/restaurant_board.json",
+          "src/main/resources/assets/tycoonlib/models/item/restaurant_board.json",
+          "src/main/resources/assets/tycoonlib/blockstates/restaurant_board.json"
         ]
       },
       "path": "~/Block/Restaurant"
@@ -287,9 +287,9 @@
       "registry_name": "restaurant_board_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/client/gui/RestaurantBoardGUIScreen.java",
           "src/main/java/net/devmultiverse/tycoonlib/world/inventory/RestaurantBoardGUIMenu.java",
-          "src/main/java/net/devmultiverse/tycoonlib/network/RestaurantBoardGUIButtonMessage.java"
+          "src/main/java/net/devmultiverse/tycoonlib/network/RestaurantBoardGUIButtonMessage.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/RestaurantBoardGUIScreen.java"
         ]
       },
       "path": "~/Block/Restaurant"
@@ -333,8 +333,8 @@
       "registry_name": "room_blueprint",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/item/RoomBlueprintItem.java",
-          "src/main/resources/assets/tycoonlib/models/item/room_blueprint.json"
+          "src/main/resources/assets/tycoonlib/models/item/room_blueprint.json",
+          "src/main/java/net/devmultiverse/tycoonlib/item/RoomBlueprintItem.java"
         ]
       },
       "path": "~/Block/Restaurant/Blueprints"
@@ -398,9 +398,9 @@
       "registry_name": "restaurant_board_states",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_0.json",
-          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_3.json",
           "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_2.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_3.json",
+          "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_0.json",
           "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_4.json",
           "src/main/resources/assets/tycoonlib/models/block/restaurant_board_states_blockstate_1.json"
         ]
@@ -434,10 +434,10 @@
       "registry_name": "mannequin",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/MannequinRenderer.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/model/MannequinModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/MannequinEntity.java",
           "src/main/resources/assets/tycoonlib/models/item/mannequin_spawn_egg.json",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/MannequinEntity.java"
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/MannequinModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/MannequinRenderer.java"
         ]
       },
       "path": "~/Mannequin"
@@ -470,8 +470,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetNameGUIMenu.java",
-          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetNameGUIScreen.java",
-          "src/main/java/net/devmultiverse/tycoonlib/network/SetNameGUIButtonMessage.java"
+          "src/main/java/net/devmultiverse/tycoonlib/network/SetNameGUIButtonMessage.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetNameGUIScreen.java"
         ]
       },
       "path": "~/Block/Restaurant/Blueprints"
@@ -1059,11 +1059,11 @@
       "registry_name": "guest_spawn_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/models/block/guest_spawn_plate.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/GuestSpawnPlateBlock.java",
+          "src/main/resources/assets/tycoonlib/models/block/guest_spawn_plate.json",
           "src/main/resources/data/tycoonlib/loot_tables/blocks/guest_spawn_plate.json",
-          "src/main/resources/assets/tycoonlib/models/item/guest_spawn_plate.json",
-          "src/main/resources/assets/tycoonlib/blockstates/guest_spawn_plate.json"
+          "src/main/resources/assets/tycoonlib/blockstates/guest_spawn_plate.json",
+          "src/main/resources/assets/tycoonlib/models/item/guest_spawn_plate.json"
         ]
       },
       "path": "~/Block/Restaurant/Guest Spawn Plate"
@@ -1186,9 +1186,9 @@
       "registry_name": "set_restaurant_blueprint_settings_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetRestaurantBlueprintSettingsGUIScreen.java",
           "src/main/java/net/devmultiverse/tycoonlib/world/inventory/SetRestaurantBlueprintSettingsGUIMenu.java",
-          "src/main/java/net/devmultiverse/tycoonlib/network/SetRestaurantBlueprintSettingsGUIButtonMessage.java",
-          "src/main/java/net/devmultiverse/tycoonlib/client/gui/SetRestaurantBlueprintSettingsGUIScreen.java"
+          "src/main/java/net/devmultiverse/tycoonlib/network/SetRestaurantBlueprintSettingsGUIButtonMessage.java"
         ]
       },
       "path": "~/Block/Restaurant/Blueprints"
@@ -1286,8 +1286,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/entity/AdultEntity.java",
-          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/AdultRenderer.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/model/AdultModel.java"
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/AdultModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/AdultRenderer.java"
         ]
       },
       "path": "~/NPC"
@@ -1319,8 +1319,8 @@
       "registry_name": "child",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/entity/ChildEntity.java",
           "src/main/java/net/devmultiverse/tycoonlib/client/renderer/ChildRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/ChildEntity.java",
           "src/main/java/net/devmultiverse/tycoonlib/entity/model/ChildModel.java"
         ]
       },
@@ -1583,12 +1583,12 @@
       "registry_name": "battery_tear_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/models/item/battery_tear_1.json",
-          "src/main/resources/assets/tycoonlib/models/block/battery_tear_1.json",
-          "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_1.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/BatteryTear1Block.java",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/BatteryTear1BlockEntity.java",
-          "src/main/resources/assets/tycoonlib/blockstates/battery_tear_1.json"
+          "src/main/resources/assets/tycoonlib/blockstates/battery_tear_1.json",
+          "src/main/resources/assets/tycoonlib/models/item/battery_tear_1.json",
+          "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_1.json",
+          "src/main/resources/assets/tycoonlib/models/block/battery_tear_1.json"
         ]
       },
       "path": "~/Block"
@@ -1601,12 +1601,12 @@
       "registry_name": "battery_tear_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/blockstates/battery_tear_2.json",
           "src/main/resources/assets/tycoonlib/models/block/battery_tear_2.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/entity/BatteryTear2BlockEntity.java",
-          "src/main/java/net/devmultiverse/tycoonlib/block/BatteryTear2Block.java",
+          "src/main/resources/assets/tycoonlib/models/item/battery_tear_2.json",
           "src/main/resources/data/tycoonlib/loot_tables/blocks/battery_tear_2.json",
-          "src/main/resources/assets/tycoonlib/models/item/battery_tear_2.json"
+          "src/main/java/net/devmultiverse/tycoonlib/block/BatteryTear2Block.java",
+          "src/main/resources/assets/tycoonlib/blockstates/battery_tear_2.json"
         ]
       },
       "path": "~/Block"
@@ -1619,8 +1619,8 @@
       "registry_name": "maintenance_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/MaintenanceGUIMenu.java",
-          "src/main/java/net/devmultiverse/tycoonlib/client/gui/MaintenanceGUIScreen.java"
+          "src/main/java/net/devmultiverse/tycoonlib/client/gui/MaintenanceGUIScreen.java",
+          "src/main/java/net/devmultiverse/tycoonlib/world/inventory/MaintenanceGUIMenu.java"
         ]
       }
     },
@@ -2219,8 +2219,8 @@
           "src/main/resources/data/tycoonlib/loot_tables/blocks/example_shop_block.json",
           "src/main/java/net/devmultiverse/tycoonlib/block/ExampleShopBlockBlock.java",
           "src/main/resources/assets/tycoonlib/blockstates/example_shop_block.json",
-          "src/main/resources/assets/tycoonlib/models/block/example_shop_block.json",
-          "src/main/resources/assets/tycoonlib/models/item/example_shop_block.json"
+          "src/main/resources/assets/tycoonlib/models/item/example_shop_block.json",
+          "src/main/resources/assets/tycoonlib/models/block/example_shop_block.json"
         ]
       },
       "path": "~/Example"
@@ -2234,9 +2234,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/entity/model/ExampleShopNPCModel.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/ExampleShopNPCEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/ExampleShopNPCRenderer.java",
           "src/main/resources/assets/tycoonlib/models/item/example_shop_npc_spawn_egg.json",
-          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/ExampleShopNPCRenderer.java"
+          "src/main/java/net/devmultiverse/tycoonlib/entity/ExampleShopNPCEntity.java"
         ]
       },
       "path": "~/Example"
@@ -2500,8 +2500,8 @@
       "registry_name": "money",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tycoonlib/particles/money.json",
-          "src/main/java/net/devmultiverse/tycoonlib/client/particle/MoneyParticle.java"
+          "src/main/java/net/devmultiverse/tycoonlib/client/particle/MoneyParticle.java",
+          "src/main/resources/assets/tycoonlib/particles/money.json"
         ]
       }
     },
@@ -2756,13 +2756,129 @@
       "registry_name": "npc",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java",
           "src/main/resources/assets/tycoonlib/models/item/npc_spawn_egg.json",
           "src/main/java/net/devmultiverse/tycoonlib/client/renderer/NPCRenderer.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java"
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java"
         ]
       },
       "path": "~/NPC Infomation Data"
+    },
+    {
+      "name": "LocatorEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/LocatorEntityEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/LocatorEntityRenderer.java"
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "LocatorEntityTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_entity_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/LocatorEntityTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "FindClosestBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_closest_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/FindClosestBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/test_tool.json",
+          "src/main/java/net/devmultiverse/tycoonlib/item/TestToolItem.java"
+        ]
+      },
+      "path": "~/Test Items"
+    },
+    {
+      "name": "TestToolProcedures",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_tool_procedures",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/TestToolProceduresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Test Items"
     }
   ],
   "variable_elements": [],
@@ -2782,6 +2898,14 @@
       ],
       "category": "neutral",
       "subtitle": "Player failing to buy in shop"
+    },
+    {
+      "name": "silence",
+      "files": [
+        "silence"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -2895,8 +3019,8 @@
   },
   "language_map": {
     "en_us": {
-      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "item.tycoonlib.spawn_npc": "Spawn NPC",
+      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
       "block.tycoonlib.crappy_table": "Table",
       "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -2904,6 +3028,8 @@
       "gui.tycoonlib.spawn_npcgui.is_child": "Is Child",
       "gui.tycoonlib.shop_gui.label_buy": "Buy",
       "block.tycoonlib.crappy_carousel": "Carousel",
+      "subtitles.silence": "",
+      "entity.tycoonlib.locator_entity": "Locator Entity",
       "block.tycoonlib.crappy_arcade": "Arcade",
       "block.tycoonlib.battery_tear_2": "Battery Tier 2",
       "block.tycoonlib.battery_tear_1": "Battery Tier 1",
@@ -2949,6 +3075,7 @@
       "gui.tycoonlib.restaurant_board.unlock_level_5": "Unlock At Level 5",
       "gui.tycoonlib.restaurant_board.unlock_level_2": "Unlock At Level 2",
       "gui.tycoonlib.restaurant_board.unlock_level_3": "Unlock At Level 3",
+      "item.tycoonlib.test_tool": "Test Tool",
       "gui.tycoonlib.restaurant_board.unlock_level_1": "Unlock At Level 1",
       "shop.tycoonlib.bonus_revenue.2": "Bonus Revenue: 2",
       "shop.tycoonlib.bonus_revenue.1": "Bonus Revenue: 1",

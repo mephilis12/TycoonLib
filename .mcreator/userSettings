@@ -1,5 +1,5 @@
 {
-  "workspacePanelIconSize": "LARGE",
+  "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "TYPE",
   "workspacePanelSortAscending": true,
   "projectBrowserSplitPos": 0,
@@ -7,21 +7,7 @@
     "expandedPaths": [
       "[, Tycoon-Lib]",
       "[, Tycoon-Lib, Source (Gradle)]",
-      "[, Tycoon-Lib, Source (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\java\\net]",
-      "[, Tycoon-Lib, Source (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\java\\net, D:\\GitHub\\TycoonLib\\src\\main\\java\\net\\devmultiverse]",
-      "[, Tycoon-Lib, Source (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\java\\net, D:\\GitHub\\TycoonLib\\src\\main\\java\\net\\devmultiverse, D:\\GitHub\\TycoonLib\\src\\main\\java\\net\\devmultiverse\\tycoonlib]",
-      "[, Tycoon-Lib, Resources (Gradle)]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets, D:\\GitHub\\TycoonLib\\src\\main\\resources\\assets\\tycoonlib]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\shops]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\tags]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\tags, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\tags\\blocks]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\tags, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\tags\\blocks, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\minecraft\\tags\\blocks\\mineable]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\recipes]",
-      "[, Tycoon-Lib, Resources (Gradle), D:\\GitHub\\TycoonLib\\src\\main\\resources\\data, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib, D:\\GitHub\\TycoonLib\\src\\main\\resources\\data\\tycoonlib\\shops]"
+      "[, Tycoon-Lib, Resources (Gradle)]"
     ]
   }
 }

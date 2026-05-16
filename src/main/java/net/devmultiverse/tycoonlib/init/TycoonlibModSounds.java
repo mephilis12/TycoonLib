@@ -17,4 +17,5 @@ public class TycoonlibModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, TycoonlibMod.MODID);
 	public static final RegistryObject<SoundEvent> SHOP_BUY = REGISTRY.register("shop.buy", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tycoonlib", "shop.buy")));
 	public static final RegistryObject<SoundEvent> SHOP_ERROR = REGISTRY.register("shop.error", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tycoonlib", "shop.error")));
+	public static final RegistryObject<SoundEvent> SILENCE = REGISTRY.register("silence", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tycoonlib", "silence")));
 }

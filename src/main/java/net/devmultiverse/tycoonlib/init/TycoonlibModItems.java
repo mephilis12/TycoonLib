@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.devmultiverse.tycoonlib.item.TestToolItem;
 import net.devmultiverse.tycoonlib.item.SpawnNPCItem;
 import net.devmultiverse.tycoonlib.item.RoomBlueprintItem;
 import net.devmultiverse.tycoonlib.item.RestaurantBoardHoverItem;
@@ -43,6 +44,7 @@ public class TycoonlibModItems {
 	public static final RegistryObject<Item> EXAMPLE_SHOP_BLOCK = block(TycoonlibModBlocks.EXAMPLE_SHOP_BLOCK);
 	public static final RegistryObject<Item> EXAMPLE_SHOP_NPC_SPAWN_EGG = REGISTRY.register("example_shop_npc_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.EXAMPLE_SHOP_NPC, -13421773, -13395457, new Item.Properties()));
 	public static final RegistryObject<Item> NPC_SPAWN_EGG = REGISTRY.register("npc_spawn_egg", () -> new ForgeSpawnEggItem(TycoonlibModEntities.NPC, -13421773, -16751002, new Item.Properties()));
+	public static final RegistryObject<Item> TEST_TOOL = REGISTRY.register("test_tool", () -> new TestToolItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

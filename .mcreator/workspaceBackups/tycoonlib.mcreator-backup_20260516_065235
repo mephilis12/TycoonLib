@@ -2763,6 +2763,126 @@
         ]
       },
       "path": "~/NPC Infomation Data"
+    },
+    {
+      "name": "LocatorEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/LocatorEntityEntity.java",
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/LocatorEntityRenderer.java"
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "LocatorEntityTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locator_entity_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/LocatorEntityTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Seat"
+    },
+    {
+      "name": "FindClosestBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_closest_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/FindClosestBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tycoonlib/models/item/test_tool.json",
+          "src/main/java/net/devmultiverse/tycoonlib/item/TestToolItem.java"
+        ]
+      },
+      "path": "~/Test Items"
+    },
+    {
+      "name": "TestToolProcedures",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_tool_procedures",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/TestToolProceduresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Test Items"
     }
   ],
   "variable_elements": [],
@@ -2895,8 +3015,8 @@
   },
   "language_map": {
     "en_us": {
-      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "item.tycoonlib.spawn_npc": "Spawn NPC",
+      "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
       "block.tycoonlib.crappy_table": "Table",
       "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -2904,6 +3024,7 @@
       "gui.tycoonlib.spawn_npcgui.is_child": "Is Child",
       "gui.tycoonlib.shop_gui.label_buy": "Buy",
       "block.tycoonlib.crappy_carousel": "Carousel",
+      "entity.tycoonlib.locator_entity": "Locator Entity",
       "block.tycoonlib.crappy_arcade": "Arcade",
       "block.tycoonlib.battery_tear_2": "Battery Tier 2",
       "block.tycoonlib.battery_tear_1": "Battery Tier 1",
@@ -2949,6 +3070,7 @@
       "gui.tycoonlib.restaurant_board.unlock_level_5": "Unlock At Level 5",
       "gui.tycoonlib.restaurant_board.unlock_level_2": "Unlock At Level 2",
       "gui.tycoonlib.restaurant_board.unlock_level_3": "Unlock At Level 3",
+      "item.tycoonlib.test_tool": "Test Tool",
       "gui.tycoonlib.restaurant_board.unlock_level_1": "Unlock At Level 1",
       "shop.tycoonlib.bonus_revenue.2": "Bonus Revenue: 2",
       "shop.tycoonlib.bonus_revenue.1": "Bonus Revenue: 1",

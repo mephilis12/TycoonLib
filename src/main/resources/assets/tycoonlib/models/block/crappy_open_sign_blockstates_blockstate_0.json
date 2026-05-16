@@ -1,9 +1,0 @@
-{
-  "parent": "tycoonlib:custom/crappy_open_sign",
-  "textures": {
-    "all": "tycoonlib:block/closed",
-    "particle": "tycoonlib:block/open",
-    "0": "tycoonlib:block/closed"
-  },
-  "render_type": "solid"
-}
