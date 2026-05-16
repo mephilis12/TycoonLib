@@ -2705,6 +2705,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2724,6 +2740,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2756,10 +2788,10 @@
       "registry_name": "npc",
       "metadata": {
         "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java",
           "src/main/resources/assets/tycoonlib/models/item/npc_spawn_egg.json",
           "src/main/java/net/devmultiverse/tycoonlib/client/renderer/NPCRenderer.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java"
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java"
         ]
       },
       "path": "~/NPC Infomation Data"
@@ -2879,6 +2911,25 @@
         ]
       },
       "path": "~/Test Items"
+    },
+    {
+      "name": "GetNPCTask",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_npc_task",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/GetNPCTaskProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Test Items/NPC Hud"
     }
   ],
   "variable_elements": [],
@@ -2898,6 +2949,14 @@
       ],
       "category": "neutral",
       "subtitle": "Player failing to buy in shop"
+    },
+    {
+      "name": "silence",
+      "files": [
+        "silence"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -3011,8 +3070,8 @@
   },
   "language_map": {
     "en_us": {
-      "item.tycoonlib.spawn_npc": "Spawn NPC",
       "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
+      "item.tycoonlib.spawn_npc": "Spawn NPC",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
       "block.tycoonlib.crappy_table": "Table",
       "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -3020,6 +3079,7 @@
       "gui.tycoonlib.spawn_npcgui.is_child": "Is Child",
       "gui.tycoonlib.shop_gui.label_buy": "Buy",
       "block.tycoonlib.crappy_carousel": "Carousel",
+      "subtitles.silence": "",
       "entity.tycoonlib.locator_entity": "Locator Entity",
       "block.tycoonlib.crappy_arcade": "Arcade",
       "block.tycoonlib.battery_tear_2": "Battery Tier 2",
@@ -3202,7 +3262,12 @@
       },
       {
         "name": "Test Items",
-        "children": []
+        "children": [
+          {
+            "name": "NPC Hud",
+            "children": []
+          }
+        ]
       },
       {
         "name": "GUI",

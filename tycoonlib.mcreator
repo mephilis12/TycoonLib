@@ -2705,6 +2705,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2724,6 +2740,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2756,10 +2788,10 @@
       "registry_name": "npc",
       "metadata": {
         "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java",
           "src/main/resources/assets/tycoonlib/models/item/npc_spawn_egg.json",
           "src/main/java/net/devmultiverse/tycoonlib/client/renderer/NPCRenderer.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java",
-          "src/main/java/net/devmultiverse/tycoonlib/entity/NPCEntity.java"
+          "src/main/java/net/devmultiverse/tycoonlib/entity/model/NPCModel.java"
         ]
       },
       "path": "~/NPC Infomation Data"
@@ -2772,8 +2804,8 @@
       "registry_name": "locator_entity",
       "metadata": {
         "files": [
-          "src/main/java/net/devmultiverse/tycoonlib/entity/LocatorEntityEntity.java",
-          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/LocatorEntityRenderer.java"
+          "src/main/java/net/devmultiverse/tycoonlib/client/renderer/LocatorEntityRenderer.java",
+          "src/main/java/net/devmultiverse/tycoonlib/entity/LocatorEntityEntity.java"
         ]
       },
       "path": "~/Seat"
@@ -2788,12 +2820,7 @@
         "files": [
           "src/main/java/net/devmultiverse/tycoonlib/procedures/LocatorEntityTickProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Seat"
     },
@@ -2879,6 +2906,34 @@
         ]
       },
       "path": "~/Test Items"
+    },
+    {
+      "name": "GetNPCTask",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_npc_task",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/procedures/GetNPCTaskProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Test Items/NPC Hud"
+    },
+    {
+      "name": "NPCHud",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_hud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/devmultiverse/tycoonlib/client/screens/NPCHudOverlay.java"
+        ]
+      },
+      "path": "~/Test Items/NPC Hud"
     }
   ],
   "variable_elements": [],
@@ -3019,8 +3074,8 @@
   },
   "language_map": {
     "en_us": {
-      "item.tycoonlib.spawn_npc": "Spawn NPC",
       "gui.tycoonlib.restaurant_board_gui.button_setfloorlevel": "SetFloorLevel",
+      "item.tycoonlib.spawn_npc": "Spawn NPC",
       "block.tycoonlib.guest_spawn_plate": "Guest Spawn Plate",
       "block.tycoonlib.crappy_table": "Table",
       "gui.tycoonlib.set_name_gui.set_name": "name",
@@ -3211,7 +3266,12 @@
       },
       {
         "name": "Test Items",
-        "children": []
+        "children": [
+          {
+            "name": "NPC Hud",
+            "children": []
+          }
+        ]
       },
       {
         "name": "GUI",
