@@ -1,15 +1,19 @@
 package net.devmultiverse.tycoonlib.procedures;
 
-import net.devmultiverse.tycoonlib.TycoonlibMod;
+import org.checkerframework.checker.units.qual.s;
 
 public class ConvertStringToNumberProcedure {
 	public static double execute(String text) {
 		if (text == null)
 			return 0;
-		if ((text).equals(Integer.parseInt(text))) {
-			TycoonlibMod.LOGGER.info("This text is not a number! (Returning Zero)");
-			return 0;
-		}
-		return Integer.parseInt(text);
+		return new Object() {
+			double convert(String s) {
+				try {
+					return Double.parseDouble(s.trim());
+				} catch (Exception e) {
+				}
+				return 0;
+			}
+		}.convert(text);
 	}
 }

@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.client.Minecraft;
 
 import net.devmultiverse.tycoonlib.procedures.GetNPCTaskProcedure;
+import net.devmultiverse.tycoonlib.procedures.GetNPCTaskPositionProcedure;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class NPCHudOverlay {
@@ -36,6 +37,9 @@ public class NPCHudOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					GetNPCTaskProcedure.execute(), 4, h / 2 + -5, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					GetNPCTaskPositionProcedure.execute(), 4, h / 2 + 6, -1, false);
 		}
 	}
 }

@@ -1,9 +1,12 @@
 package net.devmultiverse.tycoonlib.procedures;
 
-import net.devmultiverse.tycoonlib.TycoonlibMod;
+import net.minecraft.world.entity.Entity;
 
 public class LocatorEntityTickProcedure {
-	public static void execute() {
-		TycoonlibMod.LOGGER.info("Hello");
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		if (!entity.level().isClientSide())
+			entity.discard();
 	}
 }

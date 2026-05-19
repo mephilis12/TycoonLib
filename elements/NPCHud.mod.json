@@ -21,6 +21,24 @@
           "y": 115,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_npc_task_position",
+          "text": {
+            "fixedValue": "",
+            "name": "GetNPCTaskPosition"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 4,
+          "y": 126,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

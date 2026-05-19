@@ -23,6 +23,7 @@ import net.minecraft.commands.CommandSource;
 import net.devmultiverse.tycoonlib.init.TycoonlibModEntities;
 import net.devmultiverse.tycoonlib.init.TycoonlibModBlocks;
 import net.devmultiverse.tycoonlib.entity.LocatorEntityEntity;
+import net.devmultiverse.tycoonlib.TycoonlibMod;
 
 public class NPCDataUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -85,7 +86,7 @@ public class NPCDataUpdateProcedure {
 													}
 													return 0;
 												}
-											}.convert(new Object() {
+											}.convert((new Object() {
 												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
 													StringBuilder _result = new StringBuilder();
 													if (world instanceof ServerLevel _level) {
@@ -114,7 +115,65 @@ public class NPCDataUpdateProcedure {
 													}
 													return _result.toString();
 												}
-											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]"));
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]")).lastIndexOf("d")));
 											yC = new Object() {
 												double convert(String s) {
 													try {
@@ -123,7 +182,7 @@ public class NPCDataUpdateProcedure {
 													}
 													return 0;
 												}
-											}.convert(new Object() {
+											}.convert((new Object() {
 												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
 													StringBuilder _result = new StringBuilder();
 													if (world instanceof ServerLevel _level) {
@@ -152,7 +211,65 @@ public class NPCDataUpdateProcedure {
 													}
 													return _result.toString();
 												}
-											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]"));
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]")).lastIndexOf("d")));
 											zC = new Object() {
 												double convert(String s) {
 													try {
@@ -161,7 +278,7 @@ public class NPCDataUpdateProcedure {
 													}
 													return 0;
 												}
-											}.convert(new Object() {
+											}.convert((new Object() {
 												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
 													StringBuilder _result = new StringBuilder();
 													if (world instanceof ServerLevel _level) {
@@ -190,7 +307,153 @@ public class NPCDataUpdateProcedure {
 													}
 													return _result.toString();
 												}
-											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]"));
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).lastIndexOf("d")));
+											TycoonlibMod.LOGGER.info((new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).lastIndexOf("d")));
 											if (entity instanceof Mob _entity)
 												_entity.getNavigation().moveTo((xC - (new Object() {
 													public Direction getDirection(BlockState _bs) {
@@ -213,6 +476,294 @@ public class NPCDataUpdateProcedure {
 																: Direction.NORTH;
 													}
 												}.getDirection((world.getBlockState(BlockPos.containing(x + xi, y + i, z + zi))))).getStepZ()), 1);
+											entity.getPersistentData().putDouble("xC", new Object() {
+												double convert(String s) {
+													try {
+														return Double.parseDouble(s.trim());
+													} catch (Exception e) {
+													}
+													return 0;
+												}
+											}.convert((new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[0]")).lastIndexOf("d"))));
+											entity.getPersistentData().putDouble("yC", new Object() {
+												double convert(String s) {
+													try {
+														return Double.parseDouble(s.trim());
+													} catch (Exception e) {
+													}
+													return 0;
+												}
+											}.convert((new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[1]")).lastIndexOf("d"))));
+											entity.getPersistentData().putDouble("zC", new Object() {
+												double convert(String s) {
+													try {
+														return Double.parseDouble(s.trim());
+													} catch (Exception e) {
+													}
+													return 0;
+												}
+											}.convert((new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).substring((int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).lastIndexOf(" ") + " ".length(), (int) (new Object() {
+												public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+													StringBuilder _result = new StringBuilder();
+													if (world instanceof ServerLevel _level) {
+														CommandSource _dataConsumer = new CommandSource() {
+															@Override
+															public void sendSystemMessage(Component message) {
+																_result.append(message.getString());
+															}
+
+															@Override
+															public boolean acceptsSuccess() {
+																return true;
+															}
+
+															@Override
+															public boolean acceptsFailure() {
+																return true;
+															}
+
+															@Override
+															public boolean shouldInformAdmins() {
+																return false;
+															}
+														};
+														_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+													}
+													return _result.toString();
+												}
+											}.getResult(world, new Vec3(x, y, z), "data get entity @e[sort=nearest, type=tycoonlib:locator_entity, limit=1, distance=..4] Pos[2]")).lastIndexOf("d"))));
 											if (1.5 >= new Vec3(x, y, z).distanceTo(new Vec3((xC - (new Object() {
 												public Direction getDirection(BlockState _bs) {
 													Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");

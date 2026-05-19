@@ -132,7 +132,7 @@ public class LocatorEntityEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		LocatorEntityTickProcedure.execute();
+		LocatorEntityTickProcedure.execute(this);
 	}
 
 	@Override
