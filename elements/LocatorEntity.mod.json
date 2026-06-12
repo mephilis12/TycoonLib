@@ -117,7 +117,7 @@
     },
     "entityDataEntries": [],
     "onMobTickUpdate": {
-      "name": "LocatorEntityTick"
+      "name": "LocatorEntityOnEntityTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",

@@ -26,7 +26,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import net.devmultiverse.tycoonlib.procedures.LocatorEntityTickProcedure;
+import net.devmultiverse.tycoonlib.procedures.LocatorEntityOnEntityTickUpdateProcedure;
 import net.devmultiverse.tycoonlib.init.TycoonlibModEntities;
 
 public class LocatorEntityEntity extends PathfinderMob {
@@ -132,7 +132,7 @@ public class LocatorEntityEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		LocatorEntityTickProcedure.execute(this);
+		LocatorEntityOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
